@@ -1,0 +1,218 @@
+//header
+header i.message {
+    background: url("../img/icon/message_ic.png") no-repeat center;
+    background-size: contain;
+}
+
+//marquee
+.marqueeWrap .marqueeIcon {
+    background: url("../img/icon/marquee_ic.png") no-repeat center;
+    background-size: contain;
+}
+.marqueeWrap .hotGameBtn i.hot_Icon {
+    background: url("../img/icon/hot_ic.png") no-repeat center;
+    background-size: contain;
+}
+
+//homePage
+.homePage .memberArea .vip_icon {
+    background: url("../img/icon/vipLevel_ic.png") no-repeat center;
+    background-size: contain;
+}
+.homePage .memberArea .hint_icon {
+    background: url("../img/icon/hint_ic.png") no-repeat center;
+    background-size: contain;
+}
+.homePage .memberArea .quickBtnBlock a i {
+    background: url("../img/icon/quickBtn_Ic.png") no-repeat center;
+    background-size: 300%;
+}
+
+//mainPage
+.mainPage .functionState i {
+    background: url("../img/icon/gameBlock_function_Ic.png") no-repeat;
+    background-size: 200%;
+}
+.mainPage .dataType .state i {
+    background: url("../img/icon/gameState_Ic.png") no-repeat;
+    background-size: 200%;
+}
+.mainPage .betGame_Detail .topArea {
+    background: url("../img/betGame_detail.png") no-repeat;
+    background-size: 100%;
+}
+
+//tutorial
+.tutorialPage .team .logo {
+    background: url("../img/icon/teach_team.png") no-repeat;
+    background-size: 200%;
+}
+
+//遊戲入口圖
+.homePage .homeCenter .gameType ul li.soccer {
+    background: url("../img/gameType_soccer.png") no-repeat center;
+    background-size: contain;
+}
+.homePage .homeCenter .gameType ul li.basketball {
+    background: url("../img/gameType_basketball.png") no-repeat center;
+    background-size: contain;
+}
+.homePage .homeCenter .gameType ul li.eSport {
+    background: url("../img/gameType_eSport.png") no-repeat center;
+    background-size: contain;
+}
+.homePage .homeCenter .gameType ul li.tennis {
+    background: url("../img/gameType_tennis.png") no-repeat center;
+    background-size: contain;
+}
+
+//eventPage
+.eventPage .clock_icon {
+    background: url("../img/icon/clock_ic.png") no-repeat center;
+    background-size: 100%;
+}
+
+//csPage
+.csPage .csBlock:nth-of-type(1) {
+    background: url("../img/decoPic/csBlock_01.png") no-repeat center;
+    background-size: 100%;
+}
+.csPage .csBlock:nth-of-type(2) {
+    background: url("../img/decoPic/csBlock_02.png") no-repeat center;
+    background-size: 100%;
+}
+.csPage i.cs24hr_icon {
+    background: url("../img/icon/cs24Hr_ic.png") no-repeat center;
+    background-size: 100%;
+}
+.csPage i.csNormal_icon {
+    background: url("../img/icon/csNormal_ic.png") no-repeat center;
+    background-size: 100%;
+}
+.csPage .innerMode.connectUs .themeBlock li i {
+    background: url("../img/icon/connectCS_Ic.png") no-repeat;
+    background-size: 400%;
+}
+
+//footer
+footer ul li i {
+    background: url("../img/icon/footer_Ic.png") no-repeat;
+    background-size: 500%;
+}
+
+footer ul.mainPageNav li i {
+    background: url("../img/icon/footerMainPage_Ic.png") no-repeat;
+    background-size: 600%;
+}
+
+//jumpWindow
+.jumpWindow .close_icon {
+    background: url("../img/icon/close_ic.png") no-repeat center;
+    background-size: 100%;
+}
+
+.jumpWindow.betHotGame {
+    background: url("../img/betHotG_BG.png") no-repeat center;
+    background-size: contain;
+}
+.jumpWindow.betHotGame .reFresh_icon {
+    background: url("../img/icon/refresh_ic.png") no-repeat center;
+    background-size: contain;
+}
+.jumpWindow.betHotGame .titleArea .decoPic {
+    background: url("../img/decoPic/betHotGame_deco_01.png") no-repeat center;
+    background-size: contain;
+}
+.jumpWindow.betHotGame .titleArea .textPic {
+    background: url("../img/decoPic/betHotGame_deco_02.png") no-repeat center;
+    background-size: 100%;
+}
+.jumpWindow.betHotGame i.liwagu {
+    background: url("../img/decoPic/teamLogo_01.png") no-repeat center;
+    background-size: 100%;
+}
+.jumpWindow.betHotGame i.stujia {
+    background: url("../img/decoPic/teamLogo_02.png") no-repeat center;
+    background-size: 100%;
+}
+.jumpWindow.betHotGame i.baijin {
+    background: url("../img/decoPic/teamLogo_03.png") no-repeat center;
+    background-size: 100%;
+}
+.jumpWindow.betHotGame i.herfan {
+    background: url("../img/decoPic/teamLogo_04.png") no-repeat center;
+    background-size: 100%;
+}
+.jumpWindow.betHotGame i.mays {
+    background: url("../img/decoPic/teamLogo_05.png") no-repeat center;
+    background-size: 100%;
+}
+.jumpWindow.betHotGame i.dian {
+    background: url("../img/decoPic/teamLogo_06.png") no-repeat center;
+    background-size: 100%;
+}
+
+
+//共用Icon
+.topContainer li i {
+    background: url("../img/icon/mainPage_typeIc.png") no-repeat;
+    background-size: 600%;
+}
+.leftArrow_Icon {
+    background: url("../img/icon/leftArrow_ic.png") no-repeat center;
+    background-size: contain;
+}
+.rightArrow_Icon {
+    background: url("../img/icon/rightArrow_ic.png") no-repeat center;
+    background-size: contain;
+    width: 4vw;
+    height: 4vw;
+}
+.downArrow_Icon {
+    background: url("../img/icon/downArrow_ic.png") no-repeat center;
+    background-size: contain;
+    width: 3vw;
+    height: 3vw;
+}
+.doubleArrow_icon {
+    background: url("../img/icon/doubleArrow_ic.png") no-repeat center;
+    background-size: contain;
+}
+.doubleArrow2_icon {
+    background: url("../img/icon/doubleArrow2_ic.png") no-repeat center;
+    background-size: contain;
+    width: 3vw;
+    height: 3vw;
+}
+.editPic_Icon {
+    background: url("../img/icon/editPic_Icon.png") no-repeat center;
+    background-size: contain;
+}
+.pic_Icon {
+    background: url("../img/icon/pic_ic.png") no-repeat center;
+    background-size: contain;
+}
+.cross_icon {
+    background: url("../img/icon/cross_ic.png") no-repeat center;
+    background-size: contain;
+    width: 3vw;
+    height: 3vw;
+}
+
+//teamLogo
+.teamLogo_01 {
+    background: url("../img/decoPic/teamLogo_01.png") no-repeat center;
+    background-size: contain;
+}
+.teamLogo_02 {
+    background: url("../img/decoPic/teamLogo_02.png") no-repeat center;
+    background-size: contain;
+}
+.teamLogo_03 {
+    background: url("../img/decoPic/teamLogo_03.png") no-repeat center;
+    background-size: contain;
+}
+.teamLogo_04 {
+    background: url("../img/decoPic/teamLogo_04.png") no-repeat center;
+    background-size: contain;
+}

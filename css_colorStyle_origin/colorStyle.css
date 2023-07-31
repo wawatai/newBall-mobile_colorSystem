@@ -1,0 +1,494 @@
+body main.decoBG .grayBG {
+  background: #f7f7f7;
+}
+
+body .marqueeWrap .marquee p {
+  color: #838ba0;
+}
+
+body .hotGameBtn {
+  background: -webkit-gradient(linear, left top, right top, from(#909ddc), to(#2e44b6));
+  background: linear-gradient(to right, #909ddc 0%, #2e44b6 100%);
+}
+
+body .hotGameBtn p {
+  color: #ffffff;
+}
+
+header {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+header.innerPage .pageTitle {
+  color: #4d515d;
+}
+
+header.innerPage .pageTitle i.fa-circle-dollar-to-slot {
+  color: #4d515d;
+}
+
+header.innerPage .pageTitle i.fa-magnifying-glass {
+  color: #4d515d;
+}
+
+header .message::before {
+  background: #f30d0d;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+header .innerMode_header {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+header .innerMode_header .pageTitle {
+  color: #4d515d;
+}
+
+header .innerMode_header .finish {
+  color: #8e9bdc;
+}
+
+header .innerMode_header .quickHref {
+  color: #838ba0;
+}
+
+.homePage {
+  background: #f7f7f7;
+}
+
+.homePage .memberArea .memberInfo .nameBlock p {
+  color: #838ba0;
+}
+
+.homePage .memberArea .memberInfo .nameBlock .vipLevel {
+  background: -webkit-gradient(linear, left top, right top, from(#909ddc), to(#2e44b6));
+  background: linear-gradient(to right, #909ddc 0%, #2e44b6 100%);
+}
+
+.homePage .memberArea .memberInfo .nameBlock .vipLevel p {
+  color: #ffffff;
+}
+
+.homePage .memberArea .memberInfo .total {
+  color: #1b255c;
+}
+
+.homePage .memberArea .quickBtnBlock a p {
+  color: #2d43b6;
+}
+
+.homePage .memberArea .homeCenter .gameFilter ul li {
+  background: #ffffff;
+  border: 0.3vw solid #e0e7ff;
+}
+
+.homePage .memberArea .homeCenter .gameFilter ul li .outer p.type {
+  color: #838ba0;
+}
+
+.homePage .memberArea .homeCenter .gameFilter ul li.active .outer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#909ddc), to(#2e44b6));
+  background: linear-gradient(to bottom, #909ddc 0%, #2e44b6 100%);
+}
+
+.homePage .memberArea .homeCenter .gameFilter ul li.active .outer p {
+  color: #ffffff;
+}
+
+.homePage .memberArea .homeCenter .gameType ul li .gameDetails p {
+  color: #1b255c;
+}
+
+.homePage .memberArea .homeCenter .gameType ul li .gameDetails span {
+  color: #838ba0;
+}
+
+.betLimitPage,
+.betRecordPage {
+  background: #f7f7f7;
+}
+
+footer ul {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer ul li.active span {
+  color: #2d43b6;
+}
+
+footer ul li i::before {
+  background: #f30d0d;
+}
+
+footer ul li span {
+  color: #838ba0;
+}
+
+footer ul.mainPageNav li.active p {
+  color: #2d43b6;
+}
+
+footer ul.multiBet_mode {
+  background: #ffffff;
+}
+
+footer ul.multiBet_mode .title {
+  color: #4d515d;
+  border-left: 0.8vw solid #2d43b6;
+}
+
+footer ul.multiBet_mode > div.current_state {
+  background: #959dc5;
+}
+
+footer ul.multiBet_mode > div.current_state .group {
+  color: #ffffff;
+}
+
+footer ul.multiBet_mode > div.current_state .group .count {
+  background: #ffffff;
+  color: #959dc5;
+}
+
+footer ul.multiBet_mode > div.total_count {
+  background: #eef1f8;
+  border-color: #d8d8d8;
+}
+
+footer ul.multiBet_mode > div.total_count .win {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+footer ul.multiBet_mode > div.total_count .win .tot {
+  color: #f30d0d;
+}
+
+footer ul.multiBet_mode > div.total_count .moreType {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode > div.total_count input.limit {
+  border: pxToVw(1) solid #d8d8d8;
+  border-radius: pxToVw(20);
+  font-size: 3.8vw;
+}
+
+footer ul.multiBet_mode > div.total_count .totMoney {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode > div.total_count .totMoney span {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode > div.moreCount {
+  background: #f7f7f7;
+}
+
+footer ul.multiBet_mode > div.moreCount > div {
+  border: 0.1vw solid rgba(216, 216, 216, 0.6235294118);
+  color: #4d515d;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.numBlock {
+  background: #ffffff;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.functionBlock {
+  background: #f6f8ff;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.checkBlock .addBtn {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.checkBlock button {
+  background: #2d43b6;
+  border-radius: pxToVw(20);
+  color: #ffffff;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.checkBlock button .total {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+footer ul.multiBet_mode ul li {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+footer ul.multiBet_mode ul li .group_normal .title .point {
+  color: #4d515d;
+}
+
+footer ul.multiBet_mode ul li .group_normal .betType {
+  color: #000000;
+}
+
+footer ul.multiBet_mode ul li .group_normal .teamWrap {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode ul li .group_normal .rate {
+  color: #4d515d;
+}
+
+.filter {
+  background: rgba(0, 0, 0, 0.6784313725);
+}
+
+.filter .jumpWindow.announcement {
+  background: #ffffff;
+}
+
+.filter .jumpWindow.announcement .title {
+  color: #000000;
+}
+
+.filter .jumpWindow.announcement .content p {
+  color: #838ba0;
+}
+
+.filter .jumpWindow.announcement .btnBlock button {
+  background: #ffffff;
+  color: #000000;
+}
+
+.filter .jumpWindow.announcement .btnBlock button:first-child {
+  border-right: pxToVw(1) solid #e0e7ff;
+}
+
+.filter .jumpWindow.announcement .btnBlock button.seeMore {
+  color: #2d43b6;
+}
+
+.betLimitPage .dataTable .tableOuter {
+  border: 0.2vw solid #838ba0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.betLimitPage .dataTable .tableOuter table tr {
+  border-bottom: 0.2vw solid #838ba0;
+}
+
+.betLimitPage .dataTable .tableOuter table tr.gameName th {
+  background: #2d43b6;
+}
+
+.betLimitPage .dataTable .tableOuter table tr.gameName th .outer p {
+  color: #ffffff;
+}
+
+.betLimitPage .dataTable .tableOuter table tr:nth-of-type(even) {
+  background: #eef1f8;
+}
+
+.betLimitPage .dataTable .tableOuter table tr td {
+  border-right: 0.2vw solid #838ba0;
+}
+
+.betLimitPage .dataTable .tableOuter table tr td p {
+  color: #4d515d;
+}
+
+.betLimitPage .dataTable .tableOuter table tr td p span {
+  color: #4d515d;
+}
+
+.betRecordPage .recordType {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.betRecordPage .recordType li {
+  background: #eef1f8;
+  border-radius: pxToVw(20);
+  color: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.betRecordPage .recordType li.active {
+  border: pxToVw(1) solid #2d43b6;
+}
+.betRecordPage .recordType li.active p {
+  color: #2d43b6;
+}
+
+.betRecordPage .recordType li p {
+  color: #4d515d;
+}
+
+.betRecordPage .searchFilters {
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.betRecordPage .searchFilters button {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1098039216);
+  color: #000000;
+}
+.betRecordPage .searchFilters button.active {
+  background: #2d43b6;
+  color: #ffffff;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr {
+  border-bottom: 0.1vw solid #d8d8d8;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th {
+  background: #2d43b6;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th .outer .state {
+  border-left: 0.6vw solid #599bcf;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th p {
+  color: #ffffff;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr.summary td .outer p:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(4) td,
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(5) td,
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(6) td,
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(7) td {
+  border-right: 0.1vw solid #d8d8d8;
+}
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(4) td:nth-of-type(odd),
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(5) td:nth-of-type(odd),
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(6) td:nth-of-type(odd),
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(7) td:nth-of-type(odd) {
+  background: #f7f7f7;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td {
+  background: #ffffff;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td.gameInfo {
+  background: #ffffff;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td.gameInfo .outer .team span {
+  color: #838ba0;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td p {
+  color: #000000;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td p.highLight {
+  color: #2d43b6;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td p.important {
+  color: #f30d0d;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap {
+  background: #eef1f8;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap > div {
+  border-right: 0.2vw solid #838ba0;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap > div p {
+  color: #000000;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li {
+  background: #f7f7f7;
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .overView {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .overView > div p {
+  color: #000000;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .overView > div p.betNum {
+  color: #f30d0d;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .overView > div .countNum {
+  background: #cdd0dd;
+  color: #ffffff;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr {
+  border-bottom: 0.1vw solid #d8d8d8;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr.gameName th {
+  background: #2d43b6;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr.gameName th .outer .state {
+  border-left: 0.6vw solid #599bcf;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr.gameName th p {
+  color: #ffffff;
+}
+
+.betRecordPage .countBlock {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px transparent, 0 -1px 16px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 2px 4px transparent, 0 -1px 16px rgba(0, 0, 0, 0.1098039216);
+}
+
+.betRecordPage .countBlock::before {
+  background: #d8d8d8;
+}
+
+.betRecordPage .countBlock .half p {
+  color: #000000;
+}
+
+.betRecordPage .countBlock .half span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.betRecordPage .countBlock .half span.bet {
+  color: #2d43b6;
+}
+
+.betRecordPage .countBlock .half span.result {
+  color: #1cc948;
+}

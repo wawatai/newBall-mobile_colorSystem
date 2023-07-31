@@ -1,0 +1,118 @@
+.betLimitPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .dataTable {
+        width: 100%;
+        height: auto;
+        padding: 0 2vw;
+        overflow-y: auto;
+        position: relative;
+        z-index: 3;
+
+        .tableOuter {
+            width: auto;
+            height: auto;
+            border-radius: 2vw;
+            margin-bottom: 2vw;
+            overflow: hidden;
+
+            &.active {
+
+                table {
+
+                    tr {
+
+                        &.gameName {
+    
+                            th {
+    
+                                i {
+                                    transform: rotate(-180deg);
+                                }
+                            }
+                        }
+    
+                        td {
+                            display: table-cell;
+                        }
+                    }
+                }
+            }
+
+            table {
+                width: 100%;
+                height: auto;
+                border-collapse: collapse;
+                overflow: hidden;
+
+                tr {
+                    
+                    &.gameName {
+
+                        th {
+                            width: 100%;
+                            height: 8vw;
+                            vertical-align: middle;
+                            padding: 0 3vw;
+                            position: relative;
+
+                            .outer {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                p {
+                                    font-size: 4vw;
+                                    font-weight: bold;
+                                    letter-spacing: 2px;
+                                    text-align: start;
+                                }
+    
+                                i {
+                                    filter: brightness(1.8);
+                                    translate: transform 0.3s;
+                                }
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    td {
+                        display: none;
+                        width:calc(100% / 3);
+                        height: 8vw;
+                        vertical-align: middle;
+                        padding: 0 2vw;
+
+                        &:last-child {
+                            border-right: none;
+                        }
+                        
+                        .outer {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        p {
+                            font-size: 3.8vw;
+                            font-weight: bold;
+                            text-align: center;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

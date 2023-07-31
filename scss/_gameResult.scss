@@ -1,0 +1,290 @@
+.gameResultPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: $BG_Color00;
+    position: relative;
+
+    .resultType {
+        width: 100%;
+        height: 31vw;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        background: $BG_Color01;
+        padding: pxToVw(350) 2vw 2vw;
+        box-shadow: 0 2px 4px $shadow_02,
+                    0 -1px 4px transparent;
+        position: relative;
+        z-index: 6;
+
+        li {
+            width: auto;
+            height: 10vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include btnStyle02;
+            border: pxToVw(1) solid transparent;
+            box-shadow: none;
+            border-radius: 50px;
+            padding: 0 4vw;
+            margin-right: 2vw;
+            position: relative;
+
+            p {
+                color: $Font_Color06;
+                font-size: 4.2vw;
+                font-weight: bold;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:active,&.active {
+                border-color: $Border_01;
+                
+                p {
+                    color: $Font_Color04;
+                }
+            }
+        }
+    }
+
+    .searchFilters {
+        width: 100%;
+        height: 15vw;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        background: $BG_Color00;
+        padding: 0 2vw;
+        position: relative;
+        z-index: 5;
+
+        button {
+            width: 24vw;
+            height: 60%;
+            background: $BG_Color01;
+            border-radius: pxToVw(20);
+            box-shadow: 0 2px 5px $shadow_02;
+            color: $Font_Color01;
+            font-size: 3.8vw;
+            font-weight: bold;
+            white-space: nowrap;
+            margin-right: 3vw;
+
+            &:active,&.active {
+                background: $BG_Color03;
+                color: $Font_Color03;
+            }
+        }
+    }
+
+    .dataTable {
+        display: none;
+        width: 100%;
+        height: auto;
+        padding: 0 2vw;
+        overflow-y: auto;
+        position: relative;
+        z-index: 3;
+
+        &.display {
+            display: block;
+        }
+      
+        .tableOuter {
+            width: auto;
+            height: auto;
+            border-radius: 0.8vw;
+            border: 0.2vw solid $Border_03;
+            box-shadow: 0 1px 4px $shadow_01;
+            margin-bottom: 2vw;
+
+            table {
+                width: 100%;
+                height: auto;
+                border-collapse: collapse;
+                overflow: hidden;
+
+                tr {
+                    border-bottom: 0.2vw solid $Border_03;
+                    
+                    &.gameName {
+
+                        th {
+                            height: 8vw;
+                            background: $BG_Color03;
+                            vertical-align: middle;
+
+                            p {
+                                letter-spacing: 2px;
+                            }
+
+                            .outer {
+                                display: flex;
+                                align-items: center;
+                                padding: 0 2vw;
+
+                                .state {
+                                    border-left: 0.6vw solid $Font_link;
+                                    padding-left: 2vw;
+                                    margin-left: 4vw;
+                                }
+                            }
+
+                            p {
+                                color: $Font_Color03;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(even) {
+
+                        td {
+
+                            &:nth-of-type(2),
+                            &:nth-of-type(3) {
+                                background: $BG_Color04;
+                            }
+
+                            &:nth-of-type(1) {
+
+                                .outer {
+                                    flex-direction: column;
+    
+                                    span {
+                                        color: $Font_Color06;
+                                        font-size: 3.8vw;
+                                        font-weight: bold;
+    
+                                        &:first-child {
+                                            margin-bottom: 1vw;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:nth-of-type(1) {
+
+                                p {
+                                    text-align: start;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(odd){
+
+                        td {
+
+                            &:nth-of-type(1),
+                            &:nth-of-type(3),
+                            &:nth-of-type(4) {
+                                background: $BG_Color04;
+                            }
+
+                            &:nth-of-type(1) {
+
+                                .outer {
+                                    flex-direction: column;
+    
+                                    span {
+                                        color: $Font_Color06;
+                                        font-size: 3.8vw;
+                                        font-weight: bold;
+    
+                                        &:first-child {
+                                            margin-bottom: 1vw;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:nth-of-type(2) {
+
+                                p {
+                                    text-align: start;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+
+                        td {
+                            &:nth-of-type(1),
+                            &:nth-of-type(2),
+                            &:nth-of-type(3),
+                            &:nth-of-type(4) {
+                                background: $BG_Color02;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    p {
+                        font-size: 3.8vw;
+
+                        &.highLight {
+                            color: $Font_em;
+                        }
+
+                        &.important {
+                            color: $Font_remind;
+                        }
+                    }
+
+                    td {
+                        height: 8vw;
+                        border-right: 0.2vw solid $Border_03;
+                        vertical-align: middle;
+                        padding: 0 2vw;
+
+                        &:nth-of-type(1) {
+                            width: 20%;
+                        }
+
+                        &:nth-of-type(2) {
+                            width: 66%;
+                        }
+
+                        &:nth-of-type(3), 
+                        &:nth-of-type(4) {
+                            width: 10%;
+                        }
+
+                        &:last-child {
+                            border-right: none;
+                        }
+                        
+                        .outer {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        p {
+                            color: $Font_Color01;
+                            font-weight: bold;
+                            text-align: center;
+                            white-space: nowrap;
+
+                            span {
+                                color: $Font_Color04;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,351 @@
+.memberPage {
+    width: 100%;
+    height: auto;
+
+    .topArea {
+        width: 100%;
+        height: auto;
+        background: $BG_Color01;
+        margin: 0 0 3vw 0;
+
+        .memberBlock {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            padding: 3vw;
+            position: relative;
+
+            img {
+                width: 18vw;
+                height: 18vw;
+                object-fit: contain;
+                margin-right: 4vw;
+            }
+
+            .infoText {
+
+                p {
+                    color: $Font_Color01;
+                    font-family: sans-serif;
+                    font-size: 4.4vw;
+                    font-weight: bold;
+                    margin: 0 0 2vw 0;
+                }
+
+                span {
+                    color: $Font_Color04;
+                    font-size: 4vw;
+                    font-weight: bold;
+                }
+            }
+
+            .rightArrow_Icon {
+                position: absolute;
+                top: 50%;
+                right: 4vw;
+                transform: translateY(-50%);
+            }
+        }
+
+        .quickNav {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+
+            li {
+                width: calc(100% / 4);
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 4vw;
+
+                i {
+                    width: 8vw;
+                    height: 8vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $Font_Color04;
+                    font-size: 7.8vw;
+                }
+
+                p {
+                    color: $Font_Color01;
+                    font-size: 4vw;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    margin: 2vw 0 0 0;
+                }
+            }
+        }
+    }
+
+    .bottomArea {
+        width: 100%;
+        height: auto;
+        background: $BG_Color01;
+
+        .functionList {
+            width: 100%;
+            height: auto;
+            border-top: pxToVw(1) solid $Border_02;
+
+            li {
+                width: 100%;
+                height: 15vw;
+                display: flex;
+                align-items: center;
+                border-bottom: pxToVw(1) solid $Border_02;
+                padding: 0 4vw;
+                position: relative;
+
+                i {
+                    width: 5vw;
+                    height: 5vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $Font_Color04;
+                    font-size: 5vw;
+                    margin: 0 3vw 0 0;
+                }
+
+                p {
+                    color: $Font_Color01;
+                    font-size: 4vw;
+                    font-weight: bold;
+                }
+
+                .rightArrow_Icon {
+                    width: 4vw;
+                    height: 4vw;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    
+    //編輯模式
+    .memberEditing {
+        display: none;
+        width: 100%;
+        height: auto;
+        animation: fadeIn 0.3s ease-in-out reverse;
+        position: absolute;
+        top: -10vw;
+        z-index: 13;
+        
+        &.display {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .grayBG {
+            top: 36px;
+        }
+
+        .memberData {
+            width: 100%;
+            height: auto;
+            background: $BG_Color01;
+            padding: 0 4vw 24vw 4vw;
+            margin: 29vw 0 0 0;
+            position: relative;
+
+            &.editing {
+
+                input,
+                select {
+                    display: flex;
+                    padding: 0 4vw;
+                }
+
+                p {
+
+                    &.oriData {
+                        display: none;
+                    }
+
+                    &.hint {
+                        display: none;
+                    }
+
+                    &.keep {
+                        font-size: 3.8vw;
+                        margin: 3vw 0 0 0;
+                    }
+                }
+                
+                .rightArrow_Icon {
+                    display: none;
+                }
+
+                .btnBlock {
+                    display: flex;
+                }
+            }
+            
+            label {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                padding: 5vw 0;
+                border-bottom: pxToVw(1) solid $Border_02;
+                position: relative;
+    
+                &:last-child {
+                    border-bottom: transparent;
+                }
+    
+                .rightArrow_Icon {
+                    width: 4vw;
+                    height: 4vw;
+                    position: absolute;
+                    top: 5vw;
+                    right: 0;
+                }
+    
+                p {
+                    color: $Font_Color02;
+                    font-size: 4.6vw;
+
+                    &.oriData {
+                        color: $Font_Color04;
+                        font-family: sans-serif;
+                        font-weight: bold;
+                    }
+    
+                    &.itemName {
+                        color: $Font_Color06;
+                        font-weight: bold;
+                        margin-bottom: 3vw;
+                    }
+    
+                    &.userName {
+                        color: $Font_Color06;
+                        font-weight: bold;
+                    }
+                }
+    
+                .picBox {
+                    width: 18vw;
+                    height: 18vw;
+                    position: relative;
+    
+                    .memberProfile {
+                        width: 18vw;
+                        height: 18vw;
+                        -o-object-fit: contain;
+                        object-fit: contain;
+                    }
+    
+                    .editPic_Btn {
+                        width: auto;
+                        height: auto;
+                        background: $BG_Color02;
+                        border-radius: 50px;
+                        border: 3px solid $BG_Color00;
+                        padding: 1.2vw;
+                        position: absolute;
+                        bottom: -5px;
+                        right: -5px;
+    
+                        .editPic_Icon {
+                            width: 3vw;
+                            height: 3vw;
+                            margin-bottom: 0.5vw;
+                        }
+                    }
+                }
+
+                .turnEditBtn {
+                    width: auto;
+                    height: auto;
+                    @include btnStyle02;
+                    font-size: 3.8vw;
+                    padding: 2vw 3vw;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+
+                    p {
+                        color: $Font_Color01;
+                        font-size: 3.8vw;
+                    }
+                }
+
+                input,
+                select {
+                    display: none;
+                    width: 70%;
+                    height: 10vw;
+                    @include input01;
+
+                    ::placeholder {
+                        color: $Font_Color04;
+                        font-size: 4.2vw;
+                    }
+                }
+            }
+
+            .btnBlock {
+                width: 100%;
+                height: auto;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: $BG_Color00;
+                padding: 7vw 4vw;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+
+                button {
+                    width: pxToVw(1500);
+                    height: pxToVw(275);
+                    @include btnStyle01;
+                    font-size: 4vw;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        .hintBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: $BG_Color00;
+            padding: 7vw 4vw;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+
+            &.editing {
+                display: none;
+            }
+    
+            p {
+                color: $Font_Color02;
+                font-size: 4vw;
+                line-height: 6vw;
+    
+                span {
+                    color: $Font_link;
+                }
+            }
+        }
+    }
+}

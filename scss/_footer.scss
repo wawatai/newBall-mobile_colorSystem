@@ -1,0 +1,486 @@
+footer {
+    width: 100%;
+    height: pxToVw(300);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    // background: $BG_Color00;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+
+    &.highIndex {
+        z-index: 20;
+    }
+
+    &.innerPage_Mode {
+        bottom: -5px;
+
+        .mainPageNav {
+            display: none;
+        }
+
+        .multiBet_mode {
+            display: flex;
+            padding-bottom: 0;
+
+            &>div {
+
+                &.current_state {
+                    padding: 0 4vw 0 4vw;
+                }
+            }
+        }
+    }
+
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px 20px 0 0;
+        position: relative;
+
+        li {
+            width: calc(100% / 5);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1vw 0;
+
+            &.notify {
+                
+                .member_ic {
+
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            i {
+                width: 7vw;
+                height: 7vw;
+                background-position-y: 0%;
+
+                &.home_ic {
+                    background-position-x: 0%;
+                }
+
+                &.event_ic {
+                    width: 7.8vw;
+                    background-position-x: 25%;
+                }
+
+                &.cs_ic {
+                    width: 7.6vw;
+                    background-position-x: 50%;
+                }
+
+                &.sponsor_ic {
+                    background-position-x: 75%;
+                }
+
+                &.member_ic {
+                    background-position-x: 100%;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 2vw;
+                        height: 2vw;
+                        border-radius: 50px;
+                        opacity: 0;
+                        position: absolute;
+                        top: 0px;
+                        right: -3px;
+                        z-index: 11;
+                    }
+                }
+            }
+
+            span {
+                font-size: 3.7vw;
+                margin-top: 0.2vw;
+            }
+
+            &.active {
+
+                i {
+                    background-position-y: 100%;
+                }
+            }
+        }
+
+        &.mainPageNav {
+            z-index: 11;
+            flex-shrink: 0;
+
+            li {
+
+                &.active {
+
+                    i {
+                        background-position-y: 100%;
+                    }
+                }
+
+                i {
+                    width: 5.6vw;
+                    height: 6.2vw;
+                    background-position-y: 0%;
+                  
+                    &.tutorial_ic {
+                        background-position-x: 0%;
+                    }
+
+                    &.setMenu_ic {
+                        width: 5.5vw;
+                        background-position-x: 25%;
+                    }
+
+                    &.undone_ic {
+                        background-position-x: 50%;
+                    }
+
+                    &.done_ic {
+                        background-position-x: 75%;
+                    }
+
+                    &.refresh_ic {
+                        width: 5.5vw;
+                        background-position-x: 100%;
+                    }
+                }
+            }
+        }
+
+        //串關投注視窗
+        &.multiBet_mode {
+            display: none;
+            height: auto;
+            min-height: 18vw;
+            flex-direction: column;
+            justify-content: unset;
+            position: absolute;
+            padding-bottom: 7vw;
+            bottom: 0;
+            left: 0;
+            overflow-y: auto;
+
+            &.display {
+                display: flex;
+            }
+
+            &.active {
+                // padding-bottom: 12vw;
+                padding-bottom: 0;
+                z-index: 12;
+
+                .current_state {
+                    padding: 0 4vw 0 4vw;
+
+                    i {
+                        transform: rotateX(-180deg);
+                    }
+                }
+
+                .total_count,
+                .checkBlock,
+                ul {
+                    display: flex;
+                }
+
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+                font-size: 4.8vw;
+                font-weight: bold;
+                padding: 0 0 0 1.4vw;
+                margin-bottom: 2vw;
+            }
+
+            .group_normal {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+
+                &:nth-of-type(2) {
+                    align-items: flex-end;
+                }
+            }
+
+            &>div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 4vw 4vw 4vw 8vw;
+
+                &.current_state {
+                    height: 17vw;
+                    padding: 0 4vw 5vw 4vw;
+                    flex-shrink: 0;
+    
+                    .group {
+                        width: auto;
+                        display: flex;
+                        align-items: center;
+    
+                        &:last-child {
+                            align-items: baseline;
+                        }
+                        
+                        .count {
+                            width: 6vw;
+                            height: 6vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50px;
+                            font-size: 3.8vw;
+                            font-weight: bold;
+                            margin-right: 2vw;
+                        }
+    
+                        .balance {
+                            font-size: 3.8vw;
+                            margin-right: 1vw;
+                        }
+    
+                        .currency {
+                            font-size: 3.2vw;
+                            transform: scale(0.8);
+                            
+                        }
+    
+                        .balance_num {
+                            font-size: 4.6vw;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            margin-right: 3vw;
+                        }
+    
+                        i {
+                            font-size: 3.8vw;
+                            translate: transform 0.3s;
+                        }
+                    }
+                }
+    
+                &.total_count {
+                    display: none;
+                    border-width: 0.2vw 0;
+                    border-style: solid;
+                    align-items: unset;
+
+                    .group_normal {
+
+                        &:nth-of-type(1) {
+                           width: 100%;
+                        }
+
+                        &:nth-of-type(2) {
+                            justify-content: unset;
+                        }
+                    }
+    
+                    .countNum {
+                        margin-right: 0.6vw;
+                    }
+    
+                    .amountNum {
+                        margin-left: 0.6vw;
+                    }
+
+                    .win {
+                        max-width: 44vw;
+
+                        .tot {
+                            font-weight: bold;
+                            margin-left: 1vw;
+                        }
+                    }
+
+                    .moreType {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 3vw;
+
+                        &.active {
+            
+                            i {
+                                transform: rotate(0deg);
+                            }
+                        }
+    
+                        i {
+                            margin-left: 1vw;
+                            transform: rotate(180deg);
+                            transition: transform 0.3s;
+                        }
+                    }
+    
+                    input {
+    
+                        &.limit {
+                            width: auto;
+                            height: 8vw;
+                            font-size: 3.4vw;
+                            padding: 0 2vw;
+                            margin-bottom: 2vw;
+                        }
+                    }
+                }
+
+                &.moreCount {
+                    display: none;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 1vw;
+                    padding: 4vw;
+
+                    &.display {
+                        display: grid;
+                    }
+
+                    &>div {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 1vw;
+                        font-size: 4.2vw;
+                        font-weight: bold;
+                        font-family: Arial, Helvetica, sans-serif;
+
+                        &.numBlock {
+                            height: 11vw;
+                        }
+    
+                        &.functionBlock {
+                            height: 23vw;
+                            grid-row-start: 2 span;
+                        }
+                    }
+                }
+    
+                &.checkBlock {
+                    display: none;
+                    padding: 4vw;
+                    
+                    .addBtn {
+                        width: 30%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 4vw;
+                        font-size: 4.2vw;
+                        flex-shrink: 0;
+
+                        i {
+                            margin-right: 1vw;
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        height: 18vw;
+                        border-radius: 3vw;
+
+                        span {
+                            font-size: 4.8vw;
+                            font-weight: bold;
+                        }
+
+                        .total {
+                            max-width: 60vw;
+
+                            .money {
+                                font-size: 3.8vw;
+                                margin-left: 1vw;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul {
+                display: none;
+                width: 100%;
+                height: 100%;
+                max-height: 80vw;
+                // max-height: 67vw; se
+                // max-height: 41vw; 計算機打開時
+                flex-direction: column;
+                justify-content: flex-start;
+                border-radius: 0;
+                // padding: 19vw 0 0 0;
+                overflow-y: auto;
+
+                li {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: unset;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 4vw 4vw 4vw 8vw;
+                    position: relative;
+    
+                    &:last-child {
+                        border-bottom: none;
+                    }
+    
+                    .cross_icon {
+                        position: absolute;
+                        top: 50%;
+                        left: 3vw;
+                        transform: translateY(-50%);
+                    }
+    
+                    .group_normal {
+                        width: 50%;
+
+                        .title {
+                            align-items: center;
+
+                            .point {
+                                font-size: 3.6vw;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-weight: bold;
+                            }
+                        }
+    
+                        .betType {
+                            font-size: 4vw;
+                            margin-bottom: 2vw;
+                        }
+                        
+                        .teamWrap {
+                            display: flex;
+                            font-size: 4vw;
+    
+                            span {
+                                margin: 0 2vw;
+                            }
+                        }
+    
+                        .rate {
+                            font-size: 4.6vw;
+                            font-weight: bold;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
