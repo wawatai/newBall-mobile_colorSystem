@@ -62,7 +62,6 @@
                 height: pxToVw(306);
                 display: flex;
                 align-items: center;
-                border-top: pxToVw(1) solid $Border_02;
 
                 button {
                     width: calc(100% / 2);
@@ -93,7 +92,6 @@
                 left: 10px;
 
                 p {
-                    color: $Font_Color03;
                     font-size: 4.4vw;
                     margin-right: 2vw;
                 }
@@ -157,7 +155,6 @@
                         }
 
                         p {
-                            color: $Font_Color01;
                             font-size: 3.75vw;
                             text-align: center;
                             white-space: nowrap;
@@ -458,17 +455,9 @@
                         button {
                             width: 100%;
                             height: 9vw;
-                            background: $BG_Color01;
-                            border: 0.2vw solid $Border_04;
                             border-radius: 1vw;
-                            color: $Font_Color01;
                             font-size: 4vw;
                             font-weight: bold;
-
-                            &.active {
-                                border-color: $Border_01;
-                                color: $Font_Color07;
-                            }
                         }
                     }
 
@@ -481,14 +470,12 @@
 
                         p,
                         span {
-                            color: $Font_Color01;
                             font-size: 4vw;
                             font-weight: bold;
                             white-space: nowrap;
                         }
 
                         span {
-                            color: $Font_remind;
                             margin-left: 2vw;
                         }
                     }
@@ -502,13 +489,11 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: $BG_Color06;
                 border-radius: 0 0 5vw 5vw;
                 overflow: hidden;
                 position: relative;
 
                 p {
-                    color: $Font_Color03;
                     font-size: 4.4vw;
                     text-align: 1px;
                 }
@@ -519,7 +504,6 @@
                     display: flex;
                     align-items: center;
                     justify-content: end;
-                    background: $linear05;
                     border-radius: 0 3vw 3vw 3vw;
                     padding: 0 2vw;
                     position: absolute;
@@ -555,12 +539,11 @@
         }
 
         //未結注單
-        &.unFinish_bet  {
+        &.unFinish_bet {
             width: 92vw;
             height: auto;
             flex-direction: column;
             border-radius: 20px;
-            background: $BG_Color00;
 
             &.display {
                 display: flex;
@@ -572,7 +555,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: $linear01;
                 border-radius: 20px 20px 0 0;
                 padding: 3vw 4vw;
                 flex-shrink: 0;
@@ -580,19 +562,16 @@
                 p {
                     display: flex;
                     align-items: center;
-                    color: $Font_Color03;
                     font-size: 4.2vw;
                     font-weight: bold;
 
                     .num {
                         width: 6vw;
                         height: 6vw;
-                        background: $BG_Color01;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         border-radius: 50vw;
-                        color: $Font_Color04;
                         font-size: 3.8vw;
                         font-weight: bold;
                         margin-left: 2vw;
@@ -613,7 +592,6 @@
                 .tableOuter {
                     width: 100%;
                     height: auto;
-                    box-shadow: 0 1px 4px $shadow_01;
                     margin-bottom: 2vw;
     
                     &.active {
@@ -662,13 +640,11 @@
                         overflow: hidden;
     
                         tr {
-                            border-bottom: 0.1vw solid $Border_04;
                             
                             &.gameName {
     
                                 th {
                                     height: 7vw;
-                                    background: $BG_Color08;
                                     vertical-align: middle;
     
                                     &:nth-of-type(2) {
@@ -693,14 +669,12 @@
                                         padding: 0 2vw;
     
                                         .state {
-                                            border-left: 0.6vw solid $Font_link;
                                             padding-left: 2vw;
                                             margin-left: 4vw;
                                         }
                                     }
     
                                     p {
-                                        color: $Font_Color03;
                                         font-size: 3.8vw;
                                         font-weight: bold;
                                         white-space: nowrap;
@@ -736,7 +710,6 @@
                                             &:last-child {
                                                 width: 100%;
                                                 max-width: 18vw;
-                                                @include textHidden;
                                             }
                                         }
                                     }
@@ -749,7 +722,6 @@
                             &:nth-of-type(7) {
     
                                 td {
-                                    border-right: 0.1vw solid $Border_04;
                                     
                                     &:last-child {
                                         border-right: none;
@@ -757,7 +729,6 @@
     
                                     &:nth-of-type(odd) {
                                         width: 5%;
-                                        background: $BG_Color00;
                                     
                                         p {
                                             text-align: center;
@@ -783,13 +754,11 @@
     
                             td {
                                 height: 10vw;
-                                background: $BG_Color01;
                                 vertical-align: middle;
                                 padding: 0 2vw;
     
                                 &.gameInfo {
                                     height: 16vw;
-                                    background: $BG_Color01;
     
                                     .outer {
     
@@ -802,7 +771,6 @@
                                             }
     
                                             span {
-                                                color: $Font_Color02;
                                                 font-size: 3.8vw;
                                                 font-weight: bold;
                                                 margin: 0 1vw;
@@ -812,18 +780,9 @@
                                 }
     
                                 p {
-                                    color: $Font_Color01;
                                     font-size: 3.8vw;
                                     font-weight: bold;
                                     white-space: nowrap;
-    
-                                    &.highLight {
-                                        color: $Font_Color04;
-                                    }
-    
-                                    &.important {
-                                        color: $Font_remind;
-                                    }
                                 }
                             }
                         }
@@ -836,8 +795,6 @@
                 height: 16vw;
                 display: flex;
                 align-items: center;
-                box-shadow: 0 2px 4px transparent,
-                            0 -1px 16px $shadow_02;
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -847,7 +804,6 @@
                     content: "";
                     width: 0.1vw;
                     height: 50%;
-                    background: $Border_04;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -864,7 +820,6 @@
                     padding: 0 3vw;
         
                     p {
-                        color: $Font_Color01;
                         font-size: 3.8vw;
                         margin-bottom: 1vw;
                     }
@@ -873,15 +828,6 @@
                         max-width: 100%;
                         font-size: 4vw;
                         font-weight: bold;
-                        @include textHidden;
-        
-                        &.bet {
-                            color: $Font_Color04;
-                        }
-        
-                        &.result {
-                            color: $Font_positive;
-                        }
                     }
                 }
             }
@@ -898,7 +844,6 @@
 
     .jumpBlock {
         display: none;
-        @include jumpBlock;
 
         &.dateFilter {
 
@@ -920,7 +865,6 @@
         width: 100%;
         height: auto;
         flex-direction: column;
-        background: $BG_Color00;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -935,7 +879,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: $BG_Color01;
             padding: 4vw;
 
             .group {
@@ -948,7 +891,6 @@
                     align-items: center;
 
                     p {
-                        color: $Font_Color02;
                         font-size: 3.8vw;
                     }
                     
@@ -972,57 +914,28 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                background: $BG_Color01;
-                border-bottom: 0.2vw solid $Border_04;
                 padding: 4vw;
 
                 &:last-child {
                     border-bottom: none;
                 }
 
-                
-
                 .switchBtn {
                     width: 40%;
                     height: 8vw;
-                    @include switchBtnStyle;
-                    background: $BG_Color10;
-
-                    &.on {
-                    
-                        p {
-                            &:nth-of-type(1) {
-                                color: $Font_Color03;
-                            }
-                            &:nth-of-type(2) {
-                                color: $Font_Color02;
-                            }
-                        }
-                    }
-
-                    p {
-                        color: $Font_Color01;
-
-                        &:nth-of-type(2) {
-                            color: $Font_Color03;
-                        }
-                    }
 
                     .bar {
                         height: 92%;
-                        background: $BG_Color01;
                     }
                 }
             }
         }
 
         p {
-            color: $Font_Color06;
             font-size: 4vw;
             font-weight: bold;
 
             .state {
-                color: $Font_Color02;
                 font-size: 3.4vw;
             }
         }
@@ -1030,13 +943,9 @@
         button {
             width: 100%;
             height: auto;
-            background: $BG_Color01;
-            color: $Font_Color01;
             font-size: 4vw;
             font-weight: bold;
             padding: 4vw;
-            box-shadow: 0 2px 4px transparent,
-                  0px 0px 15px $shadow_02;
         }
     }
 }

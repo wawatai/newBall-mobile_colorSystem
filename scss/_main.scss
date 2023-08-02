@@ -122,12 +122,12 @@ html {
         // @import "./csService";
         @import "./betRecord";
         @import "./betLimit";
-        // @import "./card";
-        // @import "./gameRule";
-        // @import "./member";
-        // @import "./setting";
+        @import "./card";
+        @import "./gameRule";
+        @import "./member";
+        @import "./setting";
         @import "./footer";
-        // @import "./jumpWindow";
+        @import "./jumpWindow";
         @import "./rwd";
     }
 }

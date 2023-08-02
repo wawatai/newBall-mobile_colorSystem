@@ -809,18 +809,18 @@ html body .homePage .homeCenter {
   display: -ms-flexbox;
   display: flex;
 }
-html body .homePage .homeCenter .gameFilter {
+html body .homePage .homeCenter nav.gameFilter {
   width: 12.5vw;
   height: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 4vw;
 }
-html body .homePage .homeCenter .gameFilter ul {
+html body .homePage .homeCenter nav.gameFilter ul {
   width: 100%;
   height: 100%;
 }
-html body .homePage .homeCenter .gameFilter ul li {
+html body .homePage .homeCenter nav.gameFilter ul li {
   width: 100%;
   height: 21.5%;
   min-height: 17vw;
@@ -841,10 +841,10 @@ html body .homePage .homeCenter .gameFilter ul li {
   overflow: hidden;
   margin-bottom: 2vw;
 }
-html body .homePage .homeCenter .gameFilter ul li:last-child {
+html body .homePage .homeCenter nav.gameFilter ul li:last-child {
   margin-bottom: 0;
 }
-html body .homePage .homeCenter .gameFilter ul li .outer {
+html body .homePage .homeCenter nav.gameFilter ul li .outer {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -862,24 +862,24 @@ html body .homePage .homeCenter .gameFilter ul li .outer {
           justify-content: center;
   border-radius: 0 0 0.625rem 0.625rem;
 }
-html body .homePage .homeCenter .gameFilter ul li .outer p {
+html body .homePage .homeCenter nav.gameFilter ul li .outer p {
   font-weight: bold;
 }
-html body .homePage .homeCenter .gameFilter ul li .outer p.type {
+html body .homePage .homeCenter nav.gameFilter ul li .outer p.type {
   font-size: 4vw;
   margin-bottom: 1.5vw;
 }
-html body .homePage .homeCenter .gameFilter ul li .outer p.num {
+html body .homePage .homeCenter nav.gameFilter ul li .outer p.num {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 5vw;
 }
-html body .homePage .homeCenter .gameFilter ul li.active {
+html body .homePage .homeCenter nav.gameFilter ul li.active {
   border: none;
   -webkit-box-pack: unset;
       -ms-flex-pack: unset;
           justify-content: unset;
 }
-html body .homePage .homeCenter .gameFilter ul li.active .outer {
+html body .homePage .homeCenter nav.gameFilter ul li.active .outer {
   height: calc(100% - 2vw);
 }
 html body .homePage .homeCenter .gameType {
@@ -1580,6 +1580,796 @@ html body .betLimitPage .dataTable .tableOuter table tr td p {
   text-align: center;
   white-space: nowrap;
 }
+html body .cardPage {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+html body .cardPage .cardList {
+  width: 100%;
+  height: 30vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 2vw 0;
+}
+html body .cardPage .cardList ul {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 4vw;
+  overflow-x: auto;
+}
+html body .cardPage .cardList ul li {
+  width: 55vw;
+  height: 100%;
+  border-radius: 2vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 2vw;
+  padding: 4vw;
+  position: relative;
+}
+html body .cardPage .cardList ul li:last-child {
+  margin-right: 0;
+}
+html body .cardPage .cardList ul li.addCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: grayscale(0.98) brightness(1.4);
+          filter: grayscale(0.98) brightness(1.4);
+}
+html body .cardPage .cardList ul li.addCard i {
+  font-size: 12vw;
+}
+html body .cardPage .cardList ul li.addCard p {
+  font-size: 4vw;
+  margin-top: 3vw;
+}
+html body .cardPage .cardList ul li p.bankName {
+  font-size: 4.4vw;
+  font-weight: bold;
+}
+html body .cardPage .cardList ul li p.company {
+  font-size: 3.8vw;
+  margin: 2vw 0 3vw;
+}
+html body .cardPage .cardList ul li p.cardNum {
+  font-size: 4.6vw;
+  font-weight: bold;
+}
+html body .cardPage .cardList ul li .state {
+  width: auto;
+  height: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 0 2vw 0;
+  padding: 0 2vw;
+  position: absolute;
+  right: 0;
+  bottom: -0.1vw;
+}
+html body .cardPage .cardList ul li .state::before {
+  content: "";
+  width: 2.9vw;
+  height: 100%;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  position: absolute;
+  left: -1.6vw;
+}
+html body .cardPage .cardList ul li .state p {
+  font-size: 3.8vw;
+  font-weight: bolder;
+}
+html body .cardPage form {
+  width: 100%;
+  height: auto;
+  padding: 2vw 4vw;
+}
+html body .cardPage form label {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 2vw 0;
+}
+html body .cardPage form label:last-child {
+  border-bottom: none;
+}
+html body .cardPage form label.forSelect .wrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .cardPage form label.forSelect .wrap .outer {
+  width: 49%;
+  height: auto;
+  position: relative;
+}
+html body .cardPage form label.forSelect .wrap .outer select {
+  width: 100%;
+  height: 8vw;
+  padding: 0 2vw;
+}
+html body .cardPage form label.forSelect .wrap .outer i {
+  position: absolute;
+  top: 50%;
+  right: 2vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .cardPage form label .itemName {
+  font-size: 3.8vw;
+  margin-bottom: 2vw;
+}
+html body .cardPage form label input {
+  width: 100%;
+  height: 8vw;
+  padding: 0 2vw;
+}
+html body .cardPage .submitBtn {
+  width: 95%;
+  height: 11vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 4vw auto 3vw;
+  border-radius: 0.9259259259vw;
+  font-size: 4vw;
+}
+html body .gameRulePage {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+html body .gameRulePage .dataTable {
+  width: 100%;
+  height: auto;
+  padding: 0 2vw;
+  overflow-y: auto;
+  position: relative;
+  z-index: 3;
+}
+html body .gameRulePage .dataTable .tableOuter {
+  width: auto;
+  height: auto;
+  border-radius: 2vw;
+  margin-bottom: 2vw;
+  overflow: hidden;
+}
+html body .gameRulePage .dataTable .tableOuter.active table tr.gameName th i {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+html body .gameRulePage .dataTable .tableOuter.active table tr td {
+  display: table-cell;
+}
+html body .gameRulePage .dataTable .tableOuter table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+html body .gameRulePage .dataTable .tableOuter table tr.gameName th {
+  width: 100%;
+  height: 8vw;
+  vertical-align: middle;
+  padding: 0 3vw;
+  position: relative;
+}
+html body .gameRulePage .dataTable .tableOuter table tr.gameName th .outer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .gameRulePage .dataTable .tableOuter table tr.gameName th .outer p {
+  font-size: 4vw;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: start;
+}
+html body .gameRulePage .dataTable .tableOuter table tr.gameName th .outer i {
+  -webkit-filter: brightness(1.8);
+          filter: brightness(1.8);
+  translate: transform 0.3s;
+}
+html body .gameRulePage .dataTable .tableOuter table tr:last-child {
+  border-bottom: none;
+}
+html body .gameRulePage .dataTable .tableOuter table tr td {
+  display: none;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  padding: 2vw 3vw;
+}
+html body .gameRulePage .dataTable .tableOuter table tr td:last-child {
+  border-right: none;
+}
+html body .gameRulePage .dataTable .tableOuter table tr td .outer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .gameRulePage .dataTable .tableOuter table tr td p {
+  width: 100%;
+  font-size: 3.8vw;
+  font-weight: bold;
+  line-height: 5vw;
+}
+html body .memberPage {
+  width: 100%;
+  height: auto;
+}
+html body .memberPage .topArea {
+  width: 100%;
+  height: auto;
+  margin: 0 0 3vw 0;
+}
+html body .memberPage .topArea .memberBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3vw;
+  position: relative;
+}
+html body .memberPage .topArea .memberBlock img {
+  width: 18vw;
+  height: 18vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 4vw;
+}
+html body .memberPage .topArea .memberBlock .infoText p {
+  font-family: sans-serif;
+  font-size: 4.4vw;
+  font-weight: bold;
+  margin: 0 0 2vw 0;
+}
+html body .memberPage .topArea .memberBlock .infoText span {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .memberPage .topArea .memberBlock .rightArrow_Icon {
+  position: absolute;
+  top: 50%;
+  right: 4vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .memberPage .topArea .quickNav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .memberPage .topArea .quickNav li {
+  width: 25%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4vw;
+}
+html body .memberPage .topArea .quickNav li i {
+  width: 8vw;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 7.8vw;
+}
+html body .memberPage .topArea .quickNav li p {
+  font-size: 4vw;
+  font-weight: bold;
+  white-space: nowrap;
+  margin: 2vw 0 0 0;
+}
+html body .memberPage .bottomArea {
+  width: 100%;
+  height: auto;
+}
+html body .memberPage .bottomArea .functionList {
+  width: 100%;
+  height: auto;
+}
+html body .memberPage .bottomArea .functionList li {
+  width: 100%;
+  height: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4vw;
+  position: relative;
+}
+html body .memberPage .bottomArea .functionList li i {
+  width: 5vw;
+  height: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5vw;
+  margin: 0 3vw 0 0;
+}
+html body .memberPage .bottomArea .functionList li p {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .memberPage .bottomArea .functionList li .rightArrow_Icon {
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .memberPage .memberEditing {
+  display: none;
+  width: 100%;
+  height: auto;
+  animation: fadeIn 0.3s ease-in-out reverse;
+  position: absolute;
+  top: -10vw;
+  z-index: 13;
+}
+html body .memberPage .memberEditing.display {
+  display: block;
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+          animation: fadeIn 0.3s ease-in-out;
+}
+html body .memberPage .memberEditing .grayBG {
+  top: 36px;
+}
+html body .memberPage .memberEditing .memberData {
+  width: 100%;
+  height: auto;
+  padding: 0 4vw 24vw 4vw;
+  margin: 29vw 0 0 0;
+  position: relative;
+}
+html body .memberPage .memberEditing .memberData.editing input,
+html body .memberPage .memberEditing .memberData.editing select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 4vw;
+}
+html body .memberPage .memberEditing .memberData.editing p.oriData {
+  display: none;
+}
+html body .memberPage .memberEditing .memberData.editing p.hint {
+  display: none;
+}
+html body .memberPage .memberEditing .memberData.editing p.keep {
+  font-size: 3.8vw;
+  margin: 3vw 0 0 0;
+}
+html body .memberPage .memberEditing .memberData.editing .rightArrow_Icon {
+  display: none;
+}
+html body .memberPage .memberEditing .memberData.editing .btnBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .memberPage .memberEditing .memberData label {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5vw 0;
+  position: relative;
+}
+html body .memberPage .memberEditing .memberData label:last-child {
+  border-bottom: transparent;
+}
+html body .memberPage .memberEditing .memberData label .rightArrow_Icon {
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  top: 5vw;
+  right: 0;
+}
+html body .memberPage .memberEditing .memberData label p {
+  font-size: 4.6vw;
+}
+html body .memberPage .memberEditing .memberData label p.oriData {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+html body .memberPage .memberEditing .memberData label p.itemName {
+  font-weight: bold;
+  margin-bottom: 3vw;
+}
+html body .memberPage .memberEditing .memberData label p.userName {
+  font-weight: bold;
+}
+html body .memberPage .memberEditing .memberData label .picBox {
+  width: 18vw;
+  height: 18vw;
+  position: relative;
+}
+html body .memberPage .memberEditing .memberData label .picBox .memberProfile {
+  width: 18vw;
+  height: 18vw;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+html body .memberPage .memberEditing .memberData label .picBox .editPic_Btn {
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+  padding: 1.2vw;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+html body .memberPage .memberEditing .memberData label .picBox .editPic_Btn .editPic_Icon {
+  width: 3vw;
+  height: 3vw;
+  margin-bottom: 0.5vw;
+}
+html body .memberPage .memberEditing .memberData label .turnEditBtn {
+  width: auto;
+  height: auto;
+  font-size: 3.8vw;
+  padding: 2vw 3vw;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .memberPage .memberEditing .memberData label .turnEditBtn p {
+  font-size: 3.8vw;
+}
+html body .memberPage .memberEditing .memberData label input,
+html body .memberPage .memberEditing .memberData label select {
+  display: none;
+  width: 70%;
+  height: 10vw;
+}
+html body .memberPage .memberEditing .memberData label input ::-webkit-input-placeholder, html body .memberPage .memberEditing .memberData label select ::-webkit-input-placeholder {
+  font-size: 4.2vw;
+}
+html body .memberPage .memberEditing .memberData label input ::-moz-placeholder, html body .memberPage .memberEditing .memberData label select ::-moz-placeholder {
+  font-size: 4.2vw;
+}
+html body .memberPage .memberEditing .memberData label input :-ms-input-placeholder, html body .memberPage .memberEditing .memberData label select :-ms-input-placeholder {
+  font-size: 4.2vw;
+}
+html body .memberPage .memberEditing .memberData label input ::-ms-input-placeholder, html body .memberPage .memberEditing .memberData label select ::-ms-input-placeholder {
+  font-size: 4.2vw;
+}
+html body .memberPage .memberEditing .memberData label input ::placeholder,
+html body .memberPage .memberEditing .memberData label select ::placeholder {
+  font-size: 4.2vw;
+}
+html body .memberPage .memberEditing .memberData .btnBlock {
+  width: 100%;
+  height: auto;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7vw 4vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+html body .memberPage .memberEditing .memberData .btnBlock button {
+  width: 69.4444444444vw;
+  height: 12.7314814815vw;
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .memberPage .memberEditing .hintBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7vw 4vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+html body .memberPage .memberEditing .hintBox.editing {
+  display: none;
+}
+html body .memberPage .memberEditing .hintBox p {
+  font-size: 4vw;
+  line-height: 6vw;
+}
+html body .settingPage {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  position: relative;
+}
+html body .settingPage .topArea {
+  width: 100%;
+  height: auto;
+  padding: 3vw;
+  margin-bottom: 4vw;
+  position: relative;
+  z-index: 6;
+}
+html body .settingPage .topArea .settingTitle {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .settingPage .topArea .controller {
+  width: 100%;
+  height: 10vw;
+  margin: 1vw 0;
+  z-index: inherit;
+}
+html body .settingPage .topArea .nightMode {
+  width: 100%;
+  height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+html body .settingPage .topArea .nightMode .switch {
+  width: 25%;
+  height: 100%;
+  border-radius: 30vw;
+  padding: 1vw;
+  position: relative;
+}
+html body .settingPage .topArea .nightMode .switch.on span {
+  left: unset;
+  right: 1vw;
+  -webkit-transform: translate(-2%, -50%);
+          transform: translate(-2%, -50%);
+}
+html body .settingPage .topArea .nightMode .switch.on p.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .settingPage .topArea .nightMode .switch.on p.close {
+  display: none;
+}
+html body .settingPage .topArea .nightMode .switch p {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+}
+html body .settingPage .topArea .nightMode .switch p.open {
+  display: none;
+  left: 0;
+}
+html body .settingPage .topArea .nightMode .switch p.close {
+  left: unset;
+  right: 0;
+}
+html body .settingPage .topArea .nightMode .switch span {
+  width: 8.8vw;
+  height: 86%;
+  border-radius: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 1vw;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html body .settingPage .bottomArea {
+  width: 100%;
+  height: auto;
+  padding: 0 3vw;
+  margin-bottom: 4vw;
+}
+html body .settingPage .bottomArea .row {
+  width: 100%;
+  height: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .settingPage .bottomArea .quit {
+  width: 100%;
+  text-align: center;
+  margin: 4vw 0;
+}
+html body .settingPage .changePW {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+html body .settingPage .changePW.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .settingPage .changePW form {
+  width: 100%;
+  height: auto;
+  padding: 4vw 4vw 8vw;
+}
+html body .settingPage .changePW form label {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 3vw;
+  margin-bottom: 3vw;
+}
+html body .settingPage .changePW form label:last-child {
+  margin-bottom: 0;
+}
+html body .settingPage .changePW form label .itemName {
+  font-size: 3.8vw;
+}
+html body .settingPage .changePW form label input {
+  width: 100%;
+  height: 10vw;
+  padding: 0 2vw;
+  margin: 2vw 0 1vw;
+}
+html body .settingPage .changePW form label .hint {
+  font-size: 3.4vw;
+  line-height: 3.6vw;
+}
+html body .settingPage .changePW .checkBtn {
+  width: 95%;
+  height: 11vw;
+  margin: 4vw auto;
+  font-size: 4vw;
+}
 html body footer {
   width: 100%;
   height: 13.8888888889vw;
@@ -2064,6 +2854,998 @@ html body footer ul.multiBet_mode ul li .group_normal .rate {
   font-size: 4.6vw;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+}
+html body .filter {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+html body .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow {
+  display: none;
+  position: relative;
+}
+html body .filter .jumpWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow.announcement {
+  width: 89.1203703704vw;
+  height: 66.712962963vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+}
+html body .filter .jumpWindow.announcement.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.announcement .title {
+  width: 100%;
+  height: auto;
+  font-size: 5vw;
+  text-align: center;
+  padding: 7vw 8vw 0;
+}
+html body .filter .jumpWindow.announcement .content {
+  width: 100%;
+  height: auto;
+  max-height: 28vw;
+  padding: 0vw 8vw 4vw;
+  overflow-y: hidden;
+}
+html body .filter .jumpWindow.announcement .content p {
+  font-size: 4.4vw;
+  line-height: 5.5vw;
+  text-align: center;
+}
+html body .filter .jumpWindow.announcement .btnBlock {
+  width: 100%;
+  height: 14.1666666667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.announcement .btnBlock button {
+  width: 50%;
+  height: 100%;
+  font-size: 4.4vw;
+}
+html body .filter .jumpWindow.betHotGame {
+  width: 77.7314814815vw;
+  height: 115.7407407407vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vw 8vw 0;
+  position: relative;
+}
+html body .filter .jumpWindow.betHotGame.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.betHotGame .reFresh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -45px;
+  left: 10px;
+}
+html body .filter .jumpWindow.betHotGame .reFresh p {
+  font-size: 4.4vw;
+  margin-right: 2vw;
+}
+html body .filter .jumpWindow.betHotGame .reFresh .reFresh_icon {
+  width: 6vw;
+  height: 6vw;
+}
+html body .filter .jumpWindow.betHotGame .titleArea {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: -39px;
+  left: -2vw;
+}
+html body .filter .jumpWindow.betHotGame .titleArea .decoPic {
+  width: 38vw;
+  height: 26vw;
+}
+html body .filter .jumpWindow.betHotGame .titleArea .textPic {
+  width: 33.1481481481vw;
+  height: 12.962962963vw;
+  margin: 47px 0 0 5px;
+}
+html body .filter .jumpWindow.betHotGame .content {
+  width: 100%;
+  height: auto;
+  margin-top: -8vw;
+}
+html body .filter .jumpWindow.betHotGame .content .gameBlock {
+  width: 100%;
+  height: 25.9722222222vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 1.3888888889vw;
+  padding: 3vw 5vw;
+  margin: 0 0 2vw;
+}
+html body .filter .jumpWindow.betHotGame .content .gameBlock:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.betHotGame .content .gameBlock .teamBlock,
+html body .filter .jumpWindow.betHotGame .content .gameBlock .detailBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.betHotGame .content .gameBlock .teamBlock .teamPic,
+html body .filter .jumpWindow.betHotGame .content .gameBlock .detailBlock .teamPic {
+  width: 9vw;
+  height: 10vw;
+}
+html body .filter .jumpWindow.betHotGame .content .gameBlock .teamBlock p,
+html body .filter .jumpWindow.betHotGame .content .gameBlock .detailBlock p {
+  font-size: 3.75vw;
+  text-align: center;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.betHotGame .content .gameBlock .teamBlock p.gameName,
+html body .filter .jumpWindow.betHotGame .content .gameBlock .detailBlock p.gameName {
+  font-size: 4vw;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html body .filter .jumpWindow.betHotGame .content .gameBlock .teamBlock p.time,
+html body .filter .jumpWindow.betHotGame .content .gameBlock .detailBlock p.time {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.2vw;
+  font-weight: bold;
+  margin-bottom: 4vw;
+}
+html body .filter .jumpWindow.betHotGame .content .gameBlock .teamBlock p.vs,
+html body .filter .jumpWindow.betHotGame .content .gameBlock .detailBlock p.vs {
+  font-family: sans-serif;
+  font-size: 4.6vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.betHotGame .content .gameBlock .teamBlock p.teamName,
+html body .filter .jumpWindow.betHotGame .content .gameBlock .detailBlock p.teamName {
+  max-width: 16.6666666667vw;
+  margin-top: 2vw;
+}
+html body .filter .jumpWindow.betHotGame button {
+  width: 77.7314814815vw;
+  height: 11.0185185185vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1.8518518519vw;
+  position: absolute;
+  bottom: -45px;
+}
+html body .filter .jumpWindow.betHotGame button p {
+  font-size: 4.4vw;
+  margin-right: 2vw;
+}
+html body .filter .jumpWindow.betHotGame button .doubleArrow_icon {
+  width: 3.8vw;
+  height: 3.8vw;
+  margin-top: 1vw;
+}
+html body .filter .jumpWindow.betGame {
+  width: 77.7314814815vw;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5vw;
+  padding: 5vw 0 0;
+  position: relative;
+}
+html body .filter .jumpWindow.betGame.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.betGame .titleArea {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4vw;
+}
+html body .filter .jumpWindow.betGame .titleArea .gameName {
+  width: auto;
+  height: auto;
+  font-size: 4.2vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 5vw;
+  position: relative;
+}
+html body .filter .jumpWindow.betGame .titleArea .gameName::before {
+  content: "//";
+  width: auto;
+  height: auto;
+  font-size: 3.8vw;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+html body .filter .jumpWindow.betGame .titleArea .gameName::after {
+  content: "//";
+  width: auto;
+  height: auto;
+  font-size: 3.8vw;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+}
+html body .filter .jumpWindow.betGame .content {
+  width: 100%;
+  height: auto;
+  padding: 0 4vw;
+}
+html body .filter .jumpWindow.betGame .content .gameBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 1.3888888889vw;
+  padding: 3vw 0;
+  margin: 0 0 2vw;
+}
+html body .filter .jumpWindow.betGame .content .gameBlock:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.betGame .content .gameBlock .teamBlock {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2vw;
+  margin-bottom: 4vw;
+}
+html body .filter .jumpWindow.betGame .content .gameBlock .teamBlock .teamPic {
+  width: 9vw;
+  height: 10vw;
+}
+html body .filter .jumpWindow.betGame .content .gameBlock .teamBlock p {
+  font-size: 4vw;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.betGame .content .gameBlock .teamBlock p.vs {
+  width: 10%;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 5vw;
+}
+html body .filter .jumpWindow.betGame .content .gameBlock .teamBlock p.teamName {
+  width: 100%;
+  font-weight: bold;
+  text-align: end;
+}
+html body .filter .jumpWindow.betGame .content .gameBlock .teamBlock p.teamName:last-child {
+  text-align: start;
+}
+html body .filter .jumpWindow.betGame .content .betDetail {
+  width: 100%;
+  height: 28vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2vw;
+  padding: 4vw 2vw 2vw;
+  position: relative;
+}
+html body .filter .jumpWindow.betGame .content .betDetail .infoWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow.betGame .content .betDetail .infoWrap p {
+  width: 100%;
+  text-align: end;
+}
+html body .filter .jumpWindow.betGame .content .betDetail .infoWrap p.betRate {
+  text-align: start;
+}
+html body .filter .jumpWindow.betGame .content .betDetail .infoWrap span {
+  width: 6%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-size: 4.2vw;
+  margin: 0 2vw;
+}
+html body .filter .jumpWindow.betGame .content .betDetail .betChoose {
+  font-size: 4vw;
+  font-weight: bold;
+  margin-top: 2vw;
+  text-align: center;
+}
+html body .filter .jumpWindow.betGame .content .betDetail .num {
+  width: 6vw;
+  height: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30vw;
+  font-size: 4vw;
+  font-weight: bold;
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+}
+html body .filter .jumpWindow.betGame .content .moneyState {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2vw 0;
+}
+html body .filter .jumpWindow.betGame .content .moneyState .group {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .filter .jumpWindow.betGame .content .moneyState .group:last-child {
+  width: 60%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body .filter .jumpWindow.betGame .content .moneyState .group:last-child span {
+  width: auto;
+  max-width: 100%;
+  text-align: end;
+}
+html body .filter .jumpWindow.betGame .content .moneyState .group p {
+  font-size: 4vw;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 1vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .filter .jumpWindow.betGame .content .moneyState .group span {
+  width: 100%;
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.betGame .content form {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .filter .jumpWindow.betGame .content form label {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+html body .filter .jumpWindow.betGame .content form label input {
+  width: 100%;
+  height: 10vw;
+  padding: 0 9vw 0 3vw;
+}
+html body .filter .jumpWindow.betGame .content form label p {
+  font-size: 4vw;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 4vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .filter .jumpWindow.betGame .content form .btnWrap {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2vw 1fr 2vw 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  padding: 3vw 0 6vw;
+}
+html body .filter .jumpWindow.betGame .content form .btnWrap button {
+  width: 100%;
+  height: 9vw;
+  border-radius: 1vw;
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.betGame .content form .winWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow.betGame .content form .winWrap p,
+html body .filter .jumpWindow.betGame .content form .winWrap span {
+  font-size: 4vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.betGame .content form .winWrap span {
+  margin-left: 2vw;
+}
+html body .filter .jumpWindow.betGame .btnBlock {
+  width: 100%;
+  height: 13vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 0 5vw 5vw;
+  overflow: hidden;
+  position: relative;
+}
+html body .filter .jumpWindow.betGame .btnBlock p {
+  font-size: 4.4vw;
+  text-align: 1px;
+}
+html body .filter .jumpWindow.betGame .btnBlock .grabBar {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border-radius: 0 3vw 3vw 3vw;
+  padding: 0 2vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html body .filter .jumpWindow.betGame .btnBlock .grabBar i:nth-of-type(1) {
+  -webkit-animation: move 1.2s ease-in infinite;
+          animation: move 1.2s ease-in infinite;
+}
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
+}
+@keyframes move {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
+}
+html body .filter .jumpWindow.betGame .btnBlock .grabBar i:nth-of-type(2) {
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+html body .filter .jumpWindow.betGame .close_icon {
+  top: -40px;
+  right: -20px;
+}
+html body .filter .jumpWindow.unFinish_bet {
+  width: 92vw;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+}
+html body .filter .jumpWindow.unFinish_bet.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.unFinish_bet .titleArea {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px 20px 0 0;
+  padding: 3vw 4vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .filter .jumpWindow.unFinish_bet .titleArea p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.2vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.unFinish_bet .titleArea p .num {
+  width: 6vw;
+  height: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50vw;
+  font-size: 3.8vw;
+  font-weight: bold;
+  margin-left: 2vw;
+  padding: 1vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content {
+  width: 100%;
+  height: auto;
+  min-height: 87vw;
+  max-height: 94vw;
+  padding: 2vw;
+  overflow-y: auto;
+  margin-bottom: 16vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter.active table tr.gameName th:nth-of-type(2) .outer i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter.active table tr:not(:nth-of-type(2)) td {
+  display: table-cell;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter.active table tr.summary td {
+  display: none;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.gameName th {
+  height: 7vw;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.gameName th:nth-of-type(2) .outer {
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.gameName th:nth-of-type(2) .outer i {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
+  margin: 0 1vw 0 3vw;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  translate: transform 0.3s;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.gameName th .outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.gameName th .outer .state {
+  padding-left: 2vw;
+  margin-left: 4vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.gameName th p {
+  font-size: 3.8vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(1) {
+  border-bottom: none;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.summary td {
+  height: 10vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.summary td .outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 0 0 2vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.summary td .outer p:first-child {
+  width: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0;
+  margin-right: 2vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr.summary td .outer p:last-child {
+  width: 100%;
+  max-width: 18vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(4) td:last-child, html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(5) td:last-child, html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(6) td:last-child, html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(7) td:last-child {
+  border-right: none;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(4) td:nth-of-type(odd), html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(5) td:nth-of-type(odd), html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(6) td:nth-of-type(odd), html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(7) td:nth-of-type(odd) {
+  width: 5%;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(4) td:nth-of-type(odd) p, html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(5) td:nth-of-type(odd) p, html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(6) td:nth-of-type(odd) p, html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(7) td:nth-of-type(odd) p {
+  text-align: center;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(4) td:nth-of-type(even), html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(5) td:nth-of-type(even), html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(6) td:nth-of-type(even), html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(7) td:nth-of-type(even) {
+  width: 45%;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:last-child {
+  border-bottom: none;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr:not(:nth-of-type(2)) td {
+  display: none;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr td {
+  height: 10vw;
+  vertical-align: middle;
+  padding: 0 2vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr td.gameInfo {
+  height: 16vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr td.gameInfo .outer .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2vw 0;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr td.gameInfo .outer .team:last-child {
+  margin: 2vw 0 0;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr td.gameInfo .outer .team span {
+  font-size: 3.8vw;
+  font-weight: bold;
+  margin: 0 1vw;
+}
+html body .filter .jumpWindow.unFinish_bet .content .tableOuter table tr td p {
+  font-size: 3.8vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.unFinish_bet .countBlock {
+  width: 100%;
+  height: 16vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 8;
+}
+html body .filter .jumpWindow.unFinish_bet .countBlock::before {
+  content: "";
+  width: 0.1vw;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .filter .jumpWindow.unFinish_bet .countBlock .half {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 3vw;
+}
+html body .filter .jumpWindow.unFinish_bet .countBlock .half p {
+  font-size: 3.8vw;
+  margin-bottom: 1vw;
+}
+html body .filter .jumpWindow.unFinish_bet .countBlock .half span {
+  max-width: 100%;
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow .close_icon {
+  width: 8vw;
+  height: 8vw;
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+html body .filter .jumpBlock {
+  display: none;
+}
+html body .filter .jumpBlock.dateFilter .content {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  gap: 2vw;
+  padding: 2vw 2vw 4vw;
+}
+html body .filter .jumpBlock.dateFilter .content button {
+  margin: 0;
+}
+html body .filter .jumpMenu {
+  display: none;
+  width: 100%;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+html body .filter .jumpMenu.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpMenu .setUnions {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4vw;
+}
+html body .filter .jumpMenu .setUnions .group {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpMenu .setUnions .group .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpMenu .setUnions .group .more p {
+  font-size: 3.8vw;
+}
+html body .filter .jumpMenu .setUnions .group .more i {
+  width: 2.8vw;
+  height: 2.8vw;
+  margin-left: 2vw;
+}
+html body .filter .jumpMenu ul {
+  width: 100%;
+  height: auto;
+  margin: 3vw 0;
+}
+html body .filter .jumpMenu ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4vw;
+}
+html body .filter .jumpMenu ul li:last-child {
+  border-bottom: none;
+}
+html body .filter .jumpMenu ul li .switchBtn {
+  width: 40%;
+  height: 8vw;
+}
+html body .filter .jumpMenu ul li .switchBtn .bar {
+  height: 92%;
+}
+html body .filter .jumpMenu p {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .filter .jumpMenu p .state {
+  font-size: 3.4vw;
+}
+html body .filter .jumpMenu button {
+  width: 100%;
+  height: auto;
+  font-size: 4vw;
+  font-weight: bold;
+  padding: 4vw;
 }
 @media only screen and (max-width: 820px) {
   html body main.homePage {
