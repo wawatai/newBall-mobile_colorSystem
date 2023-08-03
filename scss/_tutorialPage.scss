@@ -3,7 +3,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: $BG_Color00;
     position: relative;
 
     .topContainer {
@@ -13,10 +12,7 @@
         flex-direction: column;
         align-items: center;
         flex-shrink: 0;
-        background: $BG_Color01;
         padding: 13.4vw 0 0;
-        box-shadow: 0 2px 4px $shadow_02,
-                    0 -1px 4px transparent;
         position: relative;
         z-index: 6;
 
@@ -40,22 +36,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: $BG_Color00;
                 border: pxToVw(1) solid transparent;
                 box-shadow: none;
                 border-radius: 1vw 1vw 0 0;
                 padding: 1vw 4vw 0;
                 margin-right: 2vw;
                 position: relative;
-    
-                &.active {
-
-                    background: $Font_Color07;
-    
-                    p {
-                        color: $Font_Color03;
-                    }
-                }
     
                 i {
                     width: 5vw;
@@ -89,7 +75,6 @@
                     }
     
                     .num {
-                        color: $Font_Color02;
                         font-size: 3.4vw;
                         position: absolute;
                         top: 0vw;
@@ -98,7 +83,6 @@
                 }
     
                 p {
-                    color: $Font_Color02;
                     font-size: 4vw;
                     font-weight: bold;
                     white-space: nowrap;
@@ -115,7 +99,6 @@
             height: 10vw;
             display: flex;
             align-items: center;
-            background: $BG_Color00;
 
             li {
                 width: 50%;
@@ -129,7 +112,6 @@
                     content: "";
                     width: 100%;
                     height: 0.8vw;
-                    background: $Border_01;
                     opacity: 0;
                     position: absolute;
                     bottom: 0;
@@ -141,14 +123,9 @@
                     &::before {
                         opacity: 1;
                     }
-
-                    p {
-                        color: $Font_Color04;
-                    }
                 }
                 
                 p {
-                   color: $Font_Color06;
                    font-size: 4vw;
                    font-weight: bold;
                    white-space: nowrap;
@@ -181,11 +158,8 @@
                 height: auto;
                 display: flex;
                 flex-direction: column;
-                background: $BG_Color01;
                 padding: 0 0 4vw 0;
                 margin: 0 0 2vw 0;
-    
-               
     
                 &>div {
                     width: 100%;
@@ -198,12 +172,10 @@
                         height: 7vw;
                         justify-content: flex-start;
                         padding: 0 3vw;
-                        border-bottom: 0.2vw solid $Border_04;
     
                         p {
                             font-weight: bold;
                             padding: 0 0 0 2vw;
-                            border-left: 0.6vw solid $Border_01;
                         }
                     }
     
@@ -248,17 +220,8 @@
                                     line-height: 20px;
                                     font-weight: bold;
     
-                                    &.teamName {
-                                        color: $Font_Color04;
-                                    }
-    
                                     &.point {
-                                        color: $Font_link;
                                         font-size: 3.6vw;
-                                    }
-    
-                                    &.rate {
-                                        color: $Font_Color01;
                                     }
                                 }
                             }
@@ -266,7 +229,6 @@
     
                         .vs {
                             width: 100%;
-                            color: $Font_Color04;
                             font-weight: bold;
                             text-align: center;
                         }
@@ -275,12 +237,7 @@
                     &.pointWrap {
                         width: 95%;
                         height: 20vw;
-                        background: $BG_Color00;
                         border-radius: 50px;
-                        box-shadow: 0 2px 4px $shadow_02,
-                        0 -1px 4px transparent;
-                        box-shadow: inset 0 2px 4px $shadow_02,
-                        0 -1px 4px transparent;
                         margin: 4vw auto;
     
                         &>div {
@@ -295,7 +252,6 @@
                             }
     
                             span {
-                                color: $Font_Color04;
                                 font-size: 3.6vw;
                                 font-weight: bold;
                             }
@@ -303,9 +259,7 @@
                             &.centerResult {
                                 width: 22vw;
                                 height: 22vw;
-                                background: $linear06;
                                 border-radius: 50px;
-                                border: 0.2vw solid $Border_02;
                                 margin: 0 6vw;
     
                                 p {
@@ -324,11 +278,6 @@
                             flex-direction: column;
                             justify-content: flex-start;
                             margin-left: 6vw;
-                            color: $Font_em;
-    
-                            &.gray {
-                                color: $Font_Color02;
-                            }
     
                             &:nth-of-type(1) {
                                 align-items: flex-end;
@@ -348,7 +297,6 @@
                 }
                 
                 .betMoney {
-                    color: $Font_em;
                     font-size: 3.6vw;
                     font-weight: bold;
                     text-align: center;

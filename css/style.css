@@ -922,6 +922,1850 @@ html body .homePage .homeCenter .gameType ul li .gameDetails span {
   font-size: 3.3vw;
   text-align: center;
 }
+html body .mainPage {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+html body .mainPage .betType_mode {
+  display: none;
+  width: 100%;
+  height: 32vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 15vw 4vw 2vw;
+}
+html body .mainPage .betType_mode.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainPage .betType_mode li {
+  width: 23%;
+  height: 9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2vw;
+}
+html body .mainPage .betType_mode li.active {
+  border: none;
+}
+html body .mainPage .betType_mode li p {
+  width: 100%;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+}
+html body .mainPage .topContainer {
+  display: none;
+  width: 100%;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 13.4vw 0 0;
+  position: relative;
+  z-index: 6;
+}
+html body .mainPage .topContainer.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainPage .topContainer .dayFilter {
+  display: none;
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 4vw;
+  overflow-x: auto;
+}
+html body .mainPage .topContainer .dayFilter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainPage .topContainer .dayFilter li {
+  width: auto;
+  margin-right: 3vw;
+  position: relative;
+}
+html body .mainPage .topContainer .dayFilter li:last-child {
+  margin-right: 0;
+}
+html body .mainPage .topContainer .dayFilter li::before {
+  content: "";
+  width: 100%;
+  height: 0.5vw;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+}
+html body .mainPage .topContainer .dayFilter li.active::before {
+  opacity: 1;
+}
+html body .mainPage .topContainer .dayFilter li p {
+  font-size: 3.8vw;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 2vw 1.4vw;
+}
+html body .mainPage .topContainer .gameType {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow-x: auto;
+}
+html body .mainPage .topContainer .gameType li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 50px;
+  padding: 2vw 4vw;
+  margin-right: 2vw;
+  position: relative;
+}
+html body .mainPage .topContainer .gameType li.active i {
+  background-position-y: 100%;
+}
+html body .mainPage .topContainer .gameType li.active .num {
+  font-weight: bold;
+}
+html body .mainPage .topContainer .gameType li i {
+  width: 7vw;
+  height: 7vw;
+  background-position-y: 0%;
+  position: relative;
+}
+html body .mainPage .topContainer .gameType li i.soccer_ic {
+  background-position-x: 0%;
+}
+html body .mainPage .topContainer .gameType li i.basketball_ic {
+  background-position-x: 20%;
+}
+html body .mainPage .topContainer .gameType li i.compare_ic {
+  background-position-x: 40%;
+}
+html body .mainPage .topContainer .gameType li i.eSport_ic {
+  background-position-x: 60%;
+}
+html body .mainPage .topContainer .gameType li i.index_ic {
+  background-position-x: 80%;
+}
+html body .mainPage .topContainer .gameType li i.coloredBall_ic {
+  background-position-x: 100%;
+}
+html body .mainPage .topContainer .gameType li i .num {
+  font-size: 3.4vw;
+  position: absolute;
+  top: 0vw;
+  right: -6.4vw;
+}
+html body .mainPage .topContainer .gameType li p {
+  font-size: 4vw;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-top: 0.8vw;
+}
+html body .mainPage .topContainer .gameType li:last-child {
+  margin-right: 0;
+}
+html body .mainPage .currentType {
+  width: 100%;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 4vw;
+}
+html body .mainPage .currentType .group {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.4vw;
+  font-weight: bold;
+}
+html body .mainPage .currentType .switchBtn {
+  width: 30%;
+  height: 6vw;
+}
+html body .mainPage .currentType .switchBtn.on .bar {
+  -webkit-transform: translate(-4%, -50%);
+          transform: translate(-4%, -50%);
+}
+html body .mainPage .currentType .switchBtn p {
+  width: 47%;
+  font-size: 3.2vw;
+  margin-left: 1vw;
+}
+html body .mainPage .currentType .switchBtn p:nth-of-type(2) {
+  margin-right: 1vw;
+}
+html body .mainPage .currentType .switchBtn .bar {
+  width: 50%;
+  height: 86%;
+}
+html body .mainPage .dataContainer {
+  display: none;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+}
+html body .mainPage .dataContainer.display {
+  display: block;
+}
+html body .mainPage .dataContainer .dataType {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 3;
+}
+html body .mainPage .dataContainer .dataType.active {
+  display: block;
+}
+html body .mainPage .dataContainer .dataType.active ul {
+  display: block;
+}
+html body .mainPage .dataContainer .dataType .state {
+  width: 100%;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4vw;
+}
+html body .mainPage .dataContainer .dataType .state i {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 2vw;
+}
+html body .mainPage .dataContainer .dataType .state i.inProgress_ic {
+  background-position-x: 0%;
+}
+html body .mainPage .dataContainer .dataType .state i.unProgress_ic {
+  background-position-x: 100%;
+}
+html body .mainPage .dataContainer .dataType .state p {
+  font-size: 3.8vw;
+  font-weight: bold;
+}
+html body .mainPage .dataContainer .dataType ul {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 2vw 1vw 1vw;
+}
+html body .mainPage .dataContainer .dataType ul li {
+  width: 100%;
+  height: 8vw;
+  margin-bottom: 2vw;
+}
+html body .mainPage .dataContainer .dataType ul li.active {
+  height: auto;
+}
+html body .mainPage .dataContainer .dataType ul li.active .gameBlock {
+  display: block;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .betRateType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock {
+  padding: 2vw 3vw 7vw;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .functionState {
+  position: relative;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .functionState p {
+  margin: 0 1vw 0 0;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .functionState .group {
+  position: absolute;
+  top: 36vw;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .more p {
+  font-size: 3.4vw;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .more i {
+  width: 2.4vw;
+  height: 2.4vw;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .teamRow {
+  width: 40%;
+  height: 55%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  margin-bottom: 0;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .teamRow .teamName {
+  text-align: unset;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .teamRow .vs {
+  display: none;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .teamRow .teamLogo {
+  display: none;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .betRate {
+  width: 60%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1vw 1fr 1vw 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .betRate .rateBlock {
+  width: 100%;
+  height: auto;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .betRate .rateBlock.proType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .betRate .rateBlock.proType:nth-of-type(2), html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .betRate .rateBlock.proType:nth-of-type(3) {
+  height: 150%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .betRate .rateBlock.proType:nth-of-type(5), html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .betRate .rateBlock.proType:nth-of-type(6) {
+  height: 74.5%;
+  -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-row-span: 2;
+  grid-row-end: span 2;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock .proMode .betRate .rateBlock p {
+  font-size: 3.4vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameName {
+  width: 100%;
+  height: 9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameName p {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .mainPage .dataContainer .dataType ul li .betRateType {
+  display: none;
+  width: 100%;
+  height: 7vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 4vw;
+}
+html body .mainPage .dataContainer .dataType ul li .betRateType p {
+  width: 18vw;
+  font-size: 3.6vw;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 2vw 3vw 3vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock:last-child {
+  border-bottom: none;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock.eSport .betRate .rateBlock {
+  width: 40vw;
+  height: 9vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap {
+  width: 100%;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState,
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState i,
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more i {
+  width: 6vw;
+  height: 6vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState i.animate,
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more i.animate {
+  background-position-x: 0%;
+  margin-right: 0.6vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState i.live,
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more i.live {
+  background-position-x: 100%;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState i.rightArrow_Icon,
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more i.rightArrow_Icon {
+  width: 3vw;
+  height: 3vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState p,
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more p {
+  font-size: 3.8vw;
+  font-weight: bold;
+  margin-left: 2vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState p.num,
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more p.num {
+  margin: 0 1vw 0 0;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState .group,
+html body .mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .teamRow {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
+  font-size: 3.4vw;
+  font-weight: bold;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 2vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .teamRow .teamLogo {
+  width: 6vw;
+  height: 6vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 0 0 2vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .teamRow .teamLogo:nth-of-type(2) {
+  margin: 0 2vw 0 0;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .teamRow .teamName {
+  width: 100%;
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .teamRow .teamName:first-child {
+  text-align: end;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
+  font-size: 3.4vw;
+  font-weight: bold;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .betRate {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock {
+  width: 25vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1vw;
+  padding: 1vw;
+  margin-right: 1vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock:last-child {
+  margin-right: 0;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock.proType {
+  display: none;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock p {
+  font-size: 3.8vw;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+html body .mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock span {
+  font-size: 3.8vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+html body .mainPage .dataContainer .noData {
+  width: 100%;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .mainPage .dataContainer .noData i {
+  font-size: 10vw;
+  margin-bottom: 2vw;
+}
+html body .mainPage .dataContainer .noData p {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .mainPage .betGame_Detail {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+          animation: fadeIn 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+html body .mainPage .betGame_Detail.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainPage .betGame_Detail > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .mainPage .betGame_Detail > div.topArea {
+  height: 61vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .mainPage .betGame_Detail > div.topArea .topWrap {
+  width: 100%;
+  height: 12.6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+}
+html body .mainPage .betGame_Detail > div.topArea .topWrap i {
+  width: 4vw;
+  height: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 4vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .mainPage .betGame_Detail > div.topArea .topWrap p {
+  font-size: 4.8vw;
+  font-weight: bold;
+}
+html body .mainPage .betGame_Detail > div.topArea .content {
+  width: 100%;
+  height: 100%;
+  padding: 0 4vw;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.teamWrap {
+  margin: 10vw 0 6vw;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.teamWrap .team {
+  width: 100%;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.teamWrap .team p {
+  font-size: 5vw;
+  text-align: center;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.teamWrap .team i {
+  width: 8vw;
+  height: 8vw;
+  margin: 0 auto 2vw;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.teamWrap .info {
+  width: 20vw;
+  margin: 0 6vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.teamWrap .info p {
+  text-align: center;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.teamWrap .info p.date {
+  font-size: 3.8vw;
+  margin-bottom: 2vw;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.teamWrap .info p.time {
+  font-size: 8vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.functionState {
+  width: 70%;
+  height: 10vw;
+  border-radius: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.functionState::before {
+  content: "";
+  width: 0.2vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.functionState .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10vw;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.functionState .group:nth-of-type(2) {
+  margin-right: 0;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.functionState .group p {
+  white-space: nowrap;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.functionState .group i {
+  width: 5vw;
+  height: 5vw;
+  -webkit-filter: brightness(3);
+          filter: brightness(3);
+  margin-right: 1vw;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.functionState .group i.live {
+  background-position-x: 0%;
+}
+html body .mainPage .betGame_Detail > div.topArea .content > div.functionState .group i.animate {
+  background-position-x: 100%;
+}
+html body .mainPage .betGame_Detail > div.downArea {
+  height: 100%;
+  overflow-y: auto;
+  padding: 2vw;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock {
+  width: 100%;
+  height: auto;
+  padding: 3vw 2vw;
+  margin: 0 0 2vw;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock:last-child {
+  margin-bottom: 0;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .typeName {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 2vw;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .typeName p {
+  font-size: 4vw;
+  font-weight: bold;
+  padding: 0 0 0 2vw;
+  position: relative;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .typeName p::before {
+  content: "";
+  width: 1vw;
+  height: 100%;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .typeName i {
+  font-size: 4vw;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .rateWrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2vw 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+  padding: 2vw 0 0;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .rateWrap .teamBlock {
+  width: 100%;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .rateWrap .teamBlock.multi span {
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .rateWrap .teamBlock p {
+  max-width: 60%;
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .rateWrap .teamBlock span {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 3.8vw;
+  font-weight: bold;
+}
+html body .mainPage .betGame_Detail > div.downArea .typeBlock .rateWrap .teamBlock span.gray {
+  margin-right: 2vw;
+}
+html body .mainPage .searchFilter {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+          animation: fadeIn 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+html body .mainPage .searchFilter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainPage .searchFilter .content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12.96vw 0 0;
+}
+html body .mainPage .searchFilter .content > div {
+  width: 100%;
+}
+html body .mainPage .searchFilter .content > div.searchBlock {
+  width: 100%;
+  height: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4vw;
+  margin: 3vw 0 0;
+  position: relative;
+}
+html body .mainPage .searchFilter .content > div.searchBlock i {
+  font-size: 4.2vw;
+  position: absolute;
+  top: 50%;
+  left: 9vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .mainPage .searchFilter .content > div.searchBlock input {
+  width: 100%;
+  height: 10vw;
+  border: none;
+  border-radius: 50px;
+  padding: 0 4vw 0 12vw;
+  font-size: 4.2vw;
+}
+html body .mainPage .searchFilter .content > div.allGames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+}
+html body .mainPage .searchFilter .content > div.allGames label {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body .mainPage .searchFilter .content > div.allGames label input {
+  width: 4.2vw;
+  height: 4.2vw;
+  border-radius: 50px;
+  margin-left: 2vw;
+  position: relative;
+}
+html body .mainPage .searchFilter .content > div.allGames label input::before {
+  content: "";
+  width: 3.4vw;
+  height: 3.4vw;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+html body .mainPage .searchFilter .content > div.allGames label input:checked::before {
+  opacity: 1;
+}
+html body .mainPage .searchFilter .content > div.allGames .selectAll {
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 6vw 0 4vw;
+}
+html body .mainPage .searchFilter .content > div.allGames ul {
+  width: 100%;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+}
+html body .mainPage .searchFilter .content > div.allGames ul:not(:first-child).active li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainPage .searchFilter .content > div.allGames ul:nth-of-type(1).active .typeName i {
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
+}
+html body .mainPage .searchFilter .content > div.allGames ul:nth-of-type(1).active li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .mainPage .searchFilter .content > div.allGames ul .typeName {
+  width: 100%;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 6vw;
+}
+html body .mainPage .searchFilter .content > div.allGames ul .typeName i {
+  margin-right: 2vw;
+}
+html body .mainPage .searchFilter .content > div.allGames ul .typeName p {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .mainPage .searchFilter .content > div.allGames ul li {
+  display: none;
+  width: 100%;
+  height: 8vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 6vw 0 11vw;
+  position: relative;
+}
+html body .mainPage .searchFilter .content > div.allGames ul li::before {
+  content: "";
+  width: 90%;
+  height: 0.2vw;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .mainPage .searchFilter .content > div.allGames ul li:last-child::before {
+  display: none;
+}
+html body .mainPage .searchFilter .content > div.allGames ul li .group {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .mainPage .searchFilter .content > div.allGames ul li .group i {
+  width: 4vw;
+  height: 4vw;
+  margin-right: 2vw;
+}
+html body .mainPage .searchFilter .content > div.allGames ul li .group p {
+  font-size: 3.6vw;
+  font-weight: bold;
+}
+html body .mainPage .searchFilter .content > div.allGames ul li .group .total {
+  font-size: 3.4vw;
+}
+html body .mainPage .searchFilter .nameTitle_select {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 65vw;
+  right: 1.4vw;
+}
+html body .mainPage .searchFilter .nameTitle_select li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.4vw;
+}
+html body .mainPage .searchFilter .nameTitle_select li:not(:first-child) {
+  margin-bottom: 1vw;
+}
+html body .mainPage .searchFilter .nameTitle_select li span {
+  height: auto;
+  display: block;
+  margin: -1vw auto 1vw;
+}
+html body .tutorialPage {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+html body .tutorialPage .topContainer {
+  display: none;
+  width: 100%;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 13.4vw 0 0;
+  position: relative;
+  z-index: 6;
+}
+html body .tutorialPage .topContainer.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .tutorialPage .topContainer .gameType {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow-x: auto;
+  padding: 0 2vw;
+  margin: 2vw 0 0;
+}
+html body .tutorialPage .topContainer .gameType li {
+  width: auto;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.0462962963vw solid transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 1vw 1vw 0 0;
+  padding: 1vw 4vw 0;
+  margin-right: 2vw;
+  position: relative;
+}
+html body .tutorialPage .topContainer .gameType li i {
+  width: 5vw;
+  height: 5vw;
+  background-position-y: 100%;
+  margin-right: 1vw;
+  position: relative;
+}
+html body .tutorialPage .topContainer .gameType li i.soccer_ic {
+  background-position-x: 0%;
+}
+html body .tutorialPage .topContainer .gameType li i.basketball_ic {
+  background-position-x: 20%;
+}
+html body .tutorialPage .topContainer .gameType li i.compare_ic {
+  background-position-x: 40%;
+}
+html body .tutorialPage .topContainer .gameType li i.eSport_ic {
+  background-position-x: 60%;
+}
+html body .tutorialPage .topContainer .gameType li i.index_ic {
+  background-position-x: 80%;
+}
+html body .tutorialPage .topContainer .gameType li i.coloredBall_ic {
+  background-position-x: 100%;
+}
+html body .tutorialPage .topContainer .gameType li i .num {
+  font-size: 3.4vw;
+  position: absolute;
+  top: 0vw;
+  right: -6.4vw;
+}
+html body .tutorialPage .topContainer .gameType li p {
+  font-size: 4vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+html body .tutorialPage .topContainer .gameType li:last-child {
+  margin-right: 0;
+}
+html body .tutorialPage .topContainer .ruleType {
+  width: 100%;
+  height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .tutorialPage .topContainer .ruleType li {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body .tutorialPage .topContainer .ruleType li::before {
+  content: "";
+  width: 100%;
+  height: 0.8vw;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+html body .tutorialPage .topContainer .ruleType li.active::before {
+  opacity: 1;
+}
+html body .tutorialPage .topContainer .ruleType li p {
+  font-size: 4vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+html body .tutorialPage .ruleContainer {
+  display: none;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+}
+html body .tutorialPage .ruleContainer.display {
+  display: block;
+}
+html body .tutorialPage .ruleContainer .ruleType_content {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html body .tutorialPage .ruleContainer .ruleType_content.display {
+  display: block;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0 4vw 0;
+  margin: 0 0 2vw 0;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.title {
+  height: 7vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 3vw;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.title p {
+  font-weight: bold;
+  padding: 0 0 0 2vw;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2vw 0;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team:nth-of-type(1) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team:nth-of-type(1) .text {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team:nth-of-type(2) .logo {
+  background-position-x: 100%;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .logo {
+  width: 8vw;
+  height: 8vw;
+  background-position-x: 0%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 3vw;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .text P {
+  line-height: 20px;
+  font-weight: bold;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .text P.point {
+  font-size: 3.6vw;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .vs {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap {
+  width: 95%;
+  height: 20vw;
+  border-radius: 50px;
+  margin: 4vw auto;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap > div p {
+  font-size: 3.6vw;
+  margin-bottom: 2vw;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap > div span {
+  font-size: 3.6vw;
+  font-weight: bold;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap > div.centerResult {
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50px;
+  margin: 0 6vw;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap > div.centerResult p {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.explain .half {
+  min-height: 12vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 6vw;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.explain .half:nth-of-type(1) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 0;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.explain .half p {
+  font-size: 3.4vw;
+  line-height: 16px;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock > div p {
+  font-size: 3.8vw;
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock .betMoney {
+  font-size: 3.6vw;
+  font-weight: bold;
+  text-align: center;
+}
+html body .gameResultPage {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+html body .gameResultPage .resultType {
+  width: 100%;
+  height: 31vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 16.2037037037vw 2vw 2vw;
+  position: relative;
+  z-index: 6;
+}
+html body .gameResultPage .resultType li {
+  width: auto;
+  height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.0462962963vw solid transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 50px;
+  padding: 0 4vw;
+  margin-right: 2vw;
+  position: relative;
+}
+html body .gameResultPage .resultType li p {
+  font-size: 4.2vw;
+  font-weight: bold;
+}
+html body .gameResultPage .resultType li:last-child {
+  margin-right: 0;
+}
+html body .gameResultPage .searchFilters {
+  width: 100%;
+  height: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 2vw;
+  position: relative;
+  z-index: 5;
+}
+html body .gameResultPage .searchFilters button {
+  width: 24vw;
+  height: 60%;
+  border-radius: 0.9259259259vw;
+  font-size: 3.8vw;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 3vw;
+}
+html body .gameResultPage .dataTable {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 0 2vw;
+  overflow-y: auto;
+  position: relative;
+  z-index: 3;
+}
+html body .gameResultPage .dataTable.display {
+  display: block;
+}
+html body .gameResultPage .dataTable .tableOuter {
+  width: auto;
+  height: auto;
+  border-radius: 0.8vw;
+  margin-bottom: 2vw;
+}
+html body .gameResultPage .dataTable .tableOuter table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+html body .gameResultPage .dataTable .tableOuter table tr.gameName th {
+  height: 8vw;
+  vertical-align: middle;
+}
+html body .gameResultPage .dataTable .tableOuter table tr.gameName th p {
+  letter-spacing: 2px;
+}
+html body .gameResultPage .dataTable .tableOuter table tr.gameName th .outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2vw;
+}
+html body .gameResultPage .dataTable .tableOuter table tr.gameName th .outer .state {
+  padding-left: 2vw;
+  margin-left: 4vw;
+}
+html body .gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(1) .outer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(1) .outer span {
+  font-size: 3.8vw;
+  font-weight: bold;
+}
+html body .gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(1) .outer span:first-child {
+  margin-bottom: 1vw;
+}
+html body .gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(1) p {
+  text-align: start;
+}
+html body .gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(1) .outer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(1) .outer span {
+  font-size: 3.8vw;
+  font-weight: bold;
+}
+html body .gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(1) .outer span:first-child {
+  margin-bottom: 1vw;
+}
+html body .gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(2) p {
+  text-align: start;
+}
+html body .gameResultPage .dataTable .tableOuter table tr:last-child {
+  border-bottom: none;
+}
+html body .gameResultPage .dataTable .tableOuter table tr p {
+  font-size: 3.8vw;
+}
+html body .gameResultPage .dataTable .tableOuter table tr td {
+  height: 8vw;
+  vertical-align: middle;
+  padding: 0 2vw;
+}
+html body .gameResultPage .dataTable .tableOuter table tr td:nth-of-type(1) {
+  width: 20%;
+}
+html body .gameResultPage .dataTable .tableOuter table tr td:nth-of-type(2) {
+  width: 66%;
+}
+html body .gameResultPage .dataTable .tableOuter table tr td:nth-of-type(3), html body .gameResultPage .dataTable .tableOuter table tr td:nth-of-type(4) {
+  width: 10%;
+}
+html body .gameResultPage .dataTable .tableOuter table tr td:last-child {
+  border-right: none;
+}
+html body .gameResultPage .dataTable .tableOuter table tr td .outer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .gameResultPage .dataTable .tableOuter table tr td p {
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+html body .depositPage {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  position: relative;
+}
+html body .depositPage .topArea {
+  width: 100%;
+  height: auto;
+  padding: 3vw;
+  margin-bottom: 4vw;
+  position: relative;
+  z-index: 6;
+}
+html body .depositPage .topArea .payTypeBlock {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  gap: 1.6vw;
+  padding: 2vw 0;
+  margin: 0 0 2vw;
+}
+html body .depositPage .topArea .payTypeBlock .type {
+  width: 100%;
+  height: 16vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2vw;
+  border: 0.4vw solid transparent;
+  padding: 2vw;
+  overflow: hidden;
+  position: relative;
+}
+html body .depositPage .topArea .payTypeBlock .type::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 5vw 5vw;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+html body .depositPage .topArea .payTypeBlock .type::after {
+  content: "✓";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.4vw;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+html body .depositPage .topArea .payTypeBlock .type.active::before, html body .depositPage .topArea .payTypeBlock .type.active::after {
+  opacity: 1;
+}
+html body .depositPage .topArea .payTypeBlock .type i {
+  width: 8vw;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4vw;
+  margin-bottom: 0.4vw;
+}
+html body .depositPage .topArea .payTypeBlock .type i.fa-weixin, html body .depositPage .topArea .payTypeBlock .type i.fa-alipay, html body .depositPage .topArea .payTypeBlock .type i.fa-bitcoin {
+  font-size: 4.2vw;
+}
+html body .depositPage .topArea .payTypeBlock .type p {
+  width: 100%;
+  font-size: 3.6vw;
+  font-weight: bold;
+  text-align: center;
+}
+html body .depositPage .topArea label {
+  width: 100%;
+  height: auto;
+  padding: 2vw 0;
+}
+html body .depositPage .topArea label input {
+  width: 100%;
+  height: 10vw;
+  padding: 0 2vw;
+  margin: 2vw 0;
+}
+html body .depositPage .bottomArea {
+  width: 100%;
+  height: auto;
+  padding: 3vw;
+  margin-bottom: 4vw;
+}
+html body .depositPage .bottomArea .quickMoneyBlock {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+  gap: 1.6vw;
+  padding: 2vw 0;
+  margin: 0 0 2vw;
+}
+html body .depositPage .bottomArea .quickMoneyBlock button {
+  width: 100%;
+  height: 9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.6vw;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 1vw;
+  padding: 4vw;
+}
+html body .depositPage .bottomArea .quickMoneyBlock button.other {
+  grid-column: -4/span 2;
+}
+html body .depositPage .checkBtn {
+  width: 95%;
+  height: 11vw;
+  margin: 0 auto 4vw;
+  font-size: 4vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .depositPage p {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .depositPage p.blockTitle {
+  font-size: 4vw;
+  font-weight: bold;
+}
+html body .depositPage p.hint {
+  font-size: 3.4vw;
+  line-height: 3.8vw;
+}
 html body .betRecordPage {
   width: 100%;
   height: 100%;

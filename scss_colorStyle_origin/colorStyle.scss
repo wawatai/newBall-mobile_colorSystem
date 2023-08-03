@@ -63,7 +63,7 @@ $gameFilter_BG: linear-gradient(to right, #0c1c6d 0%,  #8f9cdc 50%, #6674bf 60%,
 //按鈕樣式
 @mixin btnStyle01 {  //主色
     background: $BG_Color03;
-    border-radius: 10vw;
+    border-radius: 1vw;
     color: $Font_Color03;
 }
 @mixin btnStyle02 {  //淺灰藍底
@@ -327,8 +327,448 @@ header .innerMode_header .quickHref {
 .betRecordPage,
 .cardPage,
 .settingPage,
-.gameRulePage {
+.gameRulePage,
+.mainPage,
+.tutorialPage,
+.gameResultPage,
+.depositPage,
+.transferPage {
     background: $BG_Color00;
+}
+
+//mainPage
+.mainPage .betType_mode {
+    background: $BG_Color01;
+}
+.mainPage .betType_mode li {
+    border: 0.2vw solid $Border_03;
+
+    &.active {
+        background: $linear01;
+
+        p {
+            color: $Font_Color03;
+        }
+    }
+}
+.mainPage .betType_mode li p {
+    color: $Font_Color02;
+}
+.mainPage .topContainer {
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+                0 -1px 4px transparent;
+}
+.mainPage .topContainer .dayFilter {
+    border-bottom: 0.2vw solid $Border_04;
+}
+.mainPage .topContainer .dayFilter li::before {
+    background: $Border_01;
+}
+.mainPage .topContainer .dayFilter li p {
+    color: $Font_Color02;
+}
+.mainPage .topContainer .gameType li {
+    border: 0.2vw solid transparent;
+
+    &.active {
+
+        p {
+            color: $Font_Color01;
+        }
+
+        .num {
+            color: $Font_Color01;
+        }
+    }
+}
+.mainPage .topContainer .gameType li p {
+    color: $Font_Color02;
+}
+.mainPage .topContainer .gameType li i .num {
+    color: $Font_Color02;
+}
+.mainPage .currentType .group {
+    color: $Font_Color01;
+}
+.mainPage .currentType .switchBtn {
+    @include switchBtnStyle;
+    background: $BG_Color02;
+}
+.mainPage .currentType .switchBtn.on p {
+
+    &:nth-of-type(1) {
+        color: $Font_Color03;
+    }
+    &:nth-of-type(2) {
+        color: $Font_Color04;
+    }
+}
+.mainPage .currentType .switchBtn p {
+    color: $Font_Color04;
+
+    &:nth-of-type(2) {
+        color: $Font_Color03;
+    }
+}
+.mainPage .currentType .switchBtn .bar {
+    background: $BG_Color01;
+}
+.mainPage .dataContainer .dataType .filterBlock {
+    background: $BG_Color00;
+}
+.mainPage .dataContainer .dataType.ing.active .filterBlock .state {
+    background: $BG_Color04;
+    box-shadow: 0 2px 4px $shadow_02, 0 -1px 4px transparent;
+}
+.mainPage .dataContainer .dataType.ing .state {
+    border-top: 0.6vw solid $Border_01;
+}
+.mainPage .dataContainer .dataType.unProgress .state {
+    border-top: 0.6vw solid $Border_05;
+}
+.mainPage .dataContainer .dataType.unProgress.active .filterBlock .state {
+    background: $BG_Color07;
+    box-shadow: 0 2px 4px $shadow_02, 0 -1px 4px transparent;
+}
+.mainPage .dataContainer .dataType .state {
+    background: $BG_Color01;
+}
+.mainPage .dataContainer .dataType .state p {
+    color: $Font_Color06;
+}
+.mainPage .dataContainer .dataType ul li .gameName {
+    background: $BG_Color01;
+    border-bottom: 0.2vw solid $Border_04;
+}
+.mainPage .dataContainer .dataType ul li .gameName p {
+    color: $Font_Color05;
+}
+.mainPage .dataContainer .dataType ul li .betRateType {
+    background: $BG_Color00;
+}
+.mainPage .dataContainer .dataType ul li .betRateType p {
+    color: $Font_Color01;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock {
+    background: $BG_Color01;
+    border-bottom: 0.2vw solid $Border_04;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState p,
+.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more p {
+    color: $Font_Color02;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
+    color: $Font_Color05;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .teamRow .teamName {
+    color: $Font_Color05;
+    @include textHidden;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
+    color: $Font_Color05;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock {
+    background: $BG_Color04;
+
+    &.active {
+        background: $BG_Color05;
+    }
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock p {
+    color: $Font_Color02;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock span {
+    color: $Font_Color05;
+}
+.mainPage .dataContainer .noData i {
+    color: $Font_Color02;
+}
+.mainPage .dataContainer .noData p {
+    color: $Font_Color02;
+}
+.mainPage .betGame_Detail {
+    background: $BG_Color00;
+}
+.mainPage .betGame_Detail>div.topArea .topWrap {
+    color: $BG_Color01;
+}
+.mainPage .betGame_Detail>div.topArea .content>div.teamWrap .team {
+    @include textHidden;
+}
+.mainPage .betGame_Detail>div.topArea .content>div.teamWrap .team p {
+    color: $Font_Color03;
+}
+.mainPage .betGame_Detail>div.topArea .content>div.teamWrap .info p {
+    color: $Font_Color03;
+}
+.mainPage .betGame_Detail>div.topArea .content>div.functionState {
+    background: $BG_Color11;
+}
+.mainPage .betGame_Detail>div.topArea .content>div.functionState::before {
+    background: $Font_Color01;
+}
+.mainPage .betGame_Detail>div.topArea .content>div.functionState .group {
+    color: $Font_Color03;
+}
+.mainPage .betGame_Detail>div.downArea .typeBlock {
+    background: $BG_Color01;
+}
+.mainPage .betGame_Detail>div.downArea .typeBlock .typeName {
+    border-bottom: 0.15vw solid $Border_04;
+}
+.mainPage .betGame_Detail>div.downArea .typeBlock .typeName p {
+    color: $Font_Color05;
+}
+.mainPage .betGame_Detail>div.downArea .typeBlock .typeName p::before {
+    background: $BG_Color05;
+}
+.mainPage .betGame_Detail>div.downArea .typeBlock .typeName i {
+    color: $Border_04;
+
+    &.active {
+        color: $Border_03;
+    }
+}
+.mainPage .betGame_Detail>div.downArea .rateWrap .teamBlock {
+    background: $BG_Color09;
+
+    &.active {
+        background: $BG_Color05;
+    }
+}
+.mainPage .betGame_Detail>div.topArea .content>div.downArea .typeBlock p {
+    color: $Font_Color06;
+    @include textHidden;
+}
+.mainPage .betGame_Detail>div.topArea .content>div.downArea .typeBlock span {
+    color: $Font_Color06;
+}
+.mainPage .betGame_Detail>div.topArea .content>div.downArea .typeBlock span.gray {
+    color: $Font_Color02;
+}
+.mainPage .searchFilter {
+    background: $BG_Color01;
+}
+.mainPage .searchFilter .content>div.searchBlock i {
+    color: $Font_Color05;
+}
+.mainPage .searchFilter .content>div.searchBlock input {
+    background: $BG_Color09;
+    color: $Font_Color02;
+}
+.mainPage .searchFilter .content>div.searchBlock input::placeholder {
+    color: $Font_Color02;
+}
+.mainPage .searchFilter .content>div.allGames label input {
+    border: 0.2vw solid $Border_03;
+}
+.mainPage .searchFilter .content>div.allGames label input::before {
+    background: $BG_Color08;
+}
+.mainPage .searchFilter .content>div.allGames ul:nth-of-type(1).active .typeName {
+    background: $BG_Color08;
+}
+.mainPage .searchFilter .content>div.allGames ul:nth-of-type(1).active .typeName p {
+    color: $Font_Color03;
+}
+.mainPage .searchFilter .content>div.allGames ul .typeName {
+    background: $BG_Color09;
+}
+.mainPage .searchFilter .content>div.allGames ul .typeName p {
+    color: $Font_Color05;
+}
+.mainPage .searchFilter .content>div.allGames ul li::before {
+    background: $Border_04;
+}
+.mainPage .searchFilter .content>div.allGames ul li .group p {
+    color: $Font_Color06;
+}
+.mainPage .searchFilter .content>div.allGames ul li .group .total {
+    color: $Font_Color02;
+}
+.mainPage .searchFilter .nameTitle_select li {
+    color: $Font_Color06;
+}
+
+//tutorialPage
+.tutorialPage .topContainer {
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+                0 -1px 4px transparent;
+}
+.tutorialPage .topContainer .gameType li {
+    background: $BG_Color00;
+}
+.tutorialPage .topContainer .gameType li.active {
+    background: $Font_Color07;
+}
+.tutorialPage .topContainer .gameType li.active p {
+    color: $Font_Color03;
+}
+.tutorialPage .topContainer .gameType li i .num {
+    color: $Font_Color02;
+}
+.tutorialPage .topContainer .gameType li p {
+    color: $Font_Color02;
+}
+.tutorialPage .topContainer .ruleType {
+    background: $BG_Color00;
+}
+.tutorialPage .topContainer .ruleType li::before {
+    background: $Border_01;
+}
+.tutorialPage .topContainer .ruleType li.active p {
+    color: $Font_Color04;
+}
+.tutorialPage .topContainer .ruleType li p {
+    color: $Font_Color06;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock {
+    background: $BG_Color01;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.title {
+    border-bottom: 0.2vw solid $Border_04;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.title p {
+    border-left: 0.6vw solid $Border_01;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.teamWrap .team .text p {
+    
+    &.teamName {
+        color: $Font_Color04;
+    }
+
+    &.point {
+        color: $Font_link;
+    }
+
+    &.rate {
+        color: $Font_Color01;
+    }
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.teamWrap .vs {
+    color: $Font_Color04; 
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap {
+    background: $BG_Color00;
+    box-shadow: 0 2px 4px $shadow_02,
+                0 -1px 4px transparent;
+    box-shadow: inset 0 2px 4px $shadow_02,
+                0 -1px 4px transparent;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap>div span {
+    color: $Font_Color04;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap>div.centerResult {
+    background: $linear06;
+    border: 0.2vw solid $Border_02;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.explain .half {
+    color: $Font_em;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.explain .half.gray {
+    color: $Font_Color02;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock .betMoney {
+    color: $Font_em;
+}
+
+//gameResultPage
+.gameResultPage .resultType {
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+                0 -1px 4px transparent;
+}
+.gameResultPage .resultType li {
+    @include btnStyle02;
+}
+.gameResultPage .resultType li p {
+    color: $Font_Color06;
+}
+.gameResultPage .resultType li.active {
+    border-color: $Border_01;
+}
+.gameResultPage .resultType li.active p {
+    color: $Font_Color04;
+}
+.gameResultPage .searchFilters {
+    background: $BG_Color00;
+}
+.gameResultPage .searchFilters button {
+    background: $BG_Color01;
+    box-shadow: 0 2px 5px $shadow_02;
+    color: $Font_Color01;
+
+    &.active {
+        background: $BG_Color03;
+        color: $Font_Color03;
+    }
+}
+.gameResultPage .dataTable .tableOuter {
+    border: 0.2vw solid $Border_03;
+    box-shadow: 0 1px 4px $shadow_01;
+}
+.gameResultPage .dataTable .tableOuter table tr {
+    border-bottom: 0.2vw solid $Border_03;
+}
+.gameResultPage .dataTable .tableOuter table tr.gameName th {
+    background: $BG_Color03;
+}
+.gameResultPage .dataTable .tableOuter table tr.gameName th p {
+    color: $Font_Color03;
+}
+.gameResultPage .dataTable .tableOuter table tr.gameName th .outer .state {
+    border-left: 0.6vw solid $Font_link;
+}
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(1) .outer span {
+    color: $Font_Color06;
+}
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td {
+    
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+        background: $BG_Color04;
+    }
+}
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td {
+    
+    &:nth-of-type(1),
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+        background: $BG_Color04;
+    }
+}
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(1) .outer span {
+    color: $Font_Color06;
+}
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(2) td {
+    
+    &:nth-of-type(1),
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+        background: $BG_Color02;
+    }
+}
+.gameResultPage .dataTable .tableOuter table tr p {
+
+    &.highLight {
+        color: $Font_em;
+    }
+
+    &.important {
+        color: $Font_remind;
+    }
+}
+.gameResultPage .dataTable .tableOuter table tr td {
+    border-right: 0.2vw solid $Border_03;
+}
+.gameResultPage .dataTable .tableOuter table tr td p {
+    color: $Font_Color01;
+}
+.gameResultPage .dataTable .tableOuter table tr td p span {
+    color: $Font_Color04;
 }
 
 //footer
@@ -617,6 +1057,131 @@ footer ul.multiBet_mode ul li .group_normal .rate {
                   0px 0px 15px $shadow_02;
 }
 
+.depositPage .topArea {
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+                    0 -1px 4px transparent;
+}
+.depositPage .topArea .payTypeBlock {
+    border-bottom: 0.2vw solid $Border_04;
+}
+.depositPage .topArea .payTypeBlock .type {
+    background: $BG_Color04;
+}
+.depositPage .topArea .payTypeBlock .type::before {
+    border-color: transparent transparent $BG_Color03 transparent;
+}
+.depositPage .topArea .payTypeBlock .type::after {
+    color: $Font_Color03;
+}
+.depositPage .topArea .payTypeBlock .type.active {
+    border-color: $Border_01;
+}
+.depositPage .topArea .payTypeBlock .type.active i,
+.depositPage .topArea .payTypeBlock .type.active p {
+    color: $Font_Color04;
+}
+.depositPage .topArea .payTypeBlock .type i {
+    color: $Font_Color06;
+}
+.depositPage .topArea .payTypeBlock .type p {
+    color: $Font_Color06;
+    @include textHidden;
+}
+.depositPage .topArea label input {
+    @include input01;
+}
+.depositPage .bottomArea {
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+                    0 -1px 4px transparent;
+}
+.depositPage .bottomArea .quickMoneyBlock {
+    border-bottom: 0.2vw solid $Border_04;
+}
+.depositPage .bottomArea .quickMoneyBlock button {
+    background: $BG_Color04;
+    color: $Font_Color06;
+
+    &.active {
+        background: $BG_Color03;
+        color: $Font_Color03;
+    }
+}
+.depositPage .checkBtn {
+    @include btnStyle01;
+}
+.depositPage p.blockTitle {
+    color: $Font_Color04;
+}
+.depositPage p.itemName {
+    color: $Font_Color04;
+}
+.depositPage p.hint {
+    color: $Font_remind;
+}
+
+//transferPage
+.transferPage .topArea {
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+                0 -1px 4px transparent;
+}
+.transferPage .topArea .walletWrap {
+    border-bottom: 0.2vw solid $Border_04;
+}
+.transferPage .topArea .walletWrap::before {
+    background: $Border_04;
+}
+.transferPage .topArea .walletWrap .wallet:last-child i,
+.transferPage .topArea .walletWrap .wallet:last-child span {
+    color: $Font_remind;
+}
+.transferPage .topArea .walletWrap .wallet p {
+    color: $Font_Color01;
+}
+.transferPage .topArea .walletWrap .wallet p i {
+    color: $Font_Color04;
+}
+.transferPage .topArea .walletWrap .wallet span {
+    color: $Font_Color04;
+    @include textHidden;
+}
+.transferPage .topArea .platBlock {
+    border-bottom: 0.2vw solid $Border_04;
+}
+.transferPage .topArea .platBlock .platform {
+    background: $BG_Color04;
+}
+.transferPage .topArea .platBlock .platform p {
+    color: $Font_Color02;
+    @include textHidden;
+}
+.transferPage .topArea .platBlock .platform p {
+    color: $Font_Color02;
+    @include textHidden;
+}
+.transferPage .topArea .platBlock .platform span {
+    color: $Font_Color01;
+}
+.transferPage .topArea .platBlock .platform i {
+    color: $Font_Color04;
+}
+.transferPage .topArea .platBlock .platform i span {
+    background: $BG_Color03;
+    color: $Font_Color03;
+}
+.transferPage .topArea .platBlock .platform i span::before {
+    border-color: $BG_Color03 transparent transparent transparent;
+}
+.transferPage .topArea .platWrap_Switcher p {
+    color: $Font_Color02;
+}
+.transferPage .bottomArea {
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+                    0 -1px 4px transparent;
+}
 
 //betLimitPage
 .betLimitPage .dataTable .tableOuter {

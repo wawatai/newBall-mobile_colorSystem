@@ -3,7 +3,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: $BG_Color00;
     position: relative;
 
     .resultType {
@@ -12,10 +11,7 @@
         display: flex;
         align-items: center;
         flex-shrink: 0;
-        background: $BG_Color01;
         padding: pxToVw(350) 2vw 2vw;
-        box-shadow: 0 2px 4px $shadow_02,
-                    0 -1px 4px transparent;
         position: relative;
         z-index: 6;
 
@@ -25,7 +21,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            @include btnStyle02;
             border: pxToVw(1) solid transparent;
             box-shadow: none;
             border-radius: 50px;
@@ -34,21 +29,12 @@
             position: relative;
 
             p {
-                color: $Font_Color06;
                 font-size: 4.2vw;
                 font-weight: bold;
             }
 
             &:last-child {
                 margin-right: 0;
-            }
-
-            &:active,&.active {
-                border-color: $Border_01;
-                
-                p {
-                    color: $Font_Color04;
-                }
             }
         }
     }
@@ -59,7 +45,6 @@
         display: flex;
         align-items: center;
         flex-shrink: 0;
-        background: $BG_Color00;
         padding: 0 2vw;
         position: relative;
         z-index: 5;
@@ -67,19 +52,11 @@
         button {
             width: 24vw;
             height: 60%;
-            background: $BG_Color01;
             border-radius: pxToVw(20);
-            box-shadow: 0 2px 5px $shadow_02;
-            color: $Font_Color01;
             font-size: 3.8vw;
             font-weight: bold;
             white-space: nowrap;
             margin-right: 3vw;
-
-            &:active,&.active {
-                background: $BG_Color03;
-                color: $Font_Color03;
-            }
         }
     }
 
@@ -100,8 +77,6 @@
             width: auto;
             height: auto;
             border-radius: 0.8vw;
-            border: 0.2vw solid $Border_03;
-            box-shadow: 0 1px 4px $shadow_01;
             margin-bottom: 2vw;
 
             table {
@@ -111,13 +86,11 @@
                 overflow: hidden;
 
                 tr {
-                    border-bottom: 0.2vw solid $Border_03;
                     
                     &.gameName {
 
                         th {
                             height: 8vw;
-                            background: $BG_Color03;
                             vertical-align: middle;
 
                             p {
@@ -130,14 +103,9 @@
                                 padding: 0 2vw;
 
                                 .state {
-                                    border-left: 0.6vw solid $Font_link;
                                     padding-left: 2vw;
                                     margin-left: 4vw;
                                 }
-                            }
-
-                            p {
-                                color: $Font_Color03;
                             }
                         }
                     }
@@ -146,18 +114,12 @@
 
                         td {
 
-                            &:nth-of-type(2),
-                            &:nth-of-type(3) {
-                                background: $BG_Color04;
-                            }
-
                             &:nth-of-type(1) {
 
                                 .outer {
                                     flex-direction: column;
     
                                     span {
-                                        color: $Font_Color06;
                                         font-size: 3.8vw;
                                         font-weight: bold;
     
@@ -166,9 +128,6 @@
                                         }
                                     }
                                 }
-                            }
-
-                            &:nth-of-type(1) {
 
                                 p {
                                     text-align: start;
@@ -181,19 +140,12 @@
 
                         td {
 
-                            &:nth-of-type(1),
-                            &:nth-of-type(3),
-                            &:nth-of-type(4) {
-                                background: $BG_Color04;
-                            }
-
                             &:nth-of-type(1) {
 
                                 .outer {
                                     flex-direction: column;
     
                                     span {
-                                        color: $Font_Color06;
                                         font-size: 3.8vw;
                                         font-weight: bold;
     
@@ -213,37 +165,16 @@
                         }
                     }
 
-                    &:nth-of-type(2) {
-
-                        td {
-                            &:nth-of-type(1),
-                            &:nth-of-type(2),
-                            &:nth-of-type(3),
-                            &:nth-of-type(4) {
-                                background: $BG_Color02;
-                            }
-                        }
-                    }
-
                     &:last-child {
                         border-bottom: none;
                     }
 
                     p {
                         font-size: 3.8vw;
-
-                        &.highLight {
-                            color: $Font_em;
-                        }
-
-                        &.important {
-                            color: $Font_remind;
-                        }
                     }
 
                     td {
                         height: 8vw;
-                        border-right: 0.2vw solid $Border_03;
                         vertical-align: middle;
                         padding: 0 2vw;
 
@@ -273,14 +204,9 @@
                         }
 
                         p {
-                            color: $Font_Color01;
                             font-weight: bold;
                             text-align: center;
                             white-space: nowrap;
-
-                            span {
-                                color: $Font_Color04;
-                            }
                         }
                     }
                 }

@@ -3,7 +3,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: $BG_Color00;
     position: relative;
 
     .betType_mode {
@@ -12,7 +11,6 @@
         height: 32vw;
         align-items: center;
         justify-content: space-between;
-        background: $BG_Color01;
         flex-shrink: 0;
         padding: 15vw 4vw 2vw;
 
@@ -26,21 +24,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 0.2vw solid $Border_03;
             border-radius: 2vw;
 
             &.active {
-                background: $linear01;
                 border: none;
-
-                p {
-                    color: $Font_Color03;
-                }
             }
 
             p {
                 width: 100%;
-                color: $Font_Color02;
                 font-size: 4vw;
                 font-weight: bold;
                 text-align: center;
@@ -55,10 +46,7 @@
         flex-direction: column;
         align-items: center;
         flex-shrink: 0;
-        background: $BG_Color01;
         padding: 13.4vw 0 0;
-        box-shadow: 0 2px 4px $shadow_02,
-                    0 -1px 4px transparent;
         position: relative;
         z-index: 6;
 
@@ -72,7 +60,6 @@
             height: auto;
             align-items: center;
             flex-shrink: 0;
-            border-bottom: 0.2vw solid $Border_04;
             padding: 0 4vw;
             overflow-x: auto;
 
@@ -93,7 +80,6 @@
                     content: "";
                     width: 100%;
                     height: 0.5vw;
-                    background: $Border_01;
                     position: absolute;
                     bottom: 0;
                     left: 50%;
@@ -109,7 +95,6 @@
                 }
                
                 p {
-                    color: $Font_Color02;
                     font-size: 3.8vw;
                     font-weight: bold;
                     white-space: nowrap;
@@ -133,7 +118,6 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                border: pxToVw(1) solid transparent;
                 box-shadow: none;
                 border-radius: 50px;
                 padding: 2vw 4vw;
@@ -146,12 +130,7 @@
                         background-position-y: 100%;
                     }
     
-                    p {
-                        color: $Font_Color01;
-                    }
-    
                     .num {
-                        color: $Font_Color01;
                         font-weight: bold;
                     }
                 }
@@ -187,7 +166,6 @@
                     }
     
                     .num {
-                        color: $Font_Color02;
                         font-size: 3.4vw;
                         position: absolute;
                         top: 0vw;
@@ -196,7 +174,6 @@
                 }
     
                 p {
-                    color: $Font_Color02;
                     font-size: 4vw;
                     font-weight: bold;
                     white-space: nowrap;
@@ -224,7 +201,6 @@
             height: auto;
             display: flex;
             align-items: center;
-            color: $Font_Color01;
             font-size: 3.4vw;
             font-weight: bold;
         }
@@ -232,33 +208,20 @@
         .switchBtn {
             width: 30%;
             height: 6vw;
-            @include switchBtnStyle;
-            background: $BG_Color02;
 
             &.on {
 
                 .bar {
                     transform: translate(-4%, -50%);
                 }
-
-                p {
-                    &:nth-of-type(1) {
-                        color: $Font_Color03;
-                    }
-                    &:nth-of-type(2) {
-                        color: $Font_Color04;
-                    }
-                }
             }
 
             p {
                 width: 47%;
                 font-size: 3.2vw;
-                color: $Font_Color04;
                 margin-left: 1vw;
 
                 &:nth-of-type(2) {
-                    color: $Font_Color03;
                     margin-right: 1vw;
                 }
             }
@@ -266,7 +229,6 @@
             .bar {
                 width: 50%;
                 height: 86%;
-                background: $BG_Color01;
             }
         }
     }
@@ -284,46 +246,23 @@
         .dataType {
             width: 100%;
             height: auto;
-            background: $BG_Color00;
             position: relative;
             z-index: 3;
     
             &.active {
                 display: block;
     
-                .state {
-                    background: $BG_Color04;
-                }
-    
                 ul {
                     display: block;
                 }
             }
     
-            &.unProgress {
-    
-                .state {
-                    border-top: 0.6vw solid $Border_05;
-                }
-
-                &.active {
-        
-                    .state {
-                        background: $BG_Color07;
-                    }
-                }
-            }
-          
             .state {
                 width: 100%;
                 height: 8vw;
                 display: flex;
                 align-items: center;
-                background: $BG_Color01;
-                border-top: 0.6vw solid $Border_01;
                 padding: 0 4vw;
-                box-shadow: 0 2px 4px $shadow_02,
-                0 -1px 4px transparent;
     
                 i {
                     width: 5vw;
@@ -340,7 +279,6 @@
                 }
     
                 p {
-                    color: $Font_Color06;
                     font-size: 3.8vw;
                     font-weight: bold;
                 }
@@ -468,12 +406,9 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        background: $BG_Color01;
-                        border-bottom: 0.2vw solid $Border_04;
                         padding: 0 3vw;
     
                         p {
-                            color: $Font_Color05;
                             font-size: 4vw;
                             font-weight: bold;
                         }
@@ -485,12 +420,10 @@
                         height: 7vw;
                         align-items: center;
                         justify-content: flex-end;
-                        background: $BG_Color00;
                         padding: 0 4vw;
 
                         p {
                             width: 18vw;
-                            color: $Font_Color01;
                             font-size: 3.6vw;
                             font-weight: bold;
                             text-align: center;
@@ -502,9 +435,7 @@
                         display: none;
                         width: 100%;
                         height: auto;
-                        background: $BG_Color01;
                         padding: 2vw 3vw 3vw;
-                        border-bottom: 0.2vw solid $Border_04;
     
                         &:last-child {
                             border-bottom: none;
@@ -554,7 +485,6 @@
                                 }
     
                                 p {
-                                    color: $Font_Color02;
                                     font-size: 3.8vw;
                                     font-weight: bold;
                                     margin-left: 2vw;
@@ -580,7 +510,6 @@
                             margin-bottom: 3vw;
     
                             .vs {
-                                color: $Font_Color05;
                                 font-size: 3.4vw;
                                 font-weight: bold;
                                 flex-shrink: 0;
@@ -600,10 +529,8 @@
     
                             .teamName {
                                 width: 100%;
-                                color: $Font_Color05;
                                 font-size: 4vw;
                                 font-weight: bold;
-                                @include textHidden;
     
                                 &:first-child {
                                     text-align: end;
@@ -611,7 +538,6 @@
                             }
     
                             .vs {
-                                color: $Font_Color05;
                                 font-size: 3.4vw;
                                 font-weight: bold;
                             }
@@ -632,7 +558,6 @@
                                 align-items: center;
                                 justify-content: center;
                                 border-radius: 1vw;
-                                background: $BG_Color04;
                                 padding: 1vw;
                                 margin-right: 1vw;
                                 
@@ -640,23 +565,17 @@
                                     margin-right: 0;
                                 }
 
-                                &.active {
-                                    background: $BG_Color05;
-                                }
-
                                 &.proType {
                                     display: none;
                                 }
     
                                 p {
-                                    color: $Font_Color02;
                                     font-size: 3.8vw;
                                     font-weight: bold;
                                     margin-bottom: 1vw;
                                 }
     
                                 span {
-                                    color: $Font_Color05;
                                     font-size: 3.8vw;
                                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                                     font-weight: bold;
@@ -675,16 +594,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            // background: $BG_Color01;
 
             i {
-                color: $Font_Color02;
                 font-size: 10vw;
                 margin-bottom: 2vw;
             }
 
             p {
-                color: $Font_Color02;
                 font-size: 4vw;
                 font-weight: bold;
             }
@@ -697,7 +613,6 @@
         height: 100%;
         flex-direction: column;
         align-items: center;
-        background: $BG_Color00;
         animation: fadeIn 0.3s ease-in-out;
         position: absolute;
         top: 0;
@@ -724,7 +639,6 @@
                     align-items: center;
                     justify-content: center;
                     flex-shrink: 0;
-                    color: $BG_Color01;
                     position: relative;
     
                     i {
@@ -762,10 +676,8 @@
     
                             .team {
                                 width: 100%;
-                                @include textHidden;
     
                                 p {
-                                    color: $Font_Color03;
                                     font-size: 5vw;
                                     text-align: center;
                                 }
@@ -783,7 +695,6 @@
                                 flex-shrink: 0;
     
                                 p {
-                                    color: $Font_Color03;
                                     text-align: center;
     
                                     &.date {
@@ -803,7 +714,6 @@
                         &.functionState {
                             width: 70%;
                             height: 10vw;
-                            background: $BG_Color11;
                             border-radius: 50px;
                             margin: 0 auto;
                             position: relative;
@@ -812,7 +722,6 @@
                                 content: "";
                                 width: 0.2vw;
                                 height: 100%;
-                                background: $Font_Color01;
                                 position: absolute;
                                 top: 0;
                                 left: 50%;
@@ -823,7 +732,6 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                color: $Font_Color03;
                                 margin-right: 10vw;
     
                                 &:nth-of-type(2) {
@@ -862,7 +770,6 @@
                 .typeBlock {
                     width: 100%;
                     height: auto;
-                    background: $BG_Color01;
                     padding: 3vw 2vw;
                     margin: 0 0 2vw;
 
@@ -876,11 +783,9 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        border-bottom: 0.15vw solid $Border_04;
                         padding: 0 0 2vw;
 
                         p {
-                            color: $Font_Color05;
                             font-size: 4vw;
                             font-weight: bold;
                             padding: 0 0 0 2vw;
@@ -891,7 +796,6 @@
                                 width: 01vw;
                                 height: 100%;
                                 border-radius: 50px;
-                                background: $BG_Color05;
                                 position: absolute;
                                 top: 50%;
                                 left: 0;
@@ -900,13 +804,8 @@
                         }
 
                         i {
-                            color: $Border_04;
                             font-size: 4vw;
                             transform: rotate(30deg);
-
-                            &.active {
-                                color: $Border_03;
-                            }
                         }
                     }
 
@@ -922,12 +821,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            background: $BG_Color09;
                             position: relative;
-
-                            &.active {
-                                background: $BG_Color05;
-                            }
 
                             &.multi {
 
@@ -940,20 +834,16 @@
 
                             p {
                                 max-width: 60%;
-                                color: $Font_Color06;
                                 font-size: 4vw;
                                 font-weight: bold;
-                                @include textHidden;
                             }
 
                             span {
-                                color: $Font_Color06;
                                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                                 font-size: 3.8vw;
                                 font-weight: bold;
 
                                 &.gray {
-                                    color: $Font_Color02;
                                     margin-right: 2vw;
                                 }
                             }
@@ -970,7 +860,6 @@
         height: 100%;
         flex-direction: column;
         align-items: center;
-        background: $BG_Color01;
         animation: fadeIn 0.3s ease-in-out;
         position: absolute;
         top: 0;
@@ -1002,7 +891,6 @@
                     position: relative;
 
                     i {
-                        color: $Font_Color05;
                         font-size: 4.2vw;
                         position: absolute;
                         top: 50%;
@@ -1013,16 +901,10 @@
                     input {
                         width: 100%;
                         height: 10vw;
-                        background: $BG_Color09;
                         border: none;
                         border-radius: 50px;
                         padding: 0 4vw 0 12vw;
-                        color: $Font_Color02;
                         font-size: 4.2vw;
-
-                        &::placeholder {
-                            color: $Font_Color02;
-                        }
                     }
                 }
 
@@ -1042,7 +924,6 @@
                         input {
                             width: 4.2vw;
                             height: 4.2vw;
-                            border: 0.2vw solid $Border_03;
                             border-radius: 50px;
                             margin-left: 2vw;
                             position: relative;
@@ -1051,7 +932,6 @@
                                 content: "";
                                 width: 3.4vw;
                                 height: 3.4vw;
-                                background: $BG_Color08;
                                 border-radius: 50px;
                                 position: absolute;
                                 top: 50%;
@@ -1099,11 +979,6 @@
                             &.active {
 
                                 .typeName {
-                                    background: $BG_Color08;
-    
-                                    p {
-                                        color: $Font_Color03;
-                                    }
     
                                     i {
                                         filter: brightness(2);
@@ -1121,7 +996,6 @@
                             height: 8vw;
                             display: flex;
                             align-items: center;
-                            background: $BG_Color09;
                             padding: 0 6vw;
 
                             i {
@@ -1129,7 +1003,6 @@
                             }
 
                             p {
-                                color: $Font_Color05;
                                 font-size: 4vw;
                                 font-weight: bold;
                             }
@@ -1148,7 +1021,6 @@
                                 content: "";
                                 width: 90%;
                                 height: 0.2vw;
-                                background: $Border_04;
                                 bottom: 0;
                                 position: absolute;
                                 left: 50%;
@@ -1175,13 +1047,11 @@
                                 }
 
                                 p {
-                                    color: $Font_Color06;
                                     font-size: 3.6vw;
                                     font-weight: bold;
                                 }
 
                                 .total {
-                                    color: $Font_Color02;
                                     font-size: 3.4vw;
                                 }
                             }
@@ -1202,7 +1072,6 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                color: $Font_Color06;
                 font-size: 3.4vw;
 
                 &:not(:first-child) {

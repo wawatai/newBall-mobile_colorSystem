@@ -117,8 +117,602 @@ header .innerMode_header .quickHref {
 .betRecordPage,
 .cardPage,
 .settingPage,
-.gameRulePage {
+.gameRulePage,
+.mainPage,
+.tutorialPage,
+.gameResultPage,
+.depositPage,
+.transferPage {
   background: #f7f7f7;
+}
+
+.mainPage .betType_mode {
+  background: #ffffff;
+}
+
+.mainPage .betType_mode li {
+  border: 0.2vw solid #838ba0;
+}
+.mainPage .betType_mode li.active {
+  background: -webkit-gradient(linear, left top, right top, from(#909ddc), to(#2e44b6));
+  background: linear-gradient(to right, #909ddc 0%, #2e44b6 100%);
+}
+.mainPage .betType_mode li.active p {
+  color: #ffffff;
+}
+
+.mainPage .betType_mode li p {
+  color: #838ba0;
+}
+
+.mainPage .topContainer {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.mainPage .topContainer .dayFilter {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.mainPage .topContainer .dayFilter li::before {
+  background: #2d43b6;
+}
+
+.mainPage .topContainer .dayFilter li p {
+  color: #838ba0;
+}
+
+.mainPage .topContainer .gameType li {
+  border: 0.2vw solid transparent;
+}
+.mainPage .topContainer .gameType li.active p {
+  color: #000000;
+}
+.mainPage .topContainer .gameType li.active .num {
+  color: #000000;
+}
+
+.mainPage .topContainer .gameType li p {
+  color: #838ba0;
+}
+
+.mainPage .topContainer .gameType li i .num {
+  color: #838ba0;
+}
+
+.mainPage .currentType .group {
+  color: #000000;
+}
+
+.mainPage .currentType .switchBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #eef1f8;
+  border-radius: 30vw;
+  padding: 0.2vw;
+  position: relative;
+  background: #cdd0dd;
+}
+.mainPage .currentType .switchBtn.on .bar {
+  left: unset;
+  right: 0.2vw;
+  -webkit-transform: translate(-2%, -50%);
+          transform: translate(-2%, -50%);
+}
+.mainPage .currentType .switchBtn.on p:nth-of-type(1) {
+  color: #838ba0;
+}
+.mainPage .currentType .switchBtn.on p:nth-of-type(2) {
+  color: #ffffff;
+}
+.mainPage .currentType .switchBtn p {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 8;
+}
+.mainPage .currentType .switchBtn p:nth-of-type(2) {
+  color: #838ba0;
+}
+.mainPage .currentType .switchBtn .bar {
+  width: 48%;
+  height: 92%;
+  background: #2d43b6;
+  border-radius: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 0.2vw;
+  -webkit-transform: translate(2%, -50%);
+          transform: translate(2%, -50%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 7;
+}
+
+.mainPage .currentType .switchBtn.on p:nth-of-type(1) {
+  color: #ffffff;
+}
+.mainPage .currentType .switchBtn.on p:nth-of-type(2) {
+  color: #2d43b6;
+}
+
+.mainPage .currentType .switchBtn p {
+  color: #2d43b6;
+}
+.mainPage .currentType .switchBtn p:nth-of-type(2) {
+  color: #ffffff;
+}
+
+.mainPage .currentType .switchBtn .bar {
+  background: #ffffff;
+}
+
+.mainPage .dataContainer .dataType .filterBlock {
+  background: #f7f7f7;
+}
+
+.mainPage .dataContainer .dataType.ing.active .filterBlock .state {
+  background: #eef1f8;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.mainPage .dataContainer .dataType.ing .state {
+  border-top: 0.6vw solid #2d43b6;
+}
+
+.mainPage .dataContainer .dataType.unProgress .state {
+  border-top: 0.6vw solid #ef6b5d;
+}
+
+.mainPage .dataContainer .dataType.unProgress.active .filterBlock .state {
+  background: #ffdbd7;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.mainPage .dataContainer .dataType .state {
+  background: #ffffff;
+}
+
+.mainPage .dataContainer .dataType .state p {
+  color: #4d515d;
+}
+
+.mainPage .dataContainer .dataType ul li .gameName {
+  background: #ffffff;
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.mainPage .dataContainer .dataType ul li .gameName p {
+  color: #1b255c;
+}
+
+.mainPage .dataContainer .dataType ul li .betRateType {
+  background: #f7f7f7;
+}
+
+.mainPage .dataContainer .dataType ul li .betRateType p {
+  color: #000000;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock {
+  background: #ffffff;
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState p,
+.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more p {
+  color: #838ba0;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
+  color: #1b255c;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .teamRow .teamName {
+  color: #1b255c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
+  color: #1b255c;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock {
+  background: #eef1f8;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock.active {
+  background: #d3dbff;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock p {
+  color: #838ba0;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock span {
+  color: #1b255c;
+}
+
+.mainPage .dataContainer .noData i {
+  color: #838ba0;
+}
+
+.mainPage .dataContainer .noData p {
+  color: #838ba0;
+}
+
+.mainPage .betGame_Detail {
+  background: #f7f7f7;
+}
+
+.mainPage .betGame_Detail > div.topArea .topWrap {
+  color: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.teamWrap .team {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.teamWrap .team p {
+  color: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.teamWrap .info p {
+  color: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.functionState {
+  background: rgba(0, 0, 0, 0.4509803922);
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.functionState::before {
+  background: #000000;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.functionState .group {
+  color: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock {
+  background: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName {
+  border-bottom: 0.15vw solid #d8d8d8;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName p {
+  color: #1b255c;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName p::before {
+  background: #d3dbff;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName i {
+  color: #d8d8d8;
+}
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName i.active {
+  color: #838ba0;
+}
+
+.mainPage .betGame_Detail > div.downArea .rateWrap .teamBlock {
+  background: #f6f8ff;
+}
+.mainPage .betGame_Detail > div.downArea .rateWrap .teamBlock.active {
+  background: #d3dbff;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.downArea .typeBlock p {
+  color: #4d515d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.downArea .typeBlock span {
+  color: #4d515d;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.downArea .typeBlock span.gray {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter {
+  background: #ffffff;
+}
+
+.mainPage .searchFilter .content > div.searchBlock i {
+  color: #1b255c;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input {
+  background: #f6f8ff;
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input::-webkit-input-placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input::-moz-placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input:-ms-input-placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input::-ms-input-placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input::placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.allGames label input {
+  border: 0.2vw solid #838ba0;
+}
+
+.mainPage .searchFilter .content > div.allGames label input::before {
+  background: #959dc5;
+}
+
+.mainPage .searchFilter .content > div.allGames ul:nth-of-type(1).active .typeName {
+  background: #959dc5;
+}
+
+.mainPage .searchFilter .content > div.allGames ul:nth-of-type(1).active .typeName p {
+  color: #ffffff;
+}
+
+.mainPage .searchFilter .content > div.allGames ul .typeName {
+  background: #f6f8ff;
+}
+
+.mainPage .searchFilter .content > div.allGames ul .typeName p {
+  color: #1b255c;
+}
+
+.mainPage .searchFilter .content > div.allGames ul li::before {
+  background: #d8d8d8;
+}
+
+.mainPage .searchFilter .content > div.allGames ul li .group p {
+  color: #4d515d;
+}
+
+.mainPage .searchFilter .content > div.allGames ul li .group .total {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .nameTitle_select li {
+  color: #4d515d;
+}
+
+.tutorialPage .topContainer {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.tutorialPage .topContainer .gameType li {
+  background: #f7f7f7;
+}
+
+.tutorialPage .topContainer .gameType li.active {
+  background: #546ce6;
+}
+
+.tutorialPage .topContainer .gameType li.active p {
+  color: #ffffff;
+}
+
+.tutorialPage .topContainer .gameType li i .num {
+  color: #838ba0;
+}
+
+.tutorialPage .topContainer .gameType li p {
+  color: #838ba0;
+}
+
+.tutorialPage .topContainer .ruleType {
+  background: #f7f7f7;
+}
+
+.tutorialPage .topContainer .ruleType li::before {
+  background: #2d43b6;
+}
+
+.tutorialPage .topContainer .ruleType li.active p {
+  color: #2d43b6;
+}
+
+.tutorialPage .topContainer .ruleType li p {
+  color: #4d515d;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock {
+  background: #ffffff;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.title {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.title p {
+  border-left: 0.6vw solid #2d43b6;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .text p.teamName {
+  color: #2d43b6;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .text p.point {
+  color: #599bcf;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .text p.rate {
+  color: #000000;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .vs {
+  color: #2d43b6;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap {
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap > div span {
+  color: #2d43b6;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap > div.centerResult {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(176, 180, 201, 0.3568627451)), color-stop(70%, #ffffff));
+  background: linear-gradient(to top, rgba(176, 180, 201, 0.3568627451) 0%, #ffffff 70%);
+  border: 0.2vw solid #e0e7ff;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.explain .half {
+  color: #f35a02;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.explain .half.gray {
+  color: #838ba0;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock .betMoney {
+  color: #f35a02;
+}
+
+.gameResultPage .resultType {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.gameResultPage .resultType li {
+  background: #eef1f8;
+  border-radius: 10vw;
+  color: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gameResultPage .resultType li p {
+  color: #4d515d;
+}
+
+.gameResultPage .resultType li.active {
+  border-color: #2d43b6;
+}
+
+.gameResultPage .resultType li.active p {
+  color: #2d43b6;
+}
+
+.gameResultPage .searchFilters {
+  background: #f7f7f7;
+}
+
+.gameResultPage .searchFilters button {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1098039216);
+  color: #000000;
+}
+.gameResultPage .searchFilters button.active {
+  background: #2d43b6;
+  color: #ffffff;
+}
+
+.gameResultPage .dataTable .tableOuter {
+  border: 0.2vw solid #838ba0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gameResultPage .dataTable .tableOuter table tr {
+  border-bottom: 0.2vw solid #838ba0;
+}
+
+.gameResultPage .dataTable .tableOuter table tr.gameName th {
+  background: #2d43b6;
+}
+
+.gameResultPage .dataTable .tableOuter table tr.gameName th p {
+  color: #ffffff;
+}
+
+.gameResultPage .dataTable .tableOuter table tr.gameName th .outer .state {
+  border-left: 0.6vw solid #599bcf;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(1) .outer span {
+  color: #4d515d;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(2), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(3) {
+  background: #eef1f8;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(1), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(3), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(4) {
+  background: #eef1f8;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(1) .outer span {
+  color: #4d515d;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(2) td:nth-of-type(1), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(2) td:nth-of-type(2), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(2) td:nth-of-type(3), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(2) td:nth-of-type(4) {
+  background: #cdd0dd;
+}
+
+.gameResultPage .dataTable .tableOuter table tr p.highLight {
+  color: #f35a02;
+}
+.gameResultPage .dataTable .tableOuter table tr p.important {
+  color: #f30d0d;
+}
+
+.gameResultPage .dataTable .tableOuter table tr td {
+  border-right: 0.2vw solid #838ba0;
+}
+
+.gameResultPage .dataTable .tableOuter table tr td p {
+  color: #000000;
+}
+
+.gameResultPage .dataTable .tableOuter table tr td p span {
+  color: #2d43b6;
 }
 
 footer ul {
@@ -220,7 +814,7 @@ footer ul.multiBet_mode > div.moreCount > div.checkBlock .addBtn {
 
 footer ul.multiBet_mode > div.moreCount > div.checkBlock button {
   background: #2d43b6;
-  border-radius: 10vw;
+  border-radius: 1vw;
   color: #ffffff;
 }
 
@@ -636,6 +1230,173 @@ footer ul.multiBet_mode ul li .group_normal .rate {
           box-shadow: 0 2px 4px transparent, 0px 0px 15px rgba(0, 0, 0, 0.1098039216);
 }
 
+.depositPage .topArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.depositPage .topArea .payTypeBlock {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.depositPage .topArea .payTypeBlock .type {
+  background: #eef1f8;
+}
+
+.depositPage .topArea .payTypeBlock .type::before {
+  border-color: transparent transparent #2d43b6 transparent;
+}
+
+.depositPage .topArea .payTypeBlock .type::after {
+  color: #ffffff;
+}
+
+.depositPage .topArea .payTypeBlock .type.active {
+  border-color: #2d43b6;
+}
+
+.depositPage .topArea .payTypeBlock .type.active i,
+.depositPage .topArea .payTypeBlock .type.active p {
+  color: #2d43b6;
+}
+
+.depositPage .topArea .payTypeBlock .type i {
+  color: #4d515d;
+}
+
+.depositPage .topArea .payTypeBlock .type p {
+  color: #4d515d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.depositPage .topArea label input {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+}
+
+.depositPage .bottomArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.depositPage .bottomArea .quickMoneyBlock {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.depositPage .bottomArea .quickMoneyBlock button {
+  background: #eef1f8;
+  color: #4d515d;
+}
+.depositPage .bottomArea .quickMoneyBlock button.active {
+  background: #2d43b6;
+  color: #ffffff;
+}
+
+.depositPage .checkBtn {
+  background: #2d43b6;
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+.depositPage p.blockTitle {
+  color: #2d43b6;
+}
+
+.depositPage p.itemName {
+  color: #2d43b6;
+}
+
+.depositPage p.hint {
+  color: #f30d0d;
+}
+
+.transferPage .topArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.transferPage .topArea .walletWrap {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.transferPage .topArea .walletWrap::before {
+  background: #d8d8d8;
+}
+
+.transferPage .topArea .walletWrap .wallet:last-child i,
+.transferPage .topArea .walletWrap .wallet:last-child span {
+  color: #f30d0d;
+}
+
+.transferPage .topArea .walletWrap .wallet p {
+  color: #000000;
+}
+
+.transferPage .topArea .walletWrap .wallet p i {
+  color: #2d43b6;
+}
+
+.transferPage .topArea .walletWrap .wallet span {
+  color: #2d43b6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transferPage .topArea .platBlock {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.transferPage .topArea .platBlock .platform {
+  background: #eef1f8;
+}
+
+.transferPage .topArea .platBlock .platform p {
+  color: #838ba0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transferPage .topArea .platBlock .platform p {
+  color: #838ba0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transferPage .topArea .platBlock .platform span {
+  color: #000000;
+}
+
+.transferPage .topArea .platBlock .platform i {
+  color: #2d43b6;
+}
+
+.transferPage .topArea .platBlock .platform i span {
+  background: #2d43b6;
+  color: #ffffff;
+}
+
+.transferPage .topArea .platBlock .platform i span::before {
+  border-color: #2d43b6 transparent transparent transparent;
+}
+
+.transferPage .topArea .platWrap_Switcher p {
+  color: #838ba0;
+}
+
+.transferPage .bottomArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
 .betLimitPage .dataTable .tableOuter {
   border: 0.2vw solid #838ba0;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -968,7 +1729,7 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 
 .memberPage .memberEditing .memberData .btnBlock button {
   background: #2d43b6;
-  border-radius: 10vw;
+  border-radius: 1vw;
   color: #ffffff;
 }
 
@@ -1170,7 +1931,7 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 
 .settingPage .changePW .checkBtn {
   background: #2d43b6;
-  border-radius: 10vw;
+  border-radius: 1vw;
   color: #ffffff;
 }
 

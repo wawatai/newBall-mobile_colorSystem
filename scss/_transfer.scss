@@ -3,18 +3,14 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    background: $BG_Color00;
     padding: 0 0 17vw 0;
     position: relative;
 
     .topArea {
         width: 100%;
         height: auto;
-        background: $BG_Color01;
         padding: 3vw;
         margin-bottom: 4vw;
-        box-shadow: 0 2px 4px $shadow_02,
-                    0 -1px 4px transparent;
         position: relative;
         z-index: 6;
 
@@ -23,14 +19,12 @@
             height: auto;
             display: flex;
             align-items: center;
-            border-bottom: 0.2vw solid $Border_04;
             position: relative;
 
             &::before {
                 content: "";
                 width: 0.2vw;
                 height: 6vw;
-                background: $Border_04;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -45,36 +39,21 @@
                 align-items: center;
                 padding: 3vw 4vw;
 
-                &:last-child {
-
-                    i {
-                        color: $Font_remind;
-                    }
-
-                    span {
-                        color: $Font_remind;
-                    }
-                }
-
                 p {
-                    color: $Font_Color01;
                     font-size: 3.8vw;
                     margin-bottom: 2vw;
 
                     i {
-                        color: $Font_Color04;
                         font-size: 16px;
                     }
                 }
 
                 span {
                     width: 100%;
-                    color: $Font_Color04;
                     font-size: 4.8vw;
                     font-family: sans-serif;
                     font-weight: bold;
                     text-align: center;
-                    @include textHidden;
                 }
             }
         }
@@ -86,7 +65,6 @@
             grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
             gap: 1.6vw;
             padding: 2vw 0;
-            border-bottom: 0.2vw solid $Border_04;
             margin: 0 0 2vw;
             overflow: hidden;
 
@@ -101,23 +79,19 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                background: $BG_Color04;
                 border-radius: 1vw;
                 padding: 2vw;
                 position: relative;
 
                 p {
                     width: 100%;
-                    color: $Font_Color02;
                     font-size: 3.6vw;
                     font-weight: bold;
                     text-align: center;
-                    @include textHidden;
                     margin-bottom: 1vw;
                 }
 
                 span {
-                    color: $Font_Color01;
                     font-size: 3.8vw;
                     font-family: sans-serif;
                     font-weight: bold;
@@ -129,7 +103,6 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: $Font_Color04;
                     font-size: 12px;
                     position: absolute;
                     top: 3vw;
@@ -145,8 +118,6 @@
                     span {
                         width: auto;
                         height: auto;
-                        background: $BG_Color03;
-                        color: $Font_Color03;
                         font-size: 3.6vw;
                         font-family: unset;
                         font-weight: unset;
@@ -166,7 +137,6 @@
                             height: 0;
                             border-style: solid;
                             border-width: 3vw 1.5vw 0 1.5vw;
-                            border-color: $BG_Color03 transparent transparent transparent;
                             position: absolute;
                             bottom: -2.6vw;
                             left: 50%;
@@ -192,7 +162,6 @@
             }
 
             p {
-                color: $Font_Color02;
                 font-size: 3.6vw;
                 margin-right: 1vw;
             }
@@ -210,11 +179,8 @@
     .bottomArea {
         width: 100%;
         height: auto;
-        background: $BG_Color01;
         padding: 3vw;
         margin-bottom: 4vw;
-        box-shadow: 0 2px 4px $shadow_02,
-                    0 -1px 4px transparent;
         
         label {
             width: 100%;
