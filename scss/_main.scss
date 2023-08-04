@@ -28,7 +28,7 @@ html {
             }
 
             &.fullScreen {
-                padding: 0 0 12.888vw;
+                padding: 0 0 8.888vw;
             }
 
             .wrapContainer {
@@ -115,11 +115,11 @@ html {
         @import "./tutorialPage";
         @import "./gameResult";
         @import "./deposit";
-        // @import "./transfer";
-        // @import "./withdraw";
-        // @import "./event";
-        // @import "./post";
-        // @import "./csService";
+        @import "./transfer";
+        @import "./withdraw";
+        @import "./event";
+        @import "./post";
+        @import "./csService";
         @import "./betRecord";
         @import "./betLimit";
         @import "./card";

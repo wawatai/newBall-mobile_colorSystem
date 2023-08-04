@@ -69,6 +69,23 @@
                     font-size: 4.4vw;
                 }
             }
+
+            &.transfer {
+                height: auto;
+                justify-content: unset;
+
+                .title {
+                    padding: 5vw 8vw;
+                }
+
+                .content {
+                    padding: 0vw 8vw 8vw;
+
+                    p {
+                        line-height: 20px;
+                    }
+                }
+            }
         }
 
         //熱門賽事

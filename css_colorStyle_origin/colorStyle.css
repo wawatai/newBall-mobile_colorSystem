@@ -122,7 +122,9 @@ header .innerMode_header .quickHref {
 .tutorialPage,
 .gameResultPage,
 .depositPage,
-.transferPage {
+.transferPage,
+.withdrawPage,
+.postPage {
   background: #f7f7f7;
 }
 
@@ -1397,6 +1399,98 @@ footer ul.multiBet_mode ul li .group_normal .rate {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
 }
 
+.transferPage .bottomArea label {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.transferPage .bottomArea label select,
+.transferPage .bottomArea label input {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+}
+
+.transferPage .checkBtn {
+  background: #2d43b6;
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+.transferPage .blockTitle {
+  border-bottom: 0.2vw solid #d8d8d8;
+  color: #2d43b6;
+}
+
+.transferPage .blockTitle i {
+  color: #1b255c;
+}
+
+.transferPage .blockTitle .switcher {
+  background: #2d43b6;
+}
+
+.transferPage .blockTitle .dot {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.transferPage p.returnAll {
+  color: #838ba0;
+}
+.transferPage p.itemName {
+  color: #4d515d;
+}
+.transferPage p.hint {
+  color: #f30d0d;
+}
+
+.withdrawPage .topArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.withdrawPage .topArea label {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.withdrawPage .topArea label input {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+  background: #eef1f8;
+}
+.withdrawPage .topArea label input.unEdit {
+  background: #ffffff;
+}
+
+.withdrawPage .checkBtn {
+  background: #2d43b6;
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+.withdrawPage p.itemName {
+  color: #4d515d;
+}
+.withdrawPage p.hint {
+  color: #f30d0d;
+}
+
+.withdrawPage .remindBox {
+  background: #ffffff;
+  border: 0.2vw solid #838ba0;
+}
+
+.withdrawPage .remindBox p.title {
+  color: #2d43b6;
+}
+.withdrawPage .remindBox p.normal {
+  color: #4d515d;
+}
+.withdrawPage .remindBox p.highlight {
+  color: #f30d0d;
+}
+
 .betLimitPage .dataTable .tableOuter {
   border: 0.2vw solid #838ba0;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -1555,21 +1649,22 @@ footer ul.multiBet_mode ul li .group_normal .rate {
   border-bottom: 0.2vw solid #d8d8d8;
 }
 
-.betRecordPage .dataTable.history .itemName_Wrap li .overView {
+.betRecordPage .dataTable.history li .overView {
   background: #ffffff;
+  border-bottom: 0.1vw solid #d8d8d8;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
 }
 
-.betRecordPage .dataTable.history .itemName_Wrap li .overView > div p {
+.betRecordPage .dataTable.history li .overView > div p {
   color: #000000;
 }
 
-.betRecordPage .dataTable.history .itemName_Wrap li .overView > div p.betNum {
+.betRecordPage .dataTable.history li .overView > div p.betNum {
   color: #f30d0d;
 }
 
-.betRecordPage .dataTable.history .itemName_Wrap li .overView > div .countNum {
+.betRecordPage .dataTable.history li .overView > div .countNum {
   background: #cdd0dd;
   color: #ffffff;
 }
@@ -1743,6 +1838,67 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 
 .memberPage .memberEditing .hintBox p span {
   color: #599bcf;
+}
+
+.eventPage .eventList {
+  background: #ffffff;
+}
+
+.eventPage .eventList li .tag.latest {
+  background: -webkit-gradient(linear, left top, left bottom, from(#546ce6), color-stop(85%, #3549b9), to(#222836));
+  background: linear-gradient(to bottom, #546ce6 0%, #3549b9 85%, #222836 100%);
+}
+.eventPage .eventList li .tag.daily {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7684ae), color-stop(85%, #4f576e), to(#222836));
+  background: linear-gradient(to bottom, #7684ae 0%, #4f576e 85%, #222836 100%);
+}
+
+.eventPage .eventList li .tag p {
+  color: #ffffff;
+}
+
+.eventPage .eventList li .eventTime {
+  background: #ffffff;
+}
+
+.eventPage .eventList li .eventTime p,
+.eventPage .eventList li .eventTime span {
+  color: #4d515d;
+}
+
+.postPage .postType {
+  background: #eef1f8;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.postPage .postType li::before {
+  background: #2d43b6;
+}
+
+.postPage .postType li p {
+  color: #4d515d;
+}
+
+.postPage .postType li.active p {
+  color: #2d43b6;
+}
+
+.postPage .typeContainer li {
+  background: #ffffff;
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.postPage .typeContainer li i {
+  background: #eef1f8;
+  color: #2d43b6;
+}
+
+.postPage .typeContainer li .textBox p.date {
+  color: #838ba0;
+}
+.postPage .typeContainer li .textBox p.content {
+  color: #4d515d;
 }
 
 .cardPage .cardList ul li {
@@ -2002,12 +2158,62 @@ footer ul.multiBet_mode ul li .group_normal .rate {
   color: #ffffff;
 }
 
-.csPage .innerMode {
+.csPage .innerMode,
+.csPage .innerMode.connectUs .content {
   background: #f7f7f7;
+}
+
+.csPage .innerMode .innerMode_header {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1098039216);
+}
+
+.csPage .innerMode .innerMode_header .quickHref {
+  color: #838ba0;
 }
 
 .csPage .innerMode .content ul {
   background: #ffffff;
+}
+
+.csPage .innerMode .content ul.myQaList {
+  background: transparent;
+}
+
+.csPage .innerMode .content ul.myQaList li {
+  background: #ffffff;
+  border: 0.2vw solid #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li:last-child {
+  border-bottom: 0.2vw solid #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li .title {
+  background: #f6f8ff;
+  border-bottom: 0.2vw solid #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li .title p {
+  color: #1b255c;
+}
+
+.csPage .innerMode .content ul.myQaList li .title .tag {
+  background: #d3dbff;
+  border: 0.2vw solid #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li .date {
+  color: #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li .content p.quest {
+  color: #2d43b6;
+}
+
+.csPage .innerMode .content ul.myQaList li .content p.ans {
+  color: #4d515d;
 }
 
 .csPage .innerMode .content ul .themeTitle {
@@ -2059,7 +2265,7 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 }
 
 .csPage .innerMode .content form label .updateBlock .addPic {
-  border: pxToVw(10) dashed #838ba0;
+  border: 0.4vw dashed #838ba0;
 }
 
 .csPage .innerMode .content form label .updateBlock .hint {
@@ -2071,9 +2277,9 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 }
 
 .csPage .innerMode .content .onlineCS_Btn,
-.csPage .innerMode .content .subTitle_Btn {
+.csPage .innerMode .content .submit_Btn {
   background: -webkit-gradient(linear, left top, right top, from(#909ddc), to(#2e44b6));
   background: linear-gradient(to right, #909ddc 0%, #2e44b6 100%);
-  border-radius: 10vw;
+  border-radius: 1vw;
   color: #ffffff;
 }

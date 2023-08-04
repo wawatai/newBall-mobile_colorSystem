@@ -382,6 +382,13 @@ $(function(){
             .toggleClass("on");
         })
     })
+
+    $(function(){
+        $(".transferPage button.checkBtn").click(function(){
+            $(".filter, .jumpWindow.announcement")
+            .addClass("display");
+        })
+    })
 })
 
 //post 
@@ -410,6 +417,17 @@ $(function(){
         .addClass("display");
     })
     $(".csPage .innerMode .innerMode_header i").click(function(){
+        $(this)
+        .closest(".innerMode")
+        .removeClass("display");
+    })
+    $(".csPage .innerMode.feedback .innerMode_header .quickHref").click(function(){
+        $(this)
+        .closest(".csPage")
+        .find(".innerMode.myFeedback")
+        .addClass("display");
+    })
+    $(".csPage .innerMode .innerMode_header i.feedback").click(function(){
         $(this)
         .closest(".innerMode")
         .removeClass("display");

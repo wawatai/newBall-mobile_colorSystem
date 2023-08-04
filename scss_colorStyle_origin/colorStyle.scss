@@ -74,7 +74,7 @@ $gameFilter_BG: linear-gradient(to right, #0c1c6d 0%,  #8f9cdc 50%, #6674bf 60%,
 }
 @mixin btnStyle03 {  //漸層
     background: $linear01;
-    border-radius: 10vw;
+    border-radius: 1vw;
     color: $Font_Color03;
 }
 @mixin btnStyle04 {  //主色線色
@@ -332,7 +332,9 @@ header .innerMode_header .quickHref {
 .tutorialPage,
 .gameResultPage,
 .depositPage,
-.transferPage {
+.transferPage,
+.withdrawPage,
+.postPage {
     background: $BG_Color00;
 }
 
@@ -1182,6 +1184,93 @@ footer ul.multiBet_mode ul li .group_normal .rate {
     box-shadow: 0 2px 4px $shadow_02,
                     0 -1px 4px transparent;
 }
+.transferPage .bottomArea label {
+    border-bottom: 0.2vw solid $Border_04;
+}
+.transferPage .bottomArea label select,
+.transferPage .bottomArea label input {
+    @include input01;
+}
+.transferPage .checkBtn {
+    @include btnStyle01;
+}
+.transferPage .blockTitle {
+    border-bottom: 0.2vw solid $Border_04;
+    color: $Font_Color04;
+}
+.transferPage .blockTitle i {
+    color: $Font_Color05;
+}
+.transferPage .blockTitle .switcher {
+    background: $BG_Color03;
+}
+.transferPage .blockTitle .dot {
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_01;
+}
+.transferPage p {
+
+    &.returnAll {
+        color: $Font_Color02;
+    }
+
+    &.itemName {
+        color: $Font_Color06;
+    }
+
+    &.hint {
+        color: $Font_remind;
+    }
+}
+
+//withdrawPage
+.withdrawPage .topArea {
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+                0 -1px 4px transparent;
+}
+.withdrawPage .topArea label {
+    border-bottom: 0.2vw solid $Border_04;
+}
+.withdrawPage .topArea label input {
+    @include input01;
+    background: $BG_Color04;
+
+    &.unEdit {
+        background: $BG_Color01;
+    }
+}
+.withdrawPage .checkBtn {
+    @include btnStyle01;
+}
+.withdrawPage p {
+
+    &.itemName {
+        color: $Font_Color06;
+    }
+
+    &.hint {
+        color: $Font_remind;
+    }
+}
+.withdrawPage .remindBox {
+    background: $BG_Color01;
+    border: 0.2vw solid $Border_03;
+}
+.withdrawPage .remindBox p {
+
+    &.title {
+        color: $Font_Color04;
+    }
+
+    &.normal {
+        color: $Font_Color06;
+    }
+
+    &.highlight {
+        color: $Font_remind;
+    }
+}
 
 //betLimitPage
 .betLimitPage .dataTable .tableOuter {
@@ -1309,18 +1398,19 @@ footer ul.multiBet_mode ul li .group_normal .rate {
     background: $BG_Color00;
     border-bottom: 0.2vw solid $Border_04;
 }
-.betRecordPage .dataTable.history .itemName_Wrap li .overView {
+.betRecordPage .dataTable.history li .overView {
     background: $BG_Color01;
+    border-bottom: 0.1vw solid $Border_04;
     box-shadow: 0 2px 4px $shadow_02,
         0 -1px 4px transparent;
 }
-.betRecordPage .dataTable.history .itemName_Wrap li .overView>div p {
+.betRecordPage .dataTable.history li .overView>div p {
     color: $Font_Color01;
 }
-.betRecordPage .dataTable.history .itemName_Wrap li .overView>div p.betNum {
+.betRecordPage .dataTable.history li .overView>div p.betNum {
     color: $Font_remind;
 }
-.betRecordPage .dataTable.history .itemName_Wrap li .overView>div .countNum {
+.betRecordPage .dataTable.history li .overView>div .countNum {
     background: $BG_Color02;
     color: $Font_Color03;
 }
@@ -1441,6 +1531,65 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 }
 .memberPage .memberEditing .hintBox p span {
     color: $Font_link;
+}
+
+//eventPage 
+.eventPage .eventList {
+    background: $BG_Color01;
+}
+.eventPage .eventList li .tag {
+
+    &.latest {
+        background: $linear03;
+    }
+
+    &.daily {
+        background: $linear04;
+    }
+}
+.eventPage .eventList li .tag p {
+    color: $Font_Color03;
+}
+.eventPage .eventList li .eventTime {
+    background: $BG_Color01;
+}
+.eventPage .eventList li .eventTime p,
+.eventPage .eventList li .eventTime span {
+    color: $Font_Color06;
+}
+
+//postPage
+.postPage .postType {
+    background: $BG_Color04;
+    box-shadow: 0 2px 4px $shadow_02,
+                0 -1px 4px transparent;
+}
+.postPage .postType li::before {
+    background: $Border_01;
+}
+.postPage .postType li p {
+    color: $Font_Color06;
+}
+.postPage .postType li.active p {
+    color: $Font_Color04;
+}
+.postPage .typeContainer li {
+    background: $BG_Color01;
+    border-bottom: 0.2vw solid $Border_04;
+}
+.postPage .typeContainer li i {
+    background: $BG_Color04;
+    color: $Font_Color04;
+}
+.postPage .typeContainer li .textBox p {
+    
+    &.date {
+        color: $Font_Color02;
+    }
+
+    &.content {
+        color: $Font_Color06;
+    }
 }
 
 //cardPage
@@ -1595,11 +1744,49 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 .csPage .container .csBlock .subTitle {
     color: $Font_Color03;
 }
-.csPage .innerMode {
+.csPage .innerMode,
+.csPage .innerMode.connectUs .content {
     background: $BG_Color00;
+}
+.csPage .innerMode .innerMode_header {
+    background: $BG_Color01;
+    box-shadow: 0 0 15px $shadow_02;
+}
+.csPage .innerMode .innerMode_header .quickHref {
+    color: $Font_Color02;
 }
 .csPage .innerMode .content ul {
     background: $BG_Color01;
+}
+.csPage .innerMode .content ul.myQaList {
+    background: transparent;
+}
+.csPage .innerMode .content ul.myQaList li {
+    background: $BG_Color01;
+    border: 0.2vw solid $Border_03;
+}
+.csPage .innerMode .content ul.myQaList li:last-child {
+    border-bottom: 0.2vw solid $Border_03;
+}
+.csPage .innerMode .content ul.myQaList li .title {
+    background: $BG_Color09;
+    border-bottom: 0.2vw solid $Border_03;
+}
+.csPage .innerMode .content ul.myQaList li .title p {
+    color: $Font_Color05;
+}
+.csPage .innerMode .content ul.myQaList li .title .tag {
+    background: $BG_Color05;
+    border: 0.2vw solid $Border_03;
+}
+.csPage .innerMode .content ul.myQaList li .date {
+    color: $Font_Color02;
+}
+.csPage .innerMode .content ul.myQaList li .content p.quest {
+    color: $Font_Color04;
+}
+.csPage .innerMode .content ul.myQaList li .content p.ans {
+    color: $Font_Color06
 }
 .csPage .innerMode .content ul .themeTitle {
     color: $Font_Color06;
@@ -1636,7 +1823,7 @@ footer ul.multiBet_mode ul li .group_normal .rate {
     color: $Font_Color02;
 }
 .csPage .innerMode .content form label .updateBlock .addPic {
-    border: pxToVw(10) dashed $Border_03;
+    border: 0.4vw dashed $Border_03;
 }
 .csPage .innerMode .content form label .updateBlock .hint {
     color: $Font_Color02;
@@ -1645,6 +1832,6 @@ footer ul.multiBet_mode ul li .group_normal .rate {
     background: $BG_Color00;
 }
 .csPage .innerMode .content .onlineCS_Btn,
-.csPage .innerMode .content .subTitle_Btn {
+.csPage .innerMode .content .submit_Btn {
     @include btnStyle03;
 }

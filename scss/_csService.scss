@@ -113,9 +113,11 @@
         display: none;
         width: 100%;
         height: auto;
+        min-height: 104.5%;
         animation: fadeIn 0.3s ease-in-out;
         position: absolute;
         top: -10vw;
+        overflow-y: auto;
         z-index: 13;
 
         &.display {
@@ -127,23 +129,21 @@
             height: auto;
             display: flex;
             flex-direction: column;
-            padding: 0 0 17vw 0;
-            margin: 18vw 0 0 0;
+            // padding: 0 0 17vw 0;
+            margin: 23vw 0 0 0;
 
             ul {
                 width: 100%;
                 height: auto;
                 padding: 4vw 4vw 0;
 
-                &:first-child {
-                    padding: 10vw 4vw 0 4vw;
+                &.themeBlock {
                     margin-bottom: 4vw;
                 }
 
-                .themeTitle {
-                    font-size: 4.8vw;
-                    padding: 0 0 0 4vw;
-                    margin: 0 2vw 4vw;
+                &:not(:first-child) {
+                    padding: 10vw 4vw 0 4vw;
+                    margin-bottom: 4vw;
                 }
 
                 li {
@@ -155,7 +155,7 @@
                     padding: 8vw 0;
                     
                     &:last-child {
-                        border-bottom: none;
+                        border-bottom: 0;
                     }
 
                     i {
@@ -206,6 +206,85 @@
                         }
                     }
                 }
+
+                &.myQaList {
+                    padding: 2vw;
+
+                    li {
+                        border-radius: 2vw;
+                        flex-direction: column;
+                        padding: 0;
+                        margin: 0 0 2vw;
+                        overflow: unset;
+
+                        &:last-child {
+                            margin: 0 0 2vw;
+                        }
+
+                        .title {
+                            width: 100%;
+                            height: 8vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-radius: 2vw 2vw 0 0;
+                            padding: 0 3vw;
+
+                            .group {
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-size: 3.6vw;
+                                    font-weight: bold;
+                                    margin-right: 1vw;
+                                }
+    
+                                .tag {
+                                    font-size: 3.4vw;
+                                    font-weight: bold;
+                                    padding: 0.8vw 1vw;
+                                    border-radius: 1vw;
+                                    transform: scale(0.8);
+
+                                    &.read {
+                                        filter: brightness(1.1);
+                                    }
+                                }
+                            }
+
+                           .date {
+                                font-size: 3.4vw;
+                            }
+                        }
+
+                        .content {
+                            height: auto;
+                            margin: 0;
+                            padding: 3vw;
+
+                            p {
+                                font-size: 3.8vw;
+                                font-weight: bold;
+                                line-height: 20px;
+
+                                &.quest {
+                                    margin-bottom: 4vw;
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .themeTitle {
+                    font-size: 4.8vw;
+                    padding: 0 0 0 4vw;
+                    margin: 0 2vw 4vw;
+                }
             }
 
             form {
@@ -220,6 +299,10 @@
                     flex-direction: column;
                     padding: 8vw 0;
                     position: relative;
+
+                    &:first-child {
+                        padding: 0 0 8vw;
+                    }
 
                     .itemName {
                         font-size: 4.4vw;
@@ -306,11 +389,11 @@
             }
 
             .onlineCS_Btn,
-            .subTitle_Btn {
+            .submit_Btn {
                 width: pxToVw(1984);
                 height: pxToVw(297);
                 font-size: 4.4vw;
-                margin: 8vw auto 2vw;
+                margin: 0vw auto 4vw;
             }
 
             .subTitle_Btn {
