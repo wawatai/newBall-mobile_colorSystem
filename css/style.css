@@ -1,4 +1,9 @@
 @charset "UTF-8";
+header .logo {
+  background: url("../img/logo.png") no-repeat center;
+  background-size: contain;
+}
+
 header i.message {
   background: url("../img/icon/message_ic.png") no-repeat center;
   background-size: contain;

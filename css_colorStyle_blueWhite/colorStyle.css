@@ -1,0 +1,2389 @@
+body main.decoBG .grayBG {
+  background: #f7f7f7;
+}
+
+html body .marqueeWrap .marquee {
+  background: #ffffff;
+  border-color: #356bf7;
+  -webkit-box-shadow: 2px 1px 1vw rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 2px 1px 1vw rgba(0, 0, 0, 0.4588235294);
+  border-style: solid;
+  border-width: 0.2vw 0.2vw 0.2vw 0;
+  border-radius: 0 10vw 10vw 0;
+}
+
+html body .marqueeWrap .marqueeIcon {
+  height: 100%;
+  background-color: #ffffff;
+  border-color: #356bf7;
+  -webkit-box-shadow: 2px 1px 1vw rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 2px 1px 1vw rgba(0, 0, 0, 0.4588235294);
+  border-style: solid;
+  border-width: 0.2vw 0 0.2vw 0.2vw;
+  border-radius: 10vw 0 0 10vw;
+  margin: 0 0 0 0;
+  padding: 2vw 4vw;
+}
+
+body .marqueeWrap .marquee p {
+  color: #838ba0;
+}
+
+html body .marqueeWrap .hotGameBtn {
+  background: #356bf7;
+  margin-left: 7vw;
+}
+
+body .hotGameBtn p {
+  color: #ffffff;
+}
+
+header {
+  background: #356bf7;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.4588235294);
+}
+
+header.innerPage .pageTitle {
+  color: #ffffff;
+}
+
+header.innerPage .leftArrow_Icon {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+
+html body header.innerPage i.fa-sort-down {
+  color: #ffffff;
+}
+
+html body header.innerPage i.fa-circle-dollar-to-slot {
+  color: #ffffff;
+}
+
+html body header.innerPage i.fa-magnifying-glass {
+  color: #ffffff;
+}
+
+header .message::before {
+  background: #e91a0b;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.4588235294);
+}
+
+header .innerMode_header {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.4588235294);
+}
+
+header .innerMode_header .pageTitle {
+  color: #4d515d;
+}
+
+header .innerMode_header .leftArrow_Icon {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+
+header .innerMode_header .finish {
+  color: #8e9bdc;
+}
+
+header .innerMode_header .quickHref {
+  color: #838ba0;
+}
+
+.homePage {
+  background: #f7f7f7;
+}
+
+.homePage .memberArea .memberInfo .nameBlock p {
+  color: #000000;
+}
+
+.homePage .memberArea .memberInfo .nameBlock .vipLevel {
+  background: #356bf7;
+}
+
+.homePage .memberArea .memberInfo .nameBlock .vipLevel p {
+  color: #ffffff;
+}
+
+.homePage .memberArea .memberInfo .total {
+  color: #356bf7;
+}
+
+.homePage .memberArea .quickBtnBlock a p {
+  color: #000000;
+}
+
+html body .homePage .homeCenter nav.gameFilter {
+  width: 14.5vw;
+  margin-right: 3vw;
+}
+
+.homePage .homeCenter nav.gameFilter ul li {
+  background: #ebeffd;
+  border: 0.3vw solid #356bf7;
+  -webkit-box-shadow: 1px 1px 1vw rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 1px 1px 1vw rgba(0, 0, 0, 0.4588235294);
+}
+
+.homePage .homeCenter nav.gameFilter ul li.active {
+  background: -webkit-gradient(linear, left top, right top, color-stop(9%, #163dbc), color-stop(50%, #4f8cf0), color-stop(91%, #163dbc));
+  background: linear-gradient(to right, #163dbc 9%, #4f8cf0 50%, #163dbc 91%);
+}
+
+.homePage .homeCenter nav.gameFilter ul li .outer p.type {
+  color: #000000;
+}
+
+.homePage .homeCenter nav.gameFilter ul li .outer p.num {
+  color: #356bf7;
+}
+
+.homePage .homeCenter nav.gameFilter ul li.active .outer {
+  background: #356bf7;
+}
+
+.homePage .homeCenter nav.gameFilter ul li.active .outer p {
+  color: #ffffff;
+}
+
+html body .homePage .homeCenter ol.gameType ul li {
+  overflow: unset;
+}
+
+.homePage .homeCenter ol.gameType ul li .gameDetails p {
+  color: #000000;
+}
+
+.homePage .homeCenter ol.gameType ul li .gameDetails p.num {
+  color: #356bf7;
+}
+
+.homePage .homeCenter ol.gameType ul li .gameDetails span {
+  color: #838ba0;
+}
+
+.betLimitPage,
+.betRecordPage,
+.cardPage,
+.settingPage,
+.gameRulePage,
+.mainPage,
+.tutorialPage,
+.gameResultPage,
+.depositPage,
+.transferPage,
+.withdrawPage,
+.postPage {
+  background: #f7f7f7;
+}
+
+.mainPage .betType_mode {
+  background: #ffffff;
+}
+
+.mainPage .betType_mode li {
+  border: 0.2vw solid #838ba0;
+}
+.mainPage .betType_mode li.active {
+  background: -webkit-gradient(linear, left top, right top, from(#909ddc), to(#2e44b6));
+  background: linear-gradient(to right, #909ddc 0%, #2e44b6 100%);
+}
+.mainPage .betType_mode li.active p {
+  color: #ffffff;
+}
+
+.mainPage .betType_mode li p {
+  color: #838ba0;
+}
+
+.mainPage .topContainer {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.mainPage .topContainer .dayFilter {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.mainPage .topContainer .dayFilter li::before {
+  background: #356bf7;
+}
+
+.mainPage .topContainer .dayFilter li p {
+  color: #838ba0;
+}
+
+.mainPage .topContainer .gameType li {
+  border: 0.2vw solid transparent;
+}
+.mainPage .topContainer .gameType li.active p {
+  color: #000000;
+}
+.mainPage .topContainer .gameType li.active .num {
+  color: #000000;
+}
+
+.mainPage .topContainer .gameType li p {
+  color: #838ba0;
+}
+
+.mainPage .topContainer .gameType li i .num {
+  color: #838ba0;
+}
+
+.mainPage .currentType .group {
+  color: #000000;
+}
+
+.mainPage .currentType .switchBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #eef1f8;
+  border-radius: 30vw;
+  padding: 0.2vw;
+  position: relative;
+  background: #cdd0dd;
+}
+.mainPage .currentType .switchBtn.on .bar {
+  left: unset;
+  right: 0.2vw;
+  -webkit-transform: translate(-2%, -50%);
+          transform: translate(-2%, -50%);
+}
+.mainPage .currentType .switchBtn.on p:nth-of-type(1) {
+  color: #838ba0;
+}
+.mainPage .currentType .switchBtn.on p:nth-of-type(2) {
+  color: #ffffff;
+}
+.mainPage .currentType .switchBtn p {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 8;
+}
+.mainPage .currentType .switchBtn p:nth-of-type(2) {
+  color: #838ba0;
+}
+.mainPage .currentType .switchBtn .bar {
+  width: 48%;
+  height: 92%;
+  background: #356bf7;
+  border-radius: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 0.2vw;
+  -webkit-transform: translate(2%, -50%);
+          transform: translate(2%, -50%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 7;
+}
+
+.mainPage .currentType .switchBtn.on p:nth-of-type(1) {
+  color: #ffffff;
+}
+.mainPage .currentType .switchBtn.on p:nth-of-type(2) {
+  color: #356bf7;
+}
+
+.mainPage .currentType .switchBtn p {
+  color: #356bf7;
+}
+.mainPage .currentType .switchBtn p:nth-of-type(2) {
+  color: #ffffff;
+}
+
+.mainPage .currentType .switchBtn .bar {
+  background: #ffffff;
+}
+
+.mainPage .dataContainer .dataType .filterBlock {
+  background: #f7f7f7;
+}
+
+.mainPage .dataContainer .dataType.ing.active .filterBlock .state {
+  background: #eef1f8;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.mainPage .dataContainer .dataType.ing .state {
+  border-top: 0.6vw solid #356bf7;
+}
+
+.mainPage .dataContainer .dataType.unProgress .state {
+  border-top: 0.6vw solid #ef6b5d;
+}
+
+.mainPage .dataContainer .dataType.unProgress.active .filterBlock .state {
+  background: #ffdbd7;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.mainPage .dataContainer .dataType .state {
+  background: #ffffff;
+}
+
+.mainPage .dataContainer .dataType .state p {
+  color: #4d515d;
+}
+
+.mainPage .dataContainer .dataType ul li .gameName {
+  background: #ffffff;
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.mainPage .dataContainer .dataType ul li .gameName p {
+  color: #1b255c;
+}
+
+.mainPage .dataContainer .dataType ul li .betRateType {
+  background: #f7f7f7;
+}
+
+.mainPage .dataContainer .dataType ul li .betRateType p {
+  color: #000000;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock {
+  background: #ffffff;
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState p,
+.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more p {
+  color: #838ba0;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
+  color: #1b255c;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .teamRow .teamName {
+  color: #1b255c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
+  color: #1b255c;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock {
+  background: #eef1f8;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock.active {
+  background: #ebeffd;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock p {
+  color: #838ba0;
+}
+
+.mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock span {
+  color: #1b255c;
+}
+
+.mainPage .dataContainer .noData i {
+  color: #838ba0;
+}
+
+.mainPage .dataContainer .noData p {
+  color: #838ba0;
+}
+
+.mainPage .betGame_Detail {
+  background: #f7f7f7;
+}
+
+.mainPage .betGame_Detail > div.topArea .topWrap {
+  color: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.teamWrap .team {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.teamWrap .team p {
+  color: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.teamWrap .info p {
+  color: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.functionState {
+  background: rgba(0, 0, 0, 0.4509803922);
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.functionState::before {
+  background: #000000;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.functionState .group {
+  color: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock {
+  background: #ffffff;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName {
+  border-bottom: 0.15vw solid #d8d8d8;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName p {
+  color: #1b255c;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName p::before {
+  background: #ebeffd;
+}
+
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName i {
+  color: #d8d8d8;
+}
+.mainPage .betGame_Detail > div.downArea .typeBlock .typeName i.active {
+  color: #838ba0;
+}
+
+.mainPage .betGame_Detail > div.downArea .rateWrap .teamBlock {
+  background: #f6f8ff;
+}
+.mainPage .betGame_Detail > div.downArea .rateWrap .teamBlock.active {
+  background: #ebeffd;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.downArea .typeBlock p {
+  color: #4d515d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.downArea .typeBlock span {
+  color: #4d515d;
+}
+
+.mainPage .betGame_Detail > div.topArea .content > div.downArea .typeBlock span.gray {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter {
+  background: #ffffff;
+}
+
+.mainPage .searchFilter .content > div.searchBlock i {
+  color: #1b255c;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input {
+  background: #f6f8ff;
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input::-webkit-input-placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input::-moz-placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input:-ms-input-placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input::-ms-input-placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.searchBlock input::placeholder {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .content > div.allGames label input {
+  border: 0.2vw solid #838ba0;
+}
+
+.mainPage .searchFilter .content > div.allGames label input::before {
+  background: #959dc5;
+}
+
+.mainPage .searchFilter .content > div.allGames ul:nth-of-type(1).active .typeName {
+  background: #959dc5;
+}
+
+.mainPage .searchFilter .content > div.allGames ul:nth-of-type(1).active .typeName p {
+  color: #ffffff;
+}
+
+.mainPage .searchFilter .content > div.allGames ul .typeName {
+  background: #f6f8ff;
+}
+
+.mainPage .searchFilter .content > div.allGames ul .typeName p {
+  color: #1b255c;
+}
+
+.mainPage .searchFilter .content > div.allGames ul li::before {
+  background: #d8d8d8;
+}
+
+.mainPage .searchFilter .content > div.allGames ul li .group p {
+  color: #4d515d;
+}
+
+.mainPage .searchFilter .content > div.allGames ul li .group .total {
+  color: #838ba0;
+}
+
+.mainPage .searchFilter .nameTitle_select li {
+  color: #4d515d;
+}
+
+.tutorialPage .topContainer {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.tutorialPage .topContainer .gameType li {
+  background: #f7f7f7;
+}
+
+.tutorialPage .topContainer .gameType li.active {
+  background: #546ce6;
+}
+
+.tutorialPage .topContainer .gameType li.active p {
+  color: #ffffff;
+}
+
+.tutorialPage .topContainer .gameType li i .num {
+  color: #838ba0;
+}
+
+.tutorialPage .topContainer .gameType li p {
+  color: #838ba0;
+}
+
+.tutorialPage .topContainer .ruleType {
+  background: #f7f7f7;
+}
+
+.tutorialPage .topContainer .ruleType li::before {
+  background: #356bf7;
+}
+
+.tutorialPage .topContainer .ruleType li.active p {
+  color: #356bf7;
+}
+
+.tutorialPage .topContainer .ruleType li p {
+  color: #4d515d;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock {
+  background: #ffffff;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.title {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.title p {
+  border-left: 0.6vw solid #356bf7;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .text p.teamName {
+  color: #356bf7;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .text p.point {
+  color: #599bcf;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .team .text p.rate {
+  color: #000000;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.teamWrap .vs {
+  color: #356bf7;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap {
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap > div span {
+  color: #356bf7;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.pointWrap > div.centerResult {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(176, 180, 201, 0.3568627451)), color-stop(70%, #ffffff));
+  background: linear-gradient(to top, rgba(176, 180, 201, 0.3568627451) 0%, #ffffff 70%);
+  border: 0.2vw solid #e0e7ff;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.explain .half {
+  color: #ffc651;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock > div.explain .half.gray {
+  color: #838ba0;
+}
+
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock .betMoney {
+  color: #ffc651;
+}
+
+.gameResultPage .resultType {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.gameResultPage .resultType li {
+  background: #eef1f8;
+  border-radius: 10vw;
+  color: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4588235294);
+}
+
+.gameResultPage .resultType li p {
+  color: #4d515d;
+}
+
+.gameResultPage .resultType li.active {
+  border-color: #356bf7;
+}
+
+.gameResultPage .resultType li.active p {
+  color: #356bf7;
+}
+
+.gameResultPage .searchFilters {
+  background: #f7f7f7;
+}
+
+.gameResultPage .searchFilters button {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1098039216);
+  color: #000000;
+}
+.gameResultPage .searchFilters button.active {
+  background: #356bf7;
+  color: #ffffff;
+}
+
+.gameResultPage .dataTable .tableOuter {
+  border: 0.2vw solid #838ba0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+}
+
+.gameResultPage .dataTable .tableOuter table tr {
+  border-bottom: 0.2vw solid #838ba0;
+}
+
+.gameResultPage .dataTable .tableOuter table tr.gameName th {
+  background: #356bf7;
+}
+
+.gameResultPage .dataTable .tableOuter table tr.gameName th p {
+  color: #ffffff;
+}
+
+.gameResultPage .dataTable .tableOuter table tr.gameName th .outer .state {
+  border-left: 0.6vw solid #599bcf;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(1) .outer span {
+  color: #4d515d;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(2), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(even) td:nth-of-type(3) {
+  background: #eef1f8;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(1), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(3), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(4) {
+  background: #eef1f8;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(odd) td:nth-of-type(1) .outer span {
+  color: #4d515d;
+}
+
+.gameResultPage .dataTable .tableOuter table tr:nth-of-type(2) td:nth-of-type(1), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(2) td:nth-of-type(2), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(2) td:nth-of-type(3), .gameResultPage .dataTable .tableOuter table tr:nth-of-type(2) td:nth-of-type(4) {
+  background: #cdd0dd;
+}
+
+.gameResultPage .dataTable .tableOuter table tr p.highLight {
+  color: #ffc651;
+}
+.gameResultPage .dataTable .tableOuter table tr p.important {
+  color: #e91a0b;
+}
+
+.gameResultPage .dataTable .tableOuter table tr td {
+  border-right: 0.2vw solid #838ba0;
+}
+
+.gameResultPage .dataTable .tableOuter table tr td p {
+  color: #000000;
+}
+
+.gameResultPage .dataTable .tableOuter table tr td p span {
+  color: #356bf7;
+}
+
+footer ul {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4588235294);
+}
+
+footer ul li.active span {
+  color: #356bf7;
+}
+
+footer ul li i::before {
+  background: #e91a0b;
+}
+
+footer ul li span {
+  color: #000000;
+}
+
+footer ul.mainPageNav li.active span {
+  color: #356bf7;
+}
+
+footer ul.multiBet_mode {
+  background: #ffffff;
+}
+
+footer ul.multiBet_mode .title {
+  color: #4d515d;
+  border-left: 0.8vw solid #356bf7;
+}
+
+footer ul.multiBet_mode > div.current_state {
+  background: #959dc5;
+}
+
+footer ul.multiBet_mode > div.current_state .group {
+  color: #ffffff;
+}
+
+footer ul.multiBet_mode > div.current_state .group .count {
+  background: #ffffff;
+  color: #959dc5;
+}
+
+footer ul.multiBet_mode > div.total_count {
+  background: #eef1f8;
+  border-color: #d8d8d8;
+}
+
+footer ul.multiBet_mode > div.total_count .win {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+footer ul.multiBet_mode > div.total_count .win .tot {
+  color: #e91a0b;
+}
+
+footer ul.multiBet_mode > div.total_count .moreType {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode > div.total_count input.limit {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+}
+
+footer ul.multiBet_mode > div.total_count .totMoney {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode > div.total_count .totMoney span {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode > div.moreCount {
+  background: #f7f7f7;
+}
+
+footer ul.multiBet_mode > div.moreCount > div {
+  border: 0.1vw solid rgba(216, 216, 216, 0.6235294118);
+  color: #4d515d;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.numBlock {
+  background: #ffffff;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.functionBlock {
+  background: #f6f8ff;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.checkBlock .addBtn {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.checkBlock button {
+  background: #356bf7;
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+footer ul.multiBet_mode > div.moreCount > div.checkBlock button .total {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+footer ul.multiBet_mode ul li {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+footer ul.multiBet_mode ul li .group_normal .title .point {
+  color: #4d515d;
+}
+
+footer ul.multiBet_mode ul li .group_normal .betType {
+  color: #000000;
+}
+
+footer ul.multiBet_mode ul li .group_normal .teamWrap {
+  color: #838ba0;
+}
+
+footer ul.multiBet_mode ul li .group_normal .rate {
+  color: #4d515d;
+}
+
+.filter {
+  background: rgba(0, 0, 0, 0.6784313725);
+}
+
+.filter .jumpWindow.announcement {
+  background: #ffffff;
+}
+
+.filter .jumpWindow.announcement .title {
+  color: #000000;
+}
+
+.filter .jumpWindow.announcement .content p {
+  color: #838ba0;
+}
+
+.filter .jumpWindow.announcement .btnBlock button {
+  background: #ffffff;
+  color: #000000;
+}
+
+.filter .jumpWindow.announcement .btnBlock button:first-child {
+  border-right: 0.2vw solid #e0e7ff;
+}
+
+.filter .jumpWindow.announcement .btnBlock button.seeMore {
+  color: #356bf7;
+}
+
+.filter .jumpWindow.announcement .btnBlock {
+  border-top: 0.2vw solid #e0e7ff;
+}
+
+.filter .jumpWindow.betHotGame .reFresh p {
+  color: #ffffff;
+}
+
+.filter .jumpWindow.betHotGame .content .gameBlock .teamBlock p,
+.filter .jumpWindow.betHotGame .content .gameBlock .detailBlock p {
+  color: #000000;
+}
+
+.filter .jumpWindow.betGame .content form .btnWrap button {
+  background: #ffffff;
+  border: 0.2vw solid #d8d8d8;
+  color: #000000;
+}
+.filter .jumpWindow.betGame .content form .btnWrap button.active {
+  border-color: #356bf7;
+  color: #546ce6;
+}
+
+.filter .jumpWindow.betGame .content form .winWrap p,
+.filter .jumpWindow.betGame .content form .winWrap span {
+  color: #000000;
+}
+
+.filter .jumpWindow.betGame .content form .winWrap span {
+  color: #e91a0b;
+}
+
+.filter .jumpWindow.betGame .btnBlock {
+  background: #546ce6;
+}
+
+.filter .jumpWindow.betGame .btnBlock p {
+  color: #ffffff;
+}
+
+.filter .jumpWindow.betGame .btnBlock .grabBar {
+  background: -webkit-gradient(linear, left top, right top, from(#546ce6), to(#3549b9));
+  background: linear-gradient(to right, #546ce6 0%, #3549b9 100%);
+}
+
+.filter .jumpWindow.unFinish_bet {
+  background: #f7f7f7;
+}
+
+.filter .jumpWindow.unFinish_bet .titleArea {
+  background: -webkit-gradient(linear, left top, right top, from(#909ddc), to(#2e44b6));
+  background: linear-gradient(to right, #909ddc 0%, #2e44b6 100%);
+}
+
+.filter .jumpWindow.unFinish_bet .titleArea p {
+  color: #ffffff;
+}
+
+.filter .jumpWindow.unFinish_bet .titleArea p .num {
+  background: #ffffff;
+  color: #356bf7;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr {
+  border-bottom: 0.1vw solid #d8d8d8;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr.gameName th {
+  background: #959dc5;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr.gameName th .outer .state {
+  border-left: 0.6vw solid #599bcf;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr.gameName th p {
+  color: #ffffff;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(4) td,
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(5) td,
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(6) td,
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(7) td {
+  border-right: 0.1vw solid #d8d8d8;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(4) td:nth-of-type(odd),
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(5) td:nth-of-type(odd),
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(6) td:nth-of-type(odd),
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr:nth-of-type(7) td:nth-of-type(odd) {
+  background: #f7f7f7;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr td {
+  background: #ffffff;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr td.gameInfo {
+  background: #ffffff;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr td.gameInfo .outer .team span {
+  color: #838ba0;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr td p {
+  color: #000000;
+}
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr td p.highLight {
+  color: #356bf7;
+}
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr td p.important {
+  color: #e91a0b;
+}
+
+.filter .jumpWindow.unFinish_bet .content .tableOuter table tr.summary td .outer p:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.filter .jumpWindow.unFinish_bet .countBlock {
+  -webkit-box-shadow: 0 2px 4px transparent, 0 -1px 16px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 2px 4px transparent, 0 -1px 16px rgba(0, 0, 0, 0.1098039216);
+}
+
+.filter .jumpWindow.unFinish_bet .countBlock::before {
+  background: #d8d8d8;
+}
+
+.filter .jumpWindow.unFinish_bet .countBlock .half p {
+  color: #000000;
+}
+
+.filter .jumpWindow.unFinish_bet .countBlock .half span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.filter .jumpWindow.unFinish_bet .countBlock .half span.bet {
+  color: #356bf7;
+}
+.filter .jumpWindow.unFinish_bet .countBlock .half span.result {
+  color: #1cc948;
+}
+
+.filter .jumpBlock {
+  width: 95%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 2vw;
+  position: absolute;
+  top: 1vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.filter .jumpBlock.display {
+  display: block;
+}
+.filter .jumpBlock::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 2.2vw 4vw 2.2vw;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  top: -3.2vw;
+  left: 6vw;
+}
+.filter .jumpBlock .titleBlock {
+  width: 100%;
+  height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2vw 2vw 0 0;
+  position: relative;
+}
+.filter .jumpBlock .titleBlock p {
+  color: #4d515d;
+  font-size: 4vw;
+  font-weight: bold;
+}
+.filter .jumpBlock .titleBlock i {
+  width: 5vw;
+  height: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #4d515d;
+  font-size: 4vw;
+  position: absolute;
+  top: 50%;
+  right: 3vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.filter .jumpBlock .content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 0 0 2vw 2vw;
+  padding: 2vw;
+}
+.filter .jumpBlock .content button {
+  width: auto;
+  height: auto;
+  background: #eef1f8;
+  color: #356bf7;
+  font-size: 3.8vw;
+  border: 0.2vw solid #356bf7;
+  white-space: nowrap;
+  padding: 2vw 3vw;
+  margin: 0 2vw 2vw 0;
+}
+.filter .jumpBlock .content button:active, .filter .jumpBlock .content button.active {
+  background: #356bf7;
+  color: #ffffff;
+}
+
+.filter .jumpMenu {
+  background: #f7f7f7;
+}
+
+.filter .jumpMenu .setUnions {
+  background: #ffffff;
+}
+
+.filter .jumpMenu .setUnions .group .more p {
+  color: #838ba0;
+}
+
+.filter .jumpMenu ul li {
+  background: #ffffff;
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.filter .jumpMenu ul li .switchBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #eef1f8;
+  border-radius: 30vw;
+  padding: 0.2vw;
+  position: relative;
+  background: #737997;
+}
+.filter .jumpMenu ul li .switchBtn.on .bar {
+  left: unset;
+  right: 0.2vw;
+  -webkit-transform: translate(-2%, -50%);
+          transform: translate(-2%, -50%);
+}
+.filter .jumpMenu ul li .switchBtn.on p:nth-of-type(1) {
+  color: #838ba0;
+}
+.filter .jumpMenu ul li .switchBtn.on p:nth-of-type(2) {
+  color: #ffffff;
+}
+.filter .jumpMenu ul li .switchBtn p {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 8;
+}
+.filter .jumpMenu ul li .switchBtn p:nth-of-type(2) {
+  color: #838ba0;
+}
+.filter .jumpMenu ul li .switchBtn .bar {
+  width: 48%;
+  height: 92%;
+  background: #356bf7;
+  border-radius: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 0.2vw;
+  -webkit-transform: translate(2%, -50%);
+          transform: translate(2%, -50%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 7;
+}
+
+.filter .jumpMenu ul li .switchBtn.on p:nth-of-type(1) {
+  color: #ffffff;
+}
+
+.filter .jumpMenu ul li .switchBtn.on p:nth-of-type(2) {
+  color: #838ba0;
+}
+
+.filter .jumpMenu ul li .switchBtn p {
+  color: #000000;
+}
+.filter .jumpMenu ul li .switchBtn p:nth-of-type(2) {
+  color: #ffffff;
+}
+
+.filter .jumpMenu ul li .switchBtn .bar {
+  background: #ffffff;
+}
+
+.filter .jumpMenu p {
+  color: #4d515d;
+}
+
+.filter .jumpMenu p .state {
+  color: #838ba0;
+}
+
+.filter .jumpMenu button {
+  background: #ffffff;
+  color: #000000;
+  -webkit-box-shadow: 0 2px 4px transparent, 0px 0px 15px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 2px 4px transparent, 0px 0px 15px rgba(0, 0, 0, 0.1098039216);
+}
+
+.depositPage .topArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.depositPage .topArea .payTypeBlock {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.depositPage .topArea .payTypeBlock .type {
+  background: #eef1f8;
+}
+
+.depositPage .topArea .payTypeBlock .type::before {
+  border-color: transparent transparent #356bf7 transparent;
+}
+
+.depositPage .topArea .payTypeBlock .type::after {
+  color: #ffffff;
+}
+
+.depositPage .topArea .payTypeBlock .type.active {
+  border-color: #356bf7;
+}
+
+.depositPage .topArea .payTypeBlock .type.active i,
+.depositPage .topArea .payTypeBlock .type.active p {
+  color: #356bf7;
+}
+
+.depositPage .topArea .payTypeBlock .type i {
+  color: #4d515d;
+}
+
+.depositPage .topArea .payTypeBlock .type p {
+  color: #4d515d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.depositPage .topArea label input {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+}
+
+.depositPage .bottomArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.depositPage .bottomArea .quickMoneyBlock {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.depositPage .bottomArea .quickMoneyBlock button {
+  background: #eef1f8;
+  color: #4d515d;
+}
+.depositPage .bottomArea .quickMoneyBlock button.active {
+  background: #356bf7;
+  color: #ffffff;
+}
+
+.depositPage .checkBtn {
+  background: #356bf7;
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+.depositPage p.blockTitle {
+  color: #356bf7;
+}
+
+.depositPage p.itemName {
+  color: #356bf7;
+}
+
+.depositPage p.hint {
+  color: #e91a0b;
+}
+
+.transferPage .topArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.transferPage .topArea .walletWrap {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.transferPage .topArea .walletWrap::before {
+  background: #d8d8d8;
+}
+
+.transferPage .topArea .walletWrap .wallet:last-child i,
+.transferPage .topArea .walletWrap .wallet:last-child span {
+  color: #e91a0b;
+}
+
+.transferPage .topArea .walletWrap .wallet p {
+  color: #000000;
+}
+
+.transferPage .topArea .walletWrap .wallet p i {
+  color: #356bf7;
+}
+
+.transferPage .topArea .walletWrap .wallet span {
+  color: #356bf7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transferPage .topArea .platBlock {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.transferPage .topArea .platBlock .platform {
+  background: #eef1f8;
+}
+
+.transferPage .topArea .platBlock .platform p {
+  color: #838ba0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transferPage .topArea .platBlock .platform p {
+  color: #838ba0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transferPage .topArea .platBlock .platform span {
+  color: #000000;
+}
+
+.transferPage .topArea .platBlock .platform i {
+  color: #356bf7;
+}
+
+.transferPage .topArea .platBlock .platform i span {
+  background: #356bf7;
+  color: #ffffff;
+}
+
+.transferPage .topArea .platBlock .platform i span::before {
+  border-color: #356bf7 transparent transparent transparent;
+}
+
+.transferPage .topArea .platWrap_Switcher p {
+  color: #838ba0;
+}
+
+.transferPage .bottomArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.transferPage .bottomArea label {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.transferPage .bottomArea label select,
+.transferPage .bottomArea label input {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+}
+
+.transferPage .checkBtn {
+  background: #356bf7;
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+.transferPage .blockTitle {
+  border-bottom: 0.2vw solid #d8d8d8;
+  color: #356bf7;
+}
+
+.transferPage .blockTitle i {
+  color: #1b255c;
+}
+
+.transferPage .blockTitle .switcher {
+  background: #356bf7;
+}
+
+.transferPage .blockTitle .dot {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4588235294);
+}
+
+.transferPage p.returnAll {
+  color: #838ba0;
+}
+.transferPage p.itemName {
+  color: #4d515d;
+}
+.transferPage p.hint {
+  color: #e91a0b;
+}
+
+.withdrawPage .topArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.withdrawPage .topArea label {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.withdrawPage .topArea label input {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+  background: #eef1f8;
+}
+.withdrawPage .topArea label input.unEdit {
+  background: #ffffff;
+}
+
+.withdrawPage .checkBtn {
+  background: #356bf7;
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+.withdrawPage p.itemName {
+  color: #4d515d;
+}
+.withdrawPage p.hint {
+  color: #e91a0b;
+}
+
+.withdrawPage .remindBox {
+  background: #ffffff;
+  border: 0.2vw solid #838ba0;
+}
+
+.withdrawPage .remindBox p.title {
+  color: #356bf7;
+}
+.withdrawPage .remindBox p.normal {
+  color: #4d515d;
+}
+.withdrawPage .remindBox p.highlight {
+  color: #e91a0b;
+}
+
+.betLimitPage .dataTable .tableOuter {
+  border: 0.2vw solid #838ba0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+}
+
+.betLimitPage .dataTable .tableOuter table tr {
+  border-bottom: 0.2vw solid #838ba0;
+}
+
+.betLimitPage .dataTable .tableOuter table tr.gameName th {
+  background: #356bf7;
+}
+
+.betLimitPage .dataTable .tableOuter table tr.gameName th .outer p {
+  color: #ffffff;
+}
+
+.betLimitPage .dataTable .tableOuter table tr:nth-of-type(even) {
+  background: #eef1f8;
+}
+
+.betLimitPage .dataTable .tableOuter table tr td {
+  border-right: 0.2vw solid #838ba0;
+}
+
+.betLimitPage .dataTable .tableOuter table tr td p {
+  color: #4d515d;
+}
+
+.betLimitPage .dataTable .tableOuter table tr td p span {
+  color: #4d515d;
+}
+
+.betRecordPage .recordType {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.betRecordPage .recordType li {
+  background: #eef1f8;
+  border-radius: 10vw;
+  color: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4588235294);
+}
+.betRecordPage .recordType li.active {
+  border: 0.2vw solid #356bf7;
+}
+.betRecordPage .recordType li.active p {
+  color: #356bf7;
+}
+
+.betRecordPage .recordType li p {
+  color: #4d515d;
+}
+
+.betRecordPage .searchFilters {
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.betRecordPage .searchFilters button {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1098039216);
+  color: #000000;
+}
+.betRecordPage .searchFilters button.active {
+  background: #356bf7;
+  color: #ffffff;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr {
+  border-bottom: 0.1vw solid #d8d8d8;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th {
+  background: #356bf7;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th .outer .state {
+  border-left: 0.6vw solid #599bcf;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th p {
+  color: #ffffff;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr.summary td .outer p:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(4) td,
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(5) td,
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(6) td,
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(7) td {
+  border-right: 0.1vw solid #d8d8d8;
+}
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(4) td:nth-of-type(odd),
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(5) td:nth-of-type(odd),
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(6) td:nth-of-type(odd),
+.betRecordPage .dataTable .detailBlock .tableOuter table tr:nth-of-type(7) td:nth-of-type(odd) {
+  background: #f7f7f7;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td {
+  background: #ffffff;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td.gameInfo {
+  background: #ffffff;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td.gameInfo .outer .team span {
+  color: #838ba0;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td p {
+  color: #000000;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td p.highLight {
+  color: #356bf7;
+}
+
+.betRecordPage .dataTable .detailBlock .tableOuter table tr td p.important {
+  color: #e91a0b;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap {
+  background: #eef1f8;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap > div {
+  border-right: 0.2vw solid #838ba0;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap > div p {
+  color: #000000;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li {
+  background: #f7f7f7;
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.betRecordPage .dataTable.history li .overView {
+  background: #ffffff;
+  border-bottom: 0.1vw solid #d8d8d8;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.betRecordPage .dataTable.history li .overView > div p {
+  color: #000000;
+}
+
+.betRecordPage .dataTable.history li .overView > div p.betNum {
+  color: #e91a0b;
+}
+
+.betRecordPage .dataTable.history li .overView > div .countNum {
+  background: #cdd0dd;
+  color: #ffffff;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr {
+  border-bottom: 0.1vw solid #d8d8d8;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr.gameName th {
+  background: #356bf7;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr.gameName th .outer .state {
+  border-left: 0.6vw solid #599bcf;
+}
+
+.betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr.gameName th p {
+  color: #ffffff;
+}
+
+.betRecordPage .countBlock {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px transparent, 0 -1px 16px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 2px 4px transparent, 0 -1px 16px rgba(0, 0, 0, 0.1098039216);
+}
+
+.betRecordPage .countBlock::before {
+  background: #d8d8d8;
+}
+
+.betRecordPage .countBlock .half p {
+  color: #000000;
+}
+
+.betRecordPage .countBlock .half span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.betRecordPage .countBlock .half span.bet {
+  color: #356bf7;
+}
+
+.betRecordPage .countBlock .half span.result {
+  color: #1cc948;
+}
+
+.memberPage .topArea {
+  background: #ffffff;
+}
+
+.memberPage .topArea .memberBlock .infoText p {
+  color: #000000;
+}
+
+.memberPage .topArea .memberBlock .infoText span {
+  color: #356bf7;
+}
+
+.memberPage .topArea .quickNav li i {
+  color: #356bf7;
+}
+
+.memberPage .topArea .quickNav li p {
+  color: #000000;
+}
+
+.memberPage .bottomArea {
+  color: #000000;
+}
+
+.memberPage .bottomArea .functionList {
+  border-top: 0.2vw solid #e0e7ff;
+}
+
+.memberPage .bottomArea .functionList li {
+  border-bottom: 0.2vw solid #e0e7ff;
+}
+
+.memberPage .bottomArea .functionList li i {
+  color: #356bf7;
+}
+
+.memberPage .bottomArea .functionList li p {
+  color: #000000;
+}
+
+.memberPage .memberEditing .memberData {
+  background: #ffffff;
+}
+
+.memberPage .memberEditing .memberData label {
+  border-bottom: 0.2vw solid #e0e7ff;
+}
+
+.memberPage .memberEditing .memberData label p {
+  color: #838ba0;
+}
+.memberPage .memberEditing .memberData label p.oriData {
+  color: #356bf7;
+}
+.memberPage .memberEditing .memberData label p.itemName {
+  color: #4d515d;
+}
+.memberPage .memberEditing .memberData label p.userName {
+  color: #4d515d;
+}
+
+.memberPage .memberEditing .memberData label .picBox .editPic_Btn {
+  background: #cdd0dd;
+  border: 3px solid #f7f7f7;
+}
+
+.memberPage .memberEditing .memberData label .turnEditBtn {
+  background: #eef1f8;
+  border-radius: 10vw;
+  color: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4588235294);
+}
+
+.memberPage .memberEditing .memberData label .turnEditBtn p {
+  color: #000000;
+}
+
+.memberPage .memberEditing .memberData label input,
+.memberPage .memberEditing .memberData label select {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+}
+
+.memberPage .memberEditing .memberData label input::-webkit-input-placeholder, .memberPage .memberEditing .memberData label select::-webkit-input-placeholder {
+  color: #356bf7;
+}
+
+.memberPage .memberEditing .memberData label input::-moz-placeholder, .memberPage .memberEditing .memberData label select::-moz-placeholder {
+  color: #356bf7;
+}
+
+.memberPage .memberEditing .memberData label input:-ms-input-placeholder, .memberPage .memberEditing .memberData label select:-ms-input-placeholder {
+  color: #356bf7;
+}
+
+.memberPage .memberEditing .memberData label input::-ms-input-placeholder, .memberPage .memberEditing .memberData label select::-ms-input-placeholder {
+  color: #356bf7;
+}
+
+.memberPage .memberEditing .memberData label input::placeholder,
+.memberPage .memberEditing .memberData label select::placeholder {
+  color: #356bf7;
+}
+
+.memberPage .memberEditing .memberData .btnBlock {
+  background: #f7f7f7;
+}
+
+.memberPage .memberEditing .memberData .btnBlock button {
+  background: #356bf7;
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+.memberPage .memberEditing .hintBox {
+  background: #f7f7f7;
+}
+
+.memberPage .memberEditing .hintBox p {
+  color: #838ba0;
+}
+
+.memberPage .memberEditing .hintBox p span {
+  color: #599bcf;
+}
+
+.eventPage .eventList {
+  background: #ffffff;
+}
+
+.eventPage .eventList li .tag.latest {
+  background: -webkit-gradient(linear, left top, left bottom, from(#546ce6), color-stop(85%, #3549b9), to(#222836));
+  background: linear-gradient(to bottom, #546ce6 0%, #3549b9 85%, #222836 100%);
+}
+.eventPage .eventList li .tag.daily {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7684ae), color-stop(85%, #4f576e), to(#222836));
+  background: linear-gradient(to bottom, #7684ae 0%, #4f576e 85%, #222836 100%);
+}
+
+.eventPage .eventList li .tag p {
+  color: #ffffff;
+}
+
+.eventPage .eventList li .eventTime {
+  background: #ffffff;
+}
+
+.eventPage .eventList li .eventTime p,
+.eventPage .eventList li .eventTime span {
+  color: #4d515d;
+}
+
+.postPage .postType {
+  background: #eef1f8;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.postPage .postType li::before {
+  background: #356bf7;
+}
+
+.postPage .postType li p {
+  color: #4d515d;
+}
+
+.postPage .postType li.active p {
+  color: #356bf7;
+}
+
+.postPage .typeContainer li {
+  background: #ffffff;
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.postPage .typeContainer li i {
+  background: #eef1f8;
+  color: #356bf7;
+}
+
+.postPage .typeContainer li .textBox p.date {
+  color: #838ba0;
+}
+.postPage .typeContainer li .textBox p.content {
+  color: #4d515d;
+}
+
+.cardPage .cardList ul li {
+  background: -webkit-gradient(linear, left top, left bottom, from(#909ddc), to(#2e44b6));
+  background: linear-gradient(to bottom, #909ddc 0%, #2e44b6 100%);
+}
+
+.cardPage .cardList ul li.addCard i,
+.cardPage .cardList ul li.addCard p {
+  color: #ffffff;
+}
+
+.cardPage .cardList ul li p {
+  color: #ffffff;
+}
+
+.cardPage .cardList ul li .state {
+  background: #ebeffd;
+}
+
+.cardPage .cardList ul li .state::before {
+  background: #ebeffd;
+  -webkit-filter: drop-shadow(-4.8vw 0 0.5px #ebeffd);
+          filter: drop-shadow(-4.8vw 0 0.5px #ebeffd);
+}
+
+.cardPage .cardList ul li .state p {
+  color: #356bf7;
+}
+
+.cardPage form {
+  background: #ffffff;
+}
+
+.cardPage form label {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.cardPage form label.forSelect .wrap .outer select {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+  background: #f6f8ff;
+}
+
+.cardPage form label.forSelect .wrap .outer i {
+  color: #356bf7;
+}
+
+.cardPage form label .itemName {
+  color: #356bf7;
+}
+
+.cardPage form label input {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+  background: #f6f8ff;
+}
+
+.cardPage .submitBtn {
+  background: #356bf7;
+  color: #ffffff;
+}
+
+.settingPage .topArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.settingPage .topArea .settingTitle {
+  color: #356bf7;
+}
+
+.settingPage .topArea .controller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #eef1f8;
+  border-radius: 30vw;
+  padding: 0.2vw;
+  position: relative;
+}
+.settingPage .topArea .controller.on .bar {
+  left: unset;
+  right: 0.2vw;
+  -webkit-transform: translate(-2%, -50%);
+          transform: translate(-2%, -50%);
+}
+.settingPage .topArea .controller.on p:nth-of-type(1) {
+  color: #838ba0;
+}
+.settingPage .topArea .controller.on p:nth-of-type(2) {
+  color: #ffffff;
+}
+.settingPage .topArea .controller p {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 8;
+}
+.settingPage .topArea .controller p:nth-of-type(2) {
+  color: #838ba0;
+}
+.settingPage .topArea .controller .bar {
+  width: 48%;
+  height: 92%;
+  background: #356bf7;
+  border-radius: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 0.2vw;
+  -webkit-transform: translate(2%, -50%);
+          transform: translate(2%, -50%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 7;
+}
+
+.settingPage .topArea .nightMode .switch {
+  background: #eef1f8;
+}
+
+.settingPage .topArea .nightMode .switch.on span {
+  background: #356bf7;
+}
+
+.settingPage .topArea .nightMode .switch span {
+  background: #cdd0dd;
+}
+
+.settingPage .bottomArea {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1098039216), 0 -1px 4px transparent;
+}
+
+.settingPage .bottomArea .row {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.settingPage .bottomArea p {
+  color: #356bf7;
+}
+
+.settingPage .changePW {
+  background: #f7f7f7;
+}
+
+.settingPage .changePW form {
+  background: #ffffff;
+}
+
+.settingPage .changePW form label {
+  border-bottom: 0.2vw solid #d8d8d8;
+}
+
+.settingPage .changePW form label .itemName {
+  color: #356bf7;
+}
+
+.settingPage .changePW form label input {
+  border: 0.2vw solid #d8d8d8;
+  font-size: 3.8vw;
+}
+
+.settingPage .changePW form label .hint {
+  color: #e91a0b;
+}
+
+.settingPage .changePW .checkBtn {
+  background: #356bf7;
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+.gameRulePage .dataTable .tableOuter {
+  border: 0.2vw solid #838ba0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4588235294);
+}
+
+.gameRulePage .dataTable .tableOuter table tr {
+  border-bottom: 0.2vw solid #838ba0;
+}
+
+.gameRulePage .dataTable .tableOuter table tr.gameName th {
+  background: #356bf7;
+}
+
+.gameRulePage .dataTable .tableOuter table tr.gameName th .outer p {
+  color: #ffffff;
+}
+
+.gameRulePage .dataTable .tableOuter table tr:nth-of-type(even) {
+  background: #eef1f8;
+}
+
+.gameRulePage .dataTable .tableOuter table tr td {
+  border-right: 0.2vw solid #838ba0;
+}
+
+.gameRulePage .dataTable .tableOuter table tr td p {
+  color: #4d515d;
+}
+
+.gameRulePage .dataTable .tableOuter table tr td p span {
+  color: #356bf7;
+}
+
+.csPage .topContainer {
+  background: -webkit-gradient(linear, left top, right top, from(#909ddc), to(#2e44b6));
+  background: linear-gradient(to right, #909ddc 0%, #2e44b6 100%);
+}
+
+.csPage .topContainer .quickHref p {
+  color: #ffffff;
+}
+
+.csPage .topContainer .memberBlock {
+  background: #ffffff;
+}
+
+.csPage .topContainer .memberBlock .hiText {
+  color: #1b255c;
+}
+
+.csPage .topContainer .memberBlock .welcomeText {
+  color: #838ba0;
+}
+
+.csPage .topContainer .grayBG {
+  background: #f7f7f7;
+}
+
+.csPage .container .csBlock .mainTitle p {
+  color: #ffffff;
+}
+
+.csPage .container .csBlock .subTitle {
+  color: #ffffff;
+}
+
+.csPage .innerMode,
+.csPage .innerMode.connectUs .content {
+  background: #f7f7f7;
+}
+
+.csPage .innerMode .innerMode_header {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1098039216);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1098039216);
+}
+
+.csPage .innerMode .innerMode_header .quickHref {
+  color: #838ba0;
+}
+
+.csPage .innerMode .content ul {
+  background: #ffffff;
+}
+
+.csPage .innerMode .content ul.myQaList {
+  background: transparent;
+}
+
+.csPage .innerMode .content ul.myQaList li {
+  background: #ffffff;
+  border: 0.2vw solid #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li:last-child {
+  border-bottom: 0.2vw solid #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li .title {
+  background: #f6f8ff;
+  border-bottom: 0.2vw solid #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li .title p {
+  color: #1b255c;
+}
+
+.csPage .innerMode .content ul.myQaList li .title .tag {
+  background: #ebeffd;
+  border: 0.2vw solid #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li .date {
+  color: #838ba0;
+}
+
+.csPage .innerMode .content ul.myQaList li .content p.quest {
+  color: #356bf7;
+}
+
+.csPage .innerMode .content ul.myQaList li .content p.ans {
+  color: #4d515d;
+}
+
+.csPage .innerMode .content ul .themeTitle {
+  color: #4d515d;
+  border-left: 2px solid #356bf7;
+}
+
+.csPage .innerMode .content ul li {
+  border-bottom: 0.2vw solid #e0e7ff;
+}
+
+.csPage .innerMode .content ul li .infoBlock {
+  border-left: 0.2vw solid #e0e7ff;
+}
+
+.csPage .innerMode .content ul li .infoBlock p {
+  color: #4d515d;
+}
+
+.csPage .innerMode .content ul li .infoBlock .copyBtn {
+  background: transparent;
+  border: 0.2vw solid #356bf7;
+  border-radius: 10vw;
+  color: #356bf7;
+}
+
+.csPage .innerMode .content form label .itemName {
+  color: #4d515d;
+}
+
+.csPage .innerMode .content form label select {
+  color: #838ba0;
+}
+
+.csPage .innerMode .content form label .textarea {
+  color: #838ba0;
+}
+
+.csPage .innerMode .content form label .updateBlock {
+  background: #ffffff;
+}
+
+.csPage .innerMode .content form label .updateBlock::before {
+  background: #e0e7ff;
+}
+
+.csPage .innerMode .content form label .updateBlock .picLimit {
+  color: #838ba0;
+}
+
+.csPage .innerMode .content form label .updateBlock .addPic {
+  border: 0.4vw dashed #838ba0;
+}
+
+.csPage .innerMode .content form label .updateBlock .hint {
+  color: #838ba0;
+}
+
+.csPage .innerMode .content form .btnBlock {
+  background: #f7f7f7;
+}
+
+.csPage .innerMode .content .onlineCS_Btn,
+.csPage .innerMode .content .submit_Btn {
+  background: -webkit-gradient(linear, left top, right top, from(#909ddc), to(#2e44b6));
+  background: linear-gradient(to right, #909ddc 0%, #2e44b6 100%);
+  border-radius: 1vw;
+  color: #ffffff;
+}
+
+header .logo {
+  background: url("../img/blueWhite/logo.png") no-repeat center;
+  background-size: contain;
+}
+
+header i.message {
+  background: url("../img/blueWhite/message_ic.png") no-repeat center;
+  background-size: contain;
+}
+
+.marqueeWrap .marqueeIcon {
+  background: url("../img/blueWhite/marquee_ic.png") no-repeat center;
+  background-size: 53%;
+}
+
+.homePage .memberArea .hint_icon {
+  background: url("../img/blueWhite/hint_ic.png") no-repeat center;
+  background-size: 100%;
+}
+
+.homePage .memberArea .quickBtnBlock a i {
+  background: url("../img/blueWhite/quickBtn_Ic.png") no-repeat center;
+  background-size: 300%;
+}
+
+.homePage .homeCenter .gameType ul li.soccer {
+  background: url("../img/blueWhite/gameType_soccer.png") no-repeat center;
+  background-size: contain;
+}
+
+.homePage .homeCenter .gameType ul li.basketball {
+  background: url("../img/blueWhite/gameType_basketball.png") no-repeat center;
+  background-size: contain;
+}
+
+.homePage .homeCenter .gameType ul li.eSport {
+  background: url("../img/blueWhite/gameType_eSport.png") no-repeat center;
+  background-size: contain;
+}
+
+.homePage .homeCenter .gameType ul li.tennis {
+  background: url("../img/blueWhite/gameType_tennis.png") no-repeat center;
+  background-size: contain;
+}
+
+footer ul li i {
+  background: url("../img/blueWhite/footer_Ic.png") no-repeat;
+  background-size: 500%;
+}
