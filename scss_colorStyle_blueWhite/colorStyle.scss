@@ -1,5 +1,5 @@
 //BG_Color
-$BG_Color00: #f7f7f7;
+$BG_Color00: #ededed; //
 $BG_Color01: #ffffff;
 $BG_Color02: #cdd0dd;
 $BG_Color03: #356bf7; //
@@ -8,26 +8,27 @@ $BG_Color05: #ebeffd; //
 $BG_Color06: #546ce6;
 $BG_Color07: #ffdbd7;
 $BG_Color08: #959dc5;
-$BG_Color09: #f6f8ff;
+$BG_Color09: #edf0f6; //
 $BG_Color10: #737997;
 $BG_Color11: #00000073;
+$BG_Color12: #fcb930;
 
 //Font_color
 $Font_Color01: #000000;
-$Font_Color02: #838ba0;
+$Font_Color02: #b8b8b8; //
 $Font_Color03: #ffffff;
 $Font_Color04: #356bf7; //
 $Font_Color05: #1b255c;
-$Font_Color06: #4d515d;
+$Font_Color06: #616161; //
 $Font_Color07: #546ce6;
 $Font_Color08: #8e9bdc;
 $Font_link: #599bcf;
-$Font_em: #ffc651;
+$Font_em: #f25510;
 $Font_remind: #e91a0b; //
-$Font_positive: #1cc948;
+$Font_positive: #0fa424;
 
 //linear
-$linear01: linear-gradient(to right, #909ddc 0%, #2e44b6 100%);
+$linear01: linear-gradient(to right, #356bf7 0%, #315ccb 100%);
 $linear02: linear-gradient(to bottom, #909ddc 0%, #2e44b6 100%);
 $linear03: linear-gradient(to bottom, #546ce6 0%, #3549b9 85%, #222836 100%);
 $linear04: linear-gradient(to bottom, #7684ae 0%, #4f576e 85%, #222836 100%);
@@ -41,6 +42,7 @@ $Border_03: #838ba0;
 $Border_04: #d8d8d8;
 $Border_05: #ef6b5d;
 $Border_06: #d8d8d89f;
+$Border_07: #15c65c;
 
 //shadow
 $shadow_01: #00000075;
@@ -389,7 +391,7 @@ html body .homePage .homeCenter ol.gameType ul li {
     border: 0.2vw solid $Border_03;
 
     &.active {
-        background: $linear01;
+        background: $BG_Color03;
 
         p {
             color: $Font_Color03;
@@ -413,61 +415,83 @@ html body .homePage .homeCenter ol.gameType ul li {
 .mainPage .topContainer .dayFilter li p {
     color: $Font_Color02;
 }
+.mainPage .topContainer .gameType {
+    padding: 1vw 4vw;
+}
 .mainPage .topContainer .gameType li {
+    width: 20vw;
     border: 0.2vw solid transparent;
+    padding: 2vw 7vw 2vw 5vw;
+    flex-shrink: 0;
 
     &.active {
+        width: 20vw;
+        background: $BG_Color03;
+        border-radius: 1vw;
+        padding: 2vw 7vw 2vw 5vw;
 
         p {
-            color: $Font_Color01;
+            color: $Font_Color03;
         }
 
         .num {
-            color: $Font_Color01;
+            color: $Font_Color03;
         }
     }
 }
 .mainPage .topContainer .gameType li p {
-    color: $Font_Color02;
+    color: $Font_Color01;
 }
 .mainPage .topContainer .gameType li i .num {
     color: $Font_Color02;
+    transform: scale(0.9);
+    right: -5.8vw;
 }
 .mainPage .currentType .group {
     color: $Font_Color01;
 }
 .mainPage .currentType .switchBtn {
     @include switchBtnStyle;
-    background: $BG_Color02;
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+    0 -1px 4px transparent;
 }
 .mainPage .currentType .switchBtn.on p {
 
     &:nth-of-type(1) {
-        color: $Font_Color03;
+        color: $Font_Color04;
     }
     &:nth-of-type(2) {
-        color: $Font_Color04;
+        color: $Font_Color03;
     }
 }
 .mainPage .currentType .switchBtn p {
-    color: $Font_Color04;
+    color: $Font_Color03;
 
     &:nth-of-type(2) {
-        color: $Font_Color03;
+        color: $Font_Color01;
     }
 }
 .mainPage .currentType .switchBtn .bar {
-    background: $BG_Color01;
+    background: $BG_Color03;
+}
+.mainPage .dataContainer {
+    padding: 0 2vw 2vw 2vw;
+    box-shadow: 0 2px 4px $shadow_02,
+    0 -1px 4px transparent;
 }
 .mainPage .dataContainer .dataType .filterBlock {
     background: $BG_Color00;
 }
 .mainPage .dataContainer .dataType.ing.active .filterBlock .state {
-    background: $BG_Color04;
+    background: #eef8f2; //自訂義
     box-shadow: 0 2px 4px $shadow_02, 0 -1px 4px transparent;
 }
 .mainPage .dataContainer .dataType.ing .state {
-    border-top: 0.6vw solid $Border_01;
+    border-top: 0.6vw solid $Border_07;
+}
+.mainPage .dataContainer .dataType.ing .state p {
+    color: $Font_positive;
 }
 .mainPage .dataContainer .dataType.unProgress .state {
     border-top: 0.6vw solid $Border_05;
@@ -479,52 +503,71 @@ html body .homePage .homeCenter ol.gameType ul li {
 .mainPage .dataContainer .dataType .state {
     background: $BG_Color01;
 }
-.mainPage .dataContainer .dataType .state p {
-    color: $Font_Color06;
+.mainPage .dataContainer .dataType.active ul {
+    padding: 0;
+}
+.mainPage .dataContainer .dataType ul li {
+    box-shadow: 2px 1px $shadow_02, -1px -1px 4px rgba(0, 0, 0, 0.1098039216);
 }
 .mainPage .dataContainer .dataType ul li .gameName {
     background: $BG_Color01;
-    border-bottom: 0.2vw solid $Border_04;
+    border-bottom: 0.6vw solid $Border_01;
 }
 .mainPage .dataContainer .dataType ul li .gameName p {
-    color: $Font_Color05;
+    color: $Font_Color01;
 }
 .mainPage .dataContainer .dataType ul li .betRateType {
-    background: $BG_Color00;
+    background: $BG_Color01;
+    box-shadow: 0 2px 4px $shadow_02,
+    0 -1px 4px transparent;
 }
 .mainPage .dataContainer .dataType ul li .betRateType p {
     color: $Font_Color01;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock:nth-of-type(odd) {
+    background: #f6f7fb;
+}
+html body .mainPage .dataContainer .dataType ul li.active.pro .gameBlock:nth-of-type(even) {
+    background: #edf0f7;
 }
 .mainPage .dataContainer .dataType ul li .gameBlock {
     background: $BG_Color01;
     border-bottom: 0.2vw solid $Border_04;
 }
-.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState p,
-.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more p {
+.mainPage .dataContainer .dataType ul li .gameBlock:nth-of-type(even) {
+    background: $BG_Color09;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .functionState p {
     color: $Font_Color02;
+}
+.mainPage .dataContainer .dataType ul li .gameBlock .infoWrap .more p {
+    color: $Font_em;
 }
 .mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
     color: $Font_Color05;
 }
 .mainPage .dataContainer .dataType ul li .gameBlock .teamRow .teamName {
-    color: $Font_Color05;
+    color: $Font_Color01;
     @include textHidden;
 }
 .mainPage .dataContainer .dataType ul li .gameBlock .teamRow .vs {
-    color: $Font_Color05;
+    color: $Font_Color02;
 }
 .mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock {
-    background: $BG_Color04;
+    background: $BG_Color01;
+    box-shadow: 2px 1px $shadow_02, -1px -1px 4px rgba(0, 0, 0, 0.1098039216);
 
     &.active {
         background: $BG_Color05;
+        box-shadow: 0 2px 4px $shadow_02,
+    0 -1px 4px transparent;
     }
 }
 .mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock p {
     color: $Font_Color02;
 }
 .mainPage .dataContainer .dataType ul li .gameBlock .betRate .rateBlock span {
-    color: $Font_Color05;
+    color: $Font_Color04;
 }
 .mainPage .dataContainer .noData i {
     color: $Font_Color02;
@@ -646,7 +689,7 @@ html body .homePage .homeCenter ol.gameType ul li {
     background: $BG_Color00;
 }
 .tutorialPage .topContainer .gameType li.active {
-    background: $Font_Color07;
+    background: $linear01;
 }
 .tutorialPage .topContainer .gameType li.active p {
     color: $Font_Color03;
@@ -655,13 +698,16 @@ html body .homePage .homeCenter ol.gameType ul li {
     color: $Font_Color02;
 }
 .tutorialPage .topContainer .gameType li p {
-    color: $Font_Color02;
+    color: $Font_Color01;
 }
 .tutorialPage .topContainer .ruleType {
     background: $BG_Color00;
 }
 .tutorialPage .topContainer .ruleType li::before {
     background: $Border_01;
+}
+.tutorialPage .topContainer .ruleType li.active {
+    background: $BG_Color01;
 }
 .tutorialPage .topContainer .ruleType li.active p {
     color: $Font_Color04;
@@ -681,19 +727,19 @@ html body .homePage .homeCenter ol.gameType ul li {
 .tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.teamWrap .team .text p {
     
     &.teamName {
-        color: $Font_Color04;
+        color: $Font_Color01;
     }
 
     &.point {
-        color: $Font_link;
+        color: $Font_Color01;
     }
 
     &.rate {
-        color: $Font_Color01;
+        color: $Font_Color04;
     }
 }
 .tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.teamWrap .vs {
-    color: $Font_Color04; 
+    color: $Font_Color02; 
 }
 .tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap {
     background: $BG_Color00;
@@ -702,15 +748,52 @@ html body .homePage .homeCenter ol.gameType ul li {
     box-shadow: inset 0 2px 4px $shadow_02,
                 0 -1px 4px transparent;
 }
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap>div p {
+    color: $Font_Color01;
+    font-size: 3.8vw;
+    font-weight: bold;
+}
 .tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap>div span {
-    color: $Font_Color04;
+    color: $Font_Color06;
+
+    &.win {
+        color: $Font_em;
+        position: relative; 
+
+        &::before {
+            content: "";
+            width: 8vw;
+            height: 8vw;
+            position: absolute;
+            top: -5vw;
+            left: -14vw;
+        }
+    }
+
+    &.lose {
+        color: $Font_Color06;
+    }
+}
+html body .tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap>div:nth-of-type(3) span.win::before  {
+
+    position: absolute;
+    top: -5vw;
+    left: unset;
+    right: -14vw;
 }
 .tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap>div.centerResult {
-    background: $linear06;
+    background: $BG_Color01;
     border: 0.2vw solid $Border_02;
+    box-shadow: 0px 1px 4px $shadow_02;
 }
-.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.explain .half {
-    color: $Font_em;
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap>div.centerResult p {
+    color: $Font_Color01;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap>div.centerResult span {
+    color: $Font_Color04;
+}
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.explain .half p {
+    color: $Font_Color06;
 }
 .tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.explain .half.gray {
     color: $Font_Color02;
@@ -835,23 +918,36 @@ footer ul.mainPageNav li.active span {
 }
 footer ul.multiBet_mode {
     background: $BG_Color01;
+    box-shadow: 0 0 6px -1px $shadow_01;
 }
 footer ul.multiBet_mode .title {
     color: $Font_Color06;
     border-left: 0.8vw solid $Font_Color04;
 }
 footer ul.multiBet_mode>div.current_state {
-    background: $BG_Color08; 
+    background: $BG_Color01; 
+}
+footer ul.multiBet_mode>div.current_state {
+    background: $BG_Color01; 
 }
 footer ul.multiBet_mode>div.current_state .group {
-    color: $Font_Color03;
+    color: $Font_Color01;
+}
+footer ul.multiBet_mode>div.current_state .group i {
+    color: $Font_Color04;
 }
 footer ul.multiBet_mode>div.current_state .group .count {
-    background: $BG_Color01;
-    color: $BG_Color08;
+    background: $BG_Color12;
+    color: $Font_Color01;
+}
+footer ul.multiBet_mode>div.current_state .group .balance_num {
+    color: $Font_Color04;
+}
+html footer ul.multiBet_mode ul.betList {
+    box-shadow: 2px 1px $shadow_02, -1px -1px 11px 1px rgba(0, 0, 0, 0.1098039216);
 }
 footer ul.multiBet_mode>div.total_count {
-    background: $BG_Color04;
+    background: $BG_Color00;
     border-color: $Border_04;
 }
 footer ul.multiBet_mode>div.total_count .win {
@@ -879,20 +975,25 @@ footer ul.multiBet_mode>div.moreCount>div {
     border: 0.1vw solid $Border_06;
     color: $Font_Color06;
 }
-footer ul.multiBet_mode>div.moreCount>div.numBlock {
-    background: $BG_Color01;
-}
+footer ul.multiBet_mode>div.moreCount>div.numBlock,
 footer ul.multiBet_mode>div.moreCount>div.functionBlock {
-    background: $BG_Color09;
+    background: $BG_Color01;
+    box-shadow: 2px 1px 3px $shadow_02;
 }
-footer ul.multiBet_mode>div.moreCount>div.checkBlock .addBtn {
-    color: $Font_Color02;
+footer ul.multiBet_mode>div.checkBlock {
+    background: $BG_Color00;
 }
-footer ul.multiBet_mode>div.moreCount>div.checkBlock button {
+footer ul.multiBet_mode>div.checkBlock .addBtn {
+    color: $Font_Color01;
+}
+footer ul.multiBet_mode>div.checkBlock button {
     @include btnStyle01;
+    background: $BG_Color03;
+    color: $Font_Color03;
 }
 footer ul.multiBet_mode>div.moreCount>div.checkBlock button .total {
     @include textHidden;
+    color: $Font_Color03;
 }
 footer ul.multiBet_mode ul li {
     border-bottom: 0.2vw solid $Border_04;
@@ -913,6 +1014,9 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 //jumpWindow
 .filter {
     background: $filter_BG;
+}
+.filter .jumpWindow {
+    background: $BG_Color01;
 }
 .filter .jumpWindow.announcement {
     background: $BG_Color01;
@@ -960,14 +1064,28 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 .filter .jumpWindow.betGame .content form .winWrap span {
     color: $Font_remind;
 }
+html body .filter .jumpWindow.betGame .titleArea p::before,
+html body .filter .jumpWindow.betGame .titleArea p::after {
+    color: $Font_Color04;
+}
+html body .filter .jumpWindow.betGame .content {
+    background: $BG_Color00;
+}
+html .filter .jumpWindow.betGame .content .betDetail {
+    background: linear-gradient(to right, #fcb930 0%, #ff981f 100%);
+}
+html body .filter .jumpWindow.betGame .content .betDetail .num {
+    background: $BG_Color01;
+}
 .filter .jumpWindow.betGame .btnBlock {
-    background: $BG_Color06;
+    background: $BG_Color03;
 }
 .filter .jumpWindow.betGame .btnBlock p {
     color: $Font_Color03;
 }
-.filter .jumpWindow.betGame .btnBlock .grabBar {
-    background: $linear05;
+.filter .jumpWindow.betGame .btnBlock .grabBar,
+.filter .jumpWindow.betGame .btnBlock .grabBar i {
+    display: none;
 }
 .filter .jumpWindow.unFinish_bet {
     background: $BG_Color00;
@@ -1384,13 +1502,17 @@ footer ul.multiBet_mode ul li .group_normal .rate {
     border-bottom: 0.1vw solid $Border_04;
 }
 .betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th {
-    background: $BG_Color03;
+    background: $BG_Color09;
 }
 .betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th .outer .state {
-    border-left: 0.6vw solid $Font_link;
+    color: $Font_Color06;
+    border-left: 0.6vw solid $Border_01;
 }
 .betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th p {
-    color: $Font_Color03;
+    color: $Font_Color01;
+}
+.betRecordPage .dataTable .detailBlock .tableOuter table tr.gameName th:last-child .outer p {
+    color: $Font_Color06;
 }
 .betRecordPage .dataTable .detailBlock .tableOuter table tr.summary td .outer p:last-child {
     @include textHidden;
@@ -1426,11 +1548,6 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 .betRecordPage .dataTable .detailBlock .tableOuter table tr td p.important {
     color: $Font_remind;
 }
-.betRecordPage .dataTable.history .itemName_Wrap {
-    background: $BG_Color04;
-    box-shadow: 0 1px 4px $shadow_02,
-    0 -1px 4px transparent;
-}
 .betRecordPage .dataTable.history .itemName_Wrap>div {
     border-right: 0.2vw solid $Border_03;
 }
@@ -1454,14 +1571,14 @@ footer ul.multiBet_mode ul li .group_normal .rate {
     color: $Font_remind;
 }
 .betRecordPage .dataTable.history li .overView>div .countNum {
-    background: $BG_Color02;
-    color: $Font_Color03;
+    background: $BG_Color12;
+    color: $Font_Color01;
 }
 .betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr {
     border-bottom: 0.1vw solid $Border_04;
 }
 .betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr.gameName th {
-    background: $BG_Color03;
+    background: $BG_Color09;
 }
 .betRecordPage .dataTable.history .itemName_Wrap li .detailBlock .tableOuter table tr.gameName th .outer .state {
     border-left: 0.6vw solid $Font_link;
@@ -1921,8 +2038,23 @@ header i.message {
     background: url("../img/blueWhite/gameType_tennis.png") no-repeat center;
     background-size: contain;
 }
+.mainPage .dataType .state i {
+    background: url("../img/blueWhite/gameState_Ic.png") no-repeat;
+    background-size: 200%;
+}
+
+//tutorial
+.tutorialPage .ruleContainer .ruleType_content .ruleBlock>div.pointWrap>div span.win::before {
+    background: url("../img/blueWhite/winMoney_icon.png") no-repeat center;
+    background-size: contain;
+}
 
 footer ul li i {
     background: url("../img/blueWhite/footer_Ic.png") no-repeat;
     background-size: 500%;
+}
+
+.jumpWindow .close_icon {
+    background: url("../img/blueWhite/close_ic.png") no-repeat center;
+    background-size: 100%;
 }

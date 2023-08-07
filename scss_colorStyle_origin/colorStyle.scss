@@ -871,6 +871,9 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 .filter {
     background: $filter_BG;
 }
+.filter .jumpWindow {
+    background: $BG_Color01;
+}
 .filter .jumpWindow.announcement {
     background: $BG_Color01;
 }
@@ -899,6 +902,9 @@ footer ul.multiBet_mode ul li .group_normal .rate {
 .filter .jumpWindow.betHotGame .content .gameBlock .teamBlock p,
 .filter .jumpWindow.betHotGame .content .gameBlock .detailBlock p {
     color: $Font_Color01;
+}
+html .filter .jumpWindow.betHotGame .content .betDetail {
+    background: $BG_Color03;
 }
 .filter .jumpWindow.betGame .content form .btnWrap button {
     background: $BG_Color01;
